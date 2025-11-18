@@ -1,0 +1,535 @@
+Language,Model,Platform,Singer,Title,Url,SingFake_Set,Bonafide Or Deepfake,Created At,is_test_A,is_test_B
+Mandarin,,,Angela_Chang,破茧（《斗罗大陆》动画2020年新主题曲）,https://www.youtube.com/watch?v=6a0w7_NLAI8,T02,bonafide,,True,False
+Mandarin,,,Angela_Chang,張韶涵 Angela Zhang[因我而起]Official Video,https://www.youtube.com/watch?v=p__9AVS_M1k,T02,bonafide,,True,False
+Mandarin,,,Angela_Chang,張韶涵 Angela Zhang - 親愛的那不是愛情 (官方版MV),https://www.youtube.com/watch?v=HwF1i_6Iwp8,T02,bonafide,,True,False
+Mandarin,,,Angela_Chang,張韶涵 Angela Zhang - 不想懂得 (官方版MV),https://www.youtube.com/watch?v=YaJWn-Spxfc,T02,bonafide,,True,False
+Mandarin,Sovits4.0,,Angela_Chang,【AI翻唱 不是“張韶涵”】超快感 cover 孫燕姿（感覺對了 Ai要出發）,https://www.youtube.com/watch?v=J_BSeCXeXEU,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Angela_Chang,【蒙面AI猜猜猜】一個像夏天一個像秋天 cover 范瑋琪（網友出的主意，讓張來唱，應該聽不出來這聲音吧，所以問題不大）,https://www.youtube.com/watch?v=L6d6Iq-W2dY&list=PLqil1-qewx9h40Ez7bkOCZ1OSRi79o83E&index=2,T02,deepfake,,True,False
+Mandarin,,,Angela_Chang,張韶涵 Angela【還記得嗎】Official MV【HD】,https://www.youtube.com/watch?v=GCKh3quUSPo,T02,bonafide,,True,False
+Mandarin,Sovits4.0,,Angela_Chang,【蒙面AI猜猜猜】逆光 cover 孙燕姿（難道是“張韶涵”來了？如果大家都能猜對的話，該AI歌手就可以揭面出道）,https://www.youtube.com/watch?v=2bYNDt89cBE&list=PLqil1-qewx9h40Ez7bkOCZ1OSRi79o83E&index=3,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Angela_Chang,【AI翻唱 不是“張韶涵”】開始懂了 cover 孫燕姿（我想怎麼金曲少了，原來燕姿自己還占不少，只能勞煩其他AI歌手來翻唱）,https://www.youtube.com/watch?v=hdlwtUwfgX0&list=PLqil1-qewx9h40Ez7bkOCZ1OSRi79o83E,T02,deepfake,,True,False
+Mandarin,,,Angela_Chang,Angela Zhang - Invisible Wings (Official MV),https://www.youtube.com/watch?v=be2wvNFTLMc,T02,bonafide,,True,False
+Mandarin,,,Angela_Chang,Angela 張韶涵 - 淋雨一直走 官方完整HD高清版MV [Keep Walking Official HD MV],https://www.youtube.com/watch?v=WTcodZDH-Oc,T02,bonafide,,True,False
+English,unknown,youtube,BLACKPINK,Don’t Blame Me (by Taylor Swift) BLACKPINK AI Cover (Color coded lyrics) - YouTube,https://www.youtube.com/watch?v=UILa5-RfZks&ab_channel=Coverblink,,deepfake,1700328357779.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - ‘Pink Venom’ M/V - YouTube,https://www.youtube.com/watch?v=gQlMMD8auMs&ab_channel=BLACKPINK,,bonafide,1700328790510.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - '불장난 (PLAYING WITH FIRE)' M/V - YouTube,https://www.youtube.com/watch?v=9pdj4iJD08s&ab_channel=BLACKPINK,,bonafide,1700328775746.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - 'How You Like That' M/V - YouTube,https://www.youtube.com/watch?v=ioNng23DkIM&ab_channel=BLACKPINK,,bonafide,1700328759377.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - ‘뚜두뚜두 (DDU-DU DDU-DU)’ M/V - YouTube,https://www.youtube.com/watch?v=IHNzOHi8sJs&ab_channel=BLACKPINK,,bonafide,1700328750978.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - 'Kill This Love' M/V - YouTube,https://www.youtube.com/watch?v=2S24-y0Ij3Y&ab_channel=BLACKPINK,,bonafide,1700328741480.0,True,False
+English,,youtube,BLACKPINK,BLACKPINK THE GAME - ‘THE GIRLS’ MV - YouTube,https://www.youtube.com/watch?v=cSqOY5nktfg&ab_channel=BLACKPINK,,bonafide,1700328723646.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] BLACKPINK - LALALALA (STRAY KIDS) - YouTube,https://www.youtube.com/watch?v=wMFCvKC_2t4&ab_channel=AaronKpop,,deepfake,1700327944737.0,True,False
+Korean,unknown,youtube,BLACKPINK,"AI COVER UNFORGIVEN ""LESSERAFIM"" BLACKPINK LYRICS @BLACKPINK @LESSERAFIM_official #cover #lyrics - YouTube",https://www.youtube.com/watch?v=spnugVOplRU&ab_channel=kimAruna,,deepfake,1700328386157.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK | Kitsch (AI COVER) Original by Ive - YouTube,https://www.youtube.com/watch?v=h3YQ5DOkB-w&ab_channel=%E2%80%A2%C2%B0minboo%C2%B0%E2%80%A2,,deepfake,1700328461345.0,True,False
+English,unknown,youtube,BLACKPINK,"BLACKPINK [Ai Cover] ""Toxic"" By Britney Spears (Color Coded Lyrics) - YouTube",https://www.youtube.com/watch?v=pMmYG7ibCco&ab_channel=rosf%C3%A9l,,deepfake,1700328005392.0,True,False
+Korean,Kits.ai,youtube,BLACKPINK,BLACKPINK ai cover “Fearless” (original by le sserafim) || Kits.ai - YouTube,https://www.youtube.com/watch?v=yeZgWHxUNKA&ab_channel=revere,,deepfake,1700328515211.0,True,False
+Korean,unknown,youtube,BLACKPINK,"BLACKPINK sing ""GIRLS"" lyrics by AESPA (AI cover) by @ssotzi - YouTube",https://www.youtube.com/watch?v=k6ZbaNCtu_k&ab_channel=SoyLuna,,deepfake,1700328542545.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] BLACKPINK - ELEVEN (IVE) - YouTube,https://www.youtube.com/watch?v=Z_ZAHPA-sMc&ab_channel=AaronKpop,,deepfake,1700328065076.0,True,False
+English,unknown,youtube,BLACKPINK,[AI COVER] how would BLACKPINK sing ‘Worth It’ by: ​⁠Fifth Harmony - YouTube,https://www.youtube.com/watch?v=A6j25Y9cNqM&ab_channel=M3GAH,,deepfake,1700327960395.0,True,False
+English,unknown,youtube,BLACKPINK,Perfect Night - BLACKPINK (AI COVER) [color coded lyrics] - YouTube,https://www.youtube.com/watch?v=LkzV5eJVlf4&ab_channel=Takada,,deepfake,1700328130000.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] BLACKPINK - MANIAC (STRAY KIDS) - YouTube,https://www.youtube.com/watch?v=r7i7qEKF9Ag&ab_channel=AaronKpop,,deepfake,1700328237698.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] BLACKPINK - OH MY GOD (G-IDLE) - YouTube,https://www.youtube.com/watch?v=m92tTmfSWg0&ab_channel=AaronKpop,,deepfake,1700328284948.0,True,False
+English,unknown,youtube,BLACKPINK,Diamonds (by Rihanna) BLACKPINK AI Cover (Color coded lyrics) - YouTube,https://www.youtube.com/watch?v=C-1NX7tHMuY&ab_channel=Coverblink,,deepfake,1700328322046.0,True,False
+English,unknown,youtube,BLACKPINK,TAG YOU'RE IT - BLACKPINK (AI COVER) [color coded lyrics] - YouTube,https://www.youtube.com/watch?v=CFd3WJIGkpc&ab_channel=Takada,,deepfake,1700328162134.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK - MORE (Original by K/DA) | AI COVER - YouTube,https://www.youtube.com/watch?v=b7onlegSOdM&ab_channel=gukcrx,,deepfake,1700329256653.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] BLACKPINK - GOD'S MENU (STRAY KIDS) - YouTube,https://www.youtube.com/watch?v=UhnXv9w75VE&ab_channel=AaronKpop,,deepfake,1700712648922.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK - 'THE BADDEST (K/DA)' Cover - YouTube,https://www.youtube.com/watch?v=8yHCUVx9RTg&ab_channel=MingLeong,,deepfake,1700329284073.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] How Would BLACKPINK sing 'Queencard' by (G)I-DLE⎟seulgisun Collab w/ @wavemoonk - YouTube,https://www.youtube.com/watch?v=6BRuO63vtMs&ab_channel=seulgisun,,deepfake,1700329404697.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] How Would BLACKPINK sing 'Feel Special' by TWICE⎟seulgisun Collab w/ @sanathathoe - YouTube,https://www.youtube.com/watch?v=5IuuA8pH8D0&ab_channel=seulgisun,,deepfake,1700329468518.0,True,False
+Korean,unknown,youtube,BLACKPINK,how would blackpink sing talk that talk by twice (ai cover) - YouTube,https://www.youtube.com/watch?v=eQupfV5anr0&ab_channel=goldcnkim,,deepfake,1700329503627.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK - Alcohol-Free by TWICE || AI COVER - YouTube,https://www.youtube.com/watch?v=3gXCjeIkEQg&ab_channel=its_chaelivia%5BNOTTAKINGREQUESTSANYMORE%5D,,deepfake,1700329522336.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK-NEW JEANS (AÍ COVER/NEW JEANS) - YouTube,https://www.youtube.com/watch?v=NjT_rmLIcHU&ab_channel=jxnnee,,deepfake,1700329719831.0,True,False
+English,,youtube,BLACKPINK,BLACKPINK - ‘Shut Down’ M/V - YouTube,https://www.youtube.com/watch?v=POe9SOEKotk,,bonafide,1711519182154.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI Cover] BLACKPINK ~ ETA (by NewJeans) ~ How Would Sing... - YouTube,https://www.youtube.com/watch?v=lWH8QsvGDDA&ab_channel=FairDistribution,,deepfake,1700329766696.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI COVER] BLACKPINK - CHILL KILL (original by red velvet) - YouTube,https://www.youtube.com/watch?v=AKde-up1ILw&ab_channel=sprtejichu,,deepfake,1700700368309.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - '붐바야 (BOOMBAYAH)' M/V - YouTube,https://www.youtube.com/watch?v=bwmSjveL3Lc&list=RDQMjnrFGqH5ZKQ&start_radio=1&ab_channel=BLACKPINK,,bonafide,1700328876722.0,True,False
+Korean,unknown,youtube,BLACKPINK,[AI Cover] How Would BLACKPINK sing 'NEXT LEVEL' | MMUMMYS - YouTube,https://www.youtube.com/watch?v=oT9PjkGZYQs&ab_channel=MMUMMYS,,deepfake,1700329118935.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - '마지막처럼 (AS IF IT'S YOUR LAST)' M/V - YouTube,https://www.youtube.com/watch?v=Amq-qlqbjYA&list=RDQMjnrFGqH5ZKQ&index=3&ab_channel=BLACKPINK,,bonafide,1700328889114.0,True,False
+Korean,,youtube,BLACKPINK,BLACKPINK - 'Lovesick Girls' M/V - YouTube,https://www.youtube.com/watch?v=dyRsYk0LyA8&list=RDQMjnrFGqH5ZKQ&index=11&ab_channel=BLACKPINK,,bonafide,1700328903842.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK - I Am The Best (2NE1 Cover) - YouTube,https://www.youtube.com/watch?v=0bKfHZ9fogE&ab_channel=mand%C3%B8,,deepfake,1700329198265.0,True,False
+English,,youtube,BLACKPINK,BLACKPINK X PUBG MOBILE - ‘Ready For Love’ M/V - YouTube,https://www.youtube.com/watch?v=7WyHtSlvHD4&list=RDQMjnrFGqH5ZKQ&index=25&ab_channel=BLACKPINK,,bonafide,1700328930801.0,True,False
+Korean,unknown,youtube,BLACKPINK,BLACKPINK - PSYCHO (by Red Velvet) || AI Cover - YouTube,https://www.youtube.com/watch?v=W7rbXgRoits&ab_channel=ArantxaC,,deepfake,1700700332164.0,True,False
+Korean,,youtube,BLACKPINK,Kick It - YouTube,https://www.youtube.com/watch?v=-gZC9hC1PDQ&list=RDQMjnrFGqH5ZKQ&index=36&ab_channel=BLACKPINK-Topic,,bonafide,1700328950808.0,True,False
+Mandarin,sovits,bilibili,Cheer_Chen,【AI陈绮贞】水星记_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1AN411m7Dy/?spm_id_from=333.337.search-card.all.click,,deepfake,,True,False
+Cantonese,unknown,bilibili,Cheer_Chen,【AI陈绮贞】初恋（粤语）_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Fj411d7UZ/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711521021648.0,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【我喜歡上你時的內心活動】Official Audio（電影「喜歡你」主題曲） - YouTube,https://www.youtube.com/watch?v=7RKmNBmXz4o,,bonafide,1711521183291.0,True,False
+Mandarin,https://github.com/svc-develop-team/so-vits-svc,bilibili,Cheer_Chen,【AI翻唱】刻在我心底的名字-陈绮贞_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1324y1F7xa/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711521128123.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,夏夜晚风原版_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1mu4y1f7bA?p=2&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520920101.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,【AI陈绮贞】小手拉大手_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1gP41117A8/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520957678.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,【AI陈绮贞】喜欢cover张悬_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Bh411K7d4/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520971021.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,【AI陈绮贞】下雨天_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV12z4y187NX/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711521054318.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,【AI陈绮贞】知足cover梁静茹_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV12N411m7nB/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520980180.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,和真人没区别的【AI陈绮贞】季风_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1GF411Z7EG/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520995487.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,【AI陈绮贞】暗号_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1U94y157c9/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711521006382.0,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,失眠就让陈绮贞治愈你吧！【AI陈绮贞】宝贝cover张悬_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1vm4y1s7MJ/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711521038871.0,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【太陽 Immortal】Official Music Video - YouTube,https://www.youtube.com/watch?v=fRcqZqi56Ws,,bonafide,1711521171173.0,True,False
+Mandarin,,youtube,Cheer_Chen,"陳綺貞 Cheer Chen【台北某個地方 Somewhere, Taipei 】 Official Music Video - YouTube",https://www.youtube.com/watch?v=OZXy0t2i21A,,bonafide,,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【太聰明 Too smart】Official Music Video - YouTube,https://www.youtube.com/watch?v=33rdx577PxY,,bonafide,,True,False
+Mandarin,,youtube,Cheer_Chen,我喜歡上你時的内心活動 - YouTube,https://www.youtube.com/watch?v=iceGy__j_iE,,bonafide,,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【旅行的意義 Travel is Meaningful】Official Music Video (官方HD高畫質版) - YouTube,https://www.youtube.com/watch?v=tv95k0zqnaA,,bonafide,,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【小步舞曲 A little step】電影「藍色大門」主題曲 Official Music Video - YouTube,https://www.youtube.com/watch?v=1iujiTGBeaw,,bonafide,,True,False
+Mandarin,unknown,bilibili,Cheer_Chen,【AI翻唱】陈绮贞-纯真_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1js4y127xW/?spm_id_from=333.788,,deepfake,,True,False
+Mandarin,sovits,bilibili,Cheer_Chen,【AI陈绮贞】《云烟成雨》cover.房东的猫_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1ka4y137ww/?spm_id_from=333.788.recommend_more_video.5,,deepfake,,True,False
+Mandarin,unkown,bilibili,Cheer_Chen,【AI翻唱】陈绮贞 小手拉大手_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1eh411V7gp/?spm_id_from=333.337.search-card.all.click,,deepfake,,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【還是會寂寞 Lonely without you】Official Music Video - YouTube,https://www.youtube.com/watch?v=ZsiN2YVrdmA,,bonafide,,True,False
+Mandarin,sovits,bilibili,Cheer_Chen,【AI陈绮贞】夏夜晚风_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1mu4y1f7bA/?spm_id_from=333.337.search-card.all.click,,deepfake,,True,False
+Mandarin,,youtube,Cheer_Chen,陳綺貞 Cheer Chen【魚 The Edge】Official Music Video - YouTube,https://www.youtube.com/watch?v=lpsAT-Ntaaw,,bonafide,,True,False
+Mandarin,sovits,bilibili,Cheer_Chen,【AI陈绮贞】给我一瓶魔法药水_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1zs4y137e5/?spm_id_from=333.337.search-card.all.click,,deepfake,,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,AI王心凌《你也有今天》Cover蔡依林_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1UJ4m1j7B1/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520331374.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,AI王心凌《天空没有极限》Cover邓紫棋_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV18i421R7tY/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520366444.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,ai王心凌《好听》cover.许茹芸_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Dt42147c5/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520381112.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,AI王心凌《如愿》原唱：王菲，声源：周深，电影《我和我的父辈》主题曲_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1zf421f7xY/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520343871.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,ai王心凌《恰似你的温柔》cover.蔡琴_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV18z42197a3/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520417034.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,ai王心凌《鱼》cover.陈绮贞_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Ny421a7st/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520426505.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,ai王心凌《行走的鱼》cover.徐佳莹_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1bt421p7XL/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520441793.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,AI王心凌《崇拜》Cover梁静茹_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Ri421R7iY/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520352816.0,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,AI王心凌《泪桥》Cover伍佰_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1EF4m1L7dw/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520305745.0,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】好汉歌 cover 刘欢 （路見不平一聲吼，AI翻唱笑一笑）,https://www.youtube.com/watch?v=XlHTfO5P7fM&list=PLqil1-qewx9gnDh3Iwh3Y7P2rdcvXoen9&index=3,T02,deepfake,,True,False
+Mandarin,,,Cyndi_Wang,Cyndi Wang王心凌倾情演唱《第一次爱的人》，勾起无数人的青春回忆！,https://www.youtube.com/watch?v=jWTmveuepAQ&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=3,T02,bonafide,,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,ai王心凌《血腥爱情故事》cover.张惠妹_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Te411J71n/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520458186.0,True,False
+Mandarin,,,Cyndi_Wang,[avex官方] 王心凌 Cyndi Wang – 我會好好的 官方完整版MV,https://www.youtube.com/watch?v=Gw4Q7-NBFWs&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=11,T02,bonafide,,True,False
+Mandarin,,,Cyndi_Wang,王心凌 Cyndi Wang – 劈你的雷正在路上 (Official Music Video),https://www.youtube.com/watch?v=tnjh4U-Dnao&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=5,T02,bonafide,,True,False
+Mandarin,,,Cyndi_Wang,王心凌 Cyndi Wang – 生命中的美好缺憾 (Official Music Video),https://www.youtube.com/watch?v=zMIkbqyfdyM&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=18,T02,bonafide,,True,False
+Mandarin,,,Cyndi_Wang,王心凌 Cyndi Wang – 大眠 (Official Music Video),https://www.youtube.com/watch?v=VS1lvYuW3LQ&list=RDEM_WlvcThEtHAopKKgjcM0zg&start_radio=1,T02,bonafide,,True,False
+Mandarin,,,Cyndi_Wang,王心凌 Cyndi Wang - 不哭 (官方完整版MV),https://www.youtube.com/watch?v=OC1QZH5Oi5A&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=4,T02,bonafide,,True,False
+Mandarin,,,Cyndi_Wang,[avex官方] 王心凌 Cyndi Wang – 愛你 官方完整版MV,https://www.youtube.com/watch?v=NAODcPQcy9U&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=22,T02,bonafide,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】日不落 cover 蔡依林,https://www.youtube.com/watch?v=ZbbeU_SYOPA&list=PLqil1-qewx9gX1Vyga8QCjVVCaMYxCTlf&index=8,T02,deepfake,,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,ai王心凌《年轮说》cover.杨丞琳_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Xc411t7fG/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520474725.0,True,False
+Mandarin+Japanese,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】極樂淨土 cover 美依禮芽 （浪姊3&4 第一名融合召喚）,https://www.youtube.com/watch?v=cEJ_D6DymtE&list=PLqil1-qewx9gX1Vyga8QCjVVCaMYxCTlf&index=2,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】龍捲風 cover Jay （甜心风暴）,https://www.youtube.com/watch?v=UWa_wUyZG8U&list=PLqil1-qewx9gX1Vyga8QCjVVCaMYxCTlf&index=6,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】分飛 cover 徐懷鈺 （王姐，我相信你的聲音可以讓愛變成很甜美）,https://www.youtube.com/watch?v=qNWXF2psyF0&list=PLqil1-qewx9gX1Vyga8QCjVVCaMYxCTlf&index=4,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】挪威的森林 cover 伍佰 （誰能逃過伍佰老師的超級控場）,https://www.youtube.com/watch?v=PP6OV_4kBZI&list=PLqil1-qewx9gnDh3Iwh3Y7P2rdcvXoen9&index=9,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】夜曲 cover Jay （夜曲一响，上台領獎）,https://www.youtube.com/watch?v=P3kFsznHs2k&list=PLqil1-qewx9gX1Vyga8QCjVVCaMYxCTlf,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】突然的自我 cover 伍佰 （王姐怕不只是喝了三杯吧，不要喝多了喔）,https://www.youtube.com/watch?v=zxxJKu_0NyQ&list=PLqil1-qewx9gnDh3Iwh3Y7P2rdcvXoen9&index=12,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Cyndi_Wang,【AI翻唱 不是“王心凌”】一場遊戲一場夢 cover 王傑 （戀愛這個遊戲帶來甜蜜的夢）請大家不要指望AI能超越原唱，謝謝,https://www.youtube.com/watch?v=cuh9T8V9blo&list=PLqil1-qewx9gX1Vyga8QCjVVCaMYxCTlf&index=3,T02,deepfake,,True,False
+Mandarin,so-vits-svc 4.1,bilibili,Cyndi_Wang,AI.心凌《自己》cover.李玟 - 动画电影《花木兰》主题曲_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1Xw411A7vG/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,deepfake,1711520489059.0,True,False
+Mandarin,,,Cyndi_Wang,王心凌 Cyndi Wang - 黃昏曉 ( 官方完整版MV),https://www.youtube.com/watch?v=0WEpmxzGVWc&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=2,T02,bonafide,,True,False
+Mandarin,,,Cyndi_Wang,[avex官方] 王心凌 Cyndi Wang – Honey 官方完整版MV,https://www.youtube.com/watch?v=COmOMjwnK8U&list=RDEM_WlvcThEtHAopKKgjcM0zg&index=8,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《樱花树下》cover.张敬轩 高考结束快乐,https://www.bilibili.com/video/BV1Qc41137Hs/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《七友（改）》cover.梁汉文 原来无照顾到你的感受 恨意昏头 引诱我出口,https://www.bilibili.com/video/BV1j24y1K7Fu/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《隐形游乐场》cover.张敬轩 想得到烟花 马上有烟花你未看到吗,https://www.bilibili.com/video/BV1eP41197MC/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《说好的幸福呢》cover.周杰伦 怎么了 你累了 说好的 幸福呢我懂了 不说了 爱淡了 梦远了,https://www.bilibili.com/video/BV1E24y1P7MJ/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《面具》（天后粤语版）谁明白像和你 也许重逢遗憾太多却不能倒流的钟,https://www.bilibili.com/video/BV19z4y1t7Ws/?spm_id_from=pageDriver&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《东京人寿》cover.容祖儿 明年保了寿命 谁说一定有伴侣与东京明年即使有热血 初樱初雪又如何约定,https://www.bilibili.com/video/BV1QM4y1v7zL/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《阿牛》《与我常在》神级现场！祝生日快乐！,https://www.bilibili.com/video/BV1CT411E793/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【百万纪念】陈奕迅《落花流水》神级现场！落花有意，流水无情~,https://www.bilibili.com/video/BV1eU4y1p77j/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《勇》cover.杨千嬅,https://www.bilibili.com/video/BV1zk4y1p7wU/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《不来也不去》神级现场！像我没来过没去过~,https://www.bilibili.com/video/BV1Rf4y1u7yc/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《爱得太迟》 cover.古巨基 纵不信运 你不过是人理想很远 爱於咫尺却在等,https://www.bilibili.com/video/BV1rX4y1179k/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《遇见》cover.孙燕姿 我遇见你是最美丽的意外,https://www.bilibili.com/video/BV1wo4y1g7xc/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《我不如》cover.曾比特 你不如养一只狗便宜地令你满足比我可爱的密友,https://www.bilibili.com/video/BV1Ys4y1Q7VK/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《谁知我这种男孩子》（《野孩子》改）明日我绝不敢多放肆,https://www.bilibili.com/video/BV1PT41187KN/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《凄美地》cover.郭顶 等我找到你试探你眼睛,https://www.bilibili.com/video/BV1qP411e7ac/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《开始懂了》 cover.孙燕姿 相信你只是怕伤害我不是骗我很爱过谁会舍得,https://www.bilibili.com/video/BV1Yh4y1x71k/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Japanese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《Lemon》cover.米津玄师 时至今日 你仍是我的光芒,https://www.bilibili.com/video/BV1Zh4y1J7kW/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《依然爱你》cover.王力宏 我依然爱你 就是唯一的退路我依然珍惜 时时刻刻的幸福,https://www.bilibili.com/video/BV1uX4y1y72K/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《下雨天》cover.南拳妈妈 被爱的人不用道歉,https://www.bilibili.com/video/BV1Eh4y1d7we/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《嘉宾（粤语）》 我不是词神版 cover.常颖杰,https://www.bilibili.com/video/BV1Zu411p76u/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《漠河舞厅》cover.柳爽 晚星就像你的眼睛,https://www.bilibili.com/video/BV1rL41187Za/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《终身美丽》cover.郑秀文,https://www.bilibili.com/video/BV1sX4y1t7va/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《痛爱》cover.容祖儿 要为错的人伤过恨过方算是勇敢长世间不喜欢开心 喜欢痛心,https://www.bilibili.com/video/BV1wT41147xu/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《再见二丁目》cover.杨千嬅 不抽象版~,https://www.bilibili.com/video/BV1G8411Z7nF/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】废话版《阴天快乐》 这下陈奕迅更怀疑了,https://www.bilibili.com/video/BV1im4y1Y7YQ/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《街灯晚餐》cover.卫兰 难道是为了安置未来才爱你谁要计算过安享晚福便一起,https://www.bilibili.com/video/BV1tT41147Pg/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《淘汰（粤语）》我不是词神版 cover.常颖杰,https://www.bilibili.com/video/BV1QP41167Mv/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《流沙》cover.陶喆 爱情好像流沙我不挣扎随它去吧 我不害怕,https://www.bilibili.com/video/BV1Uo4y1g74J/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Eason_Chan,079. 给爱丽斯,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=79,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,013. 一丝不挂,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=13,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,【4K | 修复】陈奕迅《你给我听好》为爱情折腰 难道不是你一直以来戒不掉的癖好,https://www.bilibili.com/video/BV1kV4y1D7vF/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,025. 可以了,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=25,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,012. 我们,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=12,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,076. 一切还好,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=76,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《明年今日》神级现场！希望大家都没有遗憾,https://www.bilibili.com/video/BV11W4y1z73R/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,陈奕迅Eason《最佳损友》高清修复1080p MV,https://www.bilibili.com/video/BV1gU4y1F7d4/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《无人之境》经典现场！这爱情无人证~,https://www.bilibili.com/video/BV1x54y1G7Z6/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,022. 一生中最爱,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=22,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,【爷青回】陈奕迅《十年》最高音质版本！现象级神曲！,https://www.bilibili.com/video/BV1kf4y1778U/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,【4K60FPS】陈奕迅《淘汰》神级现场！安慰的淘汰！,https://www.bilibili.com/video/BV1zU4y1H76f/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《富士山下》神级现场！你听懂了吗？,https://www.bilibili.com/video/BV1H3411C7ZJ/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《Shall We Talk》经典现场！祝大家中秋快乐！,https://www.bilibili.com/video/BV1yG4y1B7nd/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K | 新歌速递】陈奕迅《尘大师》MV 速听！,https://www.bilibili.com/video/BV1Ak4y1h7Gg/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,041. 活着多好,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=41,T02,bonafide,,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【稀客】纯享版高品质（持续更新）cover.杨千嬅 - YouTube,https://www.youtube.com/watch?v=LRpOy8JTb8I,,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《心淡》cover.容祖儿 由这一分钟开始计起春风秋雨间限我对你以半年时间慢慢的心淡,https://www.bilibili.com/video/BV1nP41197Uy/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Eason_Chan,020. 人来人往,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=20,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《单车》神级现场！献给所有的父亲！,https://www.bilibili.com/video/BV1dU4y1D7Xt/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,4K 全站效果最好 陈奕迅《浮夸》2014韩国MaMa颁奖典礼Asian Music Awards,https://www.bilibili.com/video/BV1bW4y1S7tF/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K新现场】陈奕迅《葡萄成熟时》神级现场！冬至安康！,https://www.bilibili.com/video/BV1P24y1S7Pc/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《倾城》神级翻唱现场！封面一定要帅！,https://www.bilibili.com/video/BV1Zy4y1a7vk/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,023. 岁月如歌,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=23,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K24FPS】陈奕迅《任我行》纵然是洒脱人生境界，但人不能只当孤岛，境随心转，偶而随着大队走又何况,https://www.bilibili.com/video/BV1Dy4y1H7vL/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,072. 最后派对,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=72,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《约定》神级现场！两鬓斑白都可认得你！,https://www.bilibili.com/video/BV1Pv411E7Jg/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K新现场】陈奕迅《明年今日》 神级现场！祝大家快乐,https://www.bilibili.com/video/BV1Z84y1s716/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【新歌速递 | MV】陈奕迅《盲婚哑嫁》世事总是兜兜转转，一切可能早已注定,https://www.bilibili.com/video/BV1KA411Z7o8/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《最佳损友》经典现场！好好珍惜身边的朋友吧！,https://www.bilibili.com/video/BV1jP4y1G7td/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,028. 在这个世界相遇,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=28,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【私藏馆】陈奕迅《无条件》神级现场！今天陪大家一起过,https://www.bilibili.com/video/BV1xc411N7mT/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Mandarin,,,Eason_Chan,018. 你的背包,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=18,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,019. 最佳损友,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=19,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K60FPS】陈奕迅《我的快乐时代》神级现场！Eason硬气！,https://www.bilibili.com/video/BV1TV411e7XT/?spm_id_from=333.788&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,021. 白玫瑰,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=21,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K修复】陈奕迅《沙龙》MV 世事变，有没有将你淹盖,https://www.bilibili.com/video/BV1TV4y1J7ix/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,,,Eason_Chan,【4K】陈奕迅 Eason「我们万岁 MV」- 证明可不舍不弃 吻停不知几多岁的你,https://www.bilibili.com/video/BV12y4y1L7wK/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《必杀技》cover.古巨基 何以技痒放过我你已仿佛有神助一讲起你已经等于再杀死我,https://www.bilibili.com/video/BV1Sg4y1F7DN/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,youtube,Eason_Chan,《盲婚啞嫁》陳奕迅 Eason Chan [Official MV] - YouTube,https://www.youtube.com/watch?v=bWxHgHLJlYw,,bonafide,1711497827059.0,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《吴哥窟》 cover.吴雨霏 难道你有勇气反悔诺言 你专一,https://www.bilibili.com/video/BV1k24y1K7vW/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【想太多】纯享版高品质（持续更新）cover.李玖哲 - YouTube,https://www.youtube.com/watch?v=L_7vk8WbMOE&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=54,,deepfake,1701321285305.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【春秋】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=neTIRBSDZE8&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=53,,deepfake,1701321266341.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【披星戴月】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=WL6awUm7EXU&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=52,,deepfake,1701321251487.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【预言书】纯享版高品质（持续更新）cover.关智斌 - YouTube,https://www.youtube.com/watch?v=Kz6FgxmCYvs&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=51,,deepfake,1701321234973.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【非走不可】纯享版高品质（持续更新）cover.谢霆锋 - YouTube,https://www.youtube.com/watch?v=G16ozolxw1k&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=50,,deepfake,1701321220794.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【俏郎君】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=HqJIHEXUUuc&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=49,,deepfake,1701321194718.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【没那种命】纯享版高品质（持续更新）cover.陈小春 - YouTube,https://www.youtube.com/watch?v=vdP87e67nBU&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=48,,deepfake,1701312280687.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【再见二丁目】纯享版高品质（持续更新）cover.杨千嬅 - YouTube,https://www.youtube.com/watch?v=gYMIBJFN-hQ&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=47,,deepfake,1701312241242.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【我爱的人】纯享版高品质（持续更新）cover.陈小春 - YouTube,https://www.youtube.com/watch?v=ns2GuaALDCs&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=46,,deepfake,1701312199796.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【喜剧之王】纯享版高品质（持续更新）cover.李荣浩 - YouTube,https://www.youtube.com/watch?v=EF9Nq6lu4o0&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=55,,deepfake,1701321307388.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【像我这样的人】纯享版高品质（持续更新）cover.毛不易 - YouTube,https://www.youtube.com/watch?v=SPl_ru-fito&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=45,,deepfake,1701312187947.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【我不是伟人】纯享版高品质（持续更新）cover.陈小春 - YouTube,https://www.youtube.com/watch?v=uDMcq-P86Ew&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=43,,deepfake,1701312011593.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【千金散尽】《孤注一掷》电影主题曲（持续更新）cover.杨宗纬 - YouTube,https://www.youtube.com/watch?v=lF3-_Tsyh_w&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=42,,deepfake,1701311980330.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【灰姑娘】纯享版高品质（持续更新）cover.梁咏琪 - YouTube,https://www.youtube.com/watch?v=hRoBBiuxgp0&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=41,,deepfake,1701311913569.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【森林】纯享版高品质（持续更新）cover.Mr. - YouTube,https://www.youtube.com/watch?v=wgXLmjPcq4M&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=40,,deepfake,1701311896626.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【东京人寿】纯享版高品质（持续更新）cover.容祖儿 - YouTube,https://www.youtube.com/watch?v=vr0m6Cp-6fc&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=39,,deepfake,1701311882551.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【搜神记】纯享版高品质（持续更新）cover.容祖儿 - YouTube,https://www.youtube.com/watch?v=VPNg13RNx_E&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=38,,deepfake,1701311788155.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【少女的祈祷】纯享版高品质（持续更新）cover.杨千嬅 - YouTube,https://www.youtube.com/watch?v=zurwnlfRSsQ&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=37,,deepfake,1701311763019.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【玻璃之情】纯享版高品质（持续更新）cover.张国荣 - YouTube,https://www.youtube.com/watch?v=Ff6iJ1mO2XE&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=36,,deepfake,1701311744663.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【一直很安静】纯享版高品质（持续更新）cover.阿桑 - YouTube,https://www.youtube.com/watch?v=_xKfG8ZHWlg&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=44,,deepfake,1701312040738.0,True,False
+Mandarin,,youtube,Eason_Chan,陳奕迅 Eason Chan 《我們》Us [Official MV] - YouTube,https://www.youtube.com/watch?v=dhjomo8W6Lc,,bonafide,1711497788172.0,True,False
+Cantonese,,youtube,Eason_Chan,《龍舌蘭》TEQUILA 陳奕迅 eason and the duo band [Official MV] - YouTube,https://www.youtube.com/watch?v=pB8nwmbPfo4&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=12,,bonafide,1711497887417.0,True,False
+Cantonese,,youtube,Eason_Chan,陳奕迅 eason and the duo band《與你常在》All About Love - eason and the duo band [Official MV] - YouTube,https://www.youtube.com/watch?v=q6zTYlWxak8&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=18,,bonafide,1711497900109.0,True,False
+Mandarin,,youtube,Eason_Chan,陳奕迅 Eason Chan《披風》Soar [Official MV] - YouTube,https://www.youtube.com/watch?v=wBkGE_-CjtU&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=22,,bonafide,1711497920844.0,True,False
+Cantonese,,youtube,Eason_Chan,陳奕迅 Eason Chan《斯德哥爾摩情人》Stockholm Lover [Official MV] - YouTube,https://www.youtube.com/watch?v=d1cJkDBDQvk&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=27,,bonafide,1711497948470.0,True,False
+Cantonese,,youtube,Eason_Chan,《可一可再》THE ALBUM 陳奕迅 eason and the duo band [Official MV] - YouTube,https://www.youtube.com/watch?v=PAuNmx1NGkM&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=12,,bonafide,1711497973719.0,True,False
+Mandarin,,youtube,Eason_Chan,陳奕迅 Eason Chan《陰天快樂》Cloudy Day [Official MV] - YouTube,https://www.youtube.com/watch?v=9Z0aHUUv88Y&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=16,,bonafide,1711497989502.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,【AI陈奕迅】《水星记》Cover.郭顶 还要多远才能进入你的心还要多久才能和你接近 - YouTube,https://www.youtube.com/watch?v=sRjhYnc7eOI,,deepfake,1707894031927.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,AI翻唱 AI陳奕迅《蘭亭序》粵語版 ai cover 明滅案燈 照不見三千里 AI陈奕迅 高音質 純享版 ai song 320kbps - YouTube,https://www.youtube.com/watch?v=7hWQBaSyXkU,,deepfake,1707893441074.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【樱花树下】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=ogb-zZSMl3U&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=57,,deepfake,1701321359837.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI陈奕迅】兰亭序・粤语版 明灭案灯 照不见三千里 - YouTube,https://www.youtube.com/watch?v=qtZljE963U8,,deepfake,1707893431391.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【笑忘书】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=hS1JFjy1siU,,deepfake,1705776812903.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,「 AI 陳奕迅 」《聽風》cover.林家謙 - YouTube,https://www.youtube.com/watch?v=Tyt9STp6kJU,,deepfake,1702585162120.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,「 AI陳奕迅」《俏郎君》cover.張敬軒 - YouTube,https://www.youtube.com/watch?v=U4BlWJUEUyQ,,deepfake,1702449863831.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【Dear Myself】纯享版高品质（持续更新）cover.尹光 / Wan K. - YouTube,https://www.youtube.com/watch?v=4uu8gtb4y5w&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=64,,deepfake,1701321537080.0,True,False
+Cantonese,,youtube,Eason_Chan,陳奕迅 Eason Chan《K歌之王》[Official MV] - YouTube,https://www.youtube.com/watch?v=Sm_DVsixxsk,,bonafide,1711514785752.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【其实都没有】纯享版高品质（持续更新）cover.杨宗纬 - YouTube,https://www.youtube.com/watch?v=PR9-WL_B9t8&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=63,,deepfake,1701321519667.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【余震】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=Ehl4TY7L33s&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=62,,deepfake,1701321496382.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【断点】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=m-vrjfqhAPs&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=60,,deepfake,1701321432812.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,(1) 【AI音乐】AI陈奕迅【只是太爱你】纯享版高品质（持续更新）cover.张敬轩 - YouTube,https://www.youtube.com/watch?v=uzC8BCMvq8M&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=59,,deepfake,1701321399828.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【黄色大门】纯享版高品质（持续更新）cover.容祖儿 - YouTube,https://www.youtube.com/watch?v=-GDSRZZTOOU,,deepfake,1705776843300.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【耿耿于怀】纯享版高品质（持续更新）cover.麦浚龙 - YouTube,https://www.youtube.com/watch?v=DB7bQkCXcZA&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=33,,deepfake,1701311702008.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【到此为止】纯享版高品质（持续更新）cover.连诗雅 - YouTube,https://www.youtube.com/watch?v=K5hha8EeadM&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=31,,deepfake,1700981041250.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【七友】纯享版高品质（持续更新） - YouTube,https://www.youtube.com/watch?v=ozAwUnZZmLg&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=3,,deepfake,1700978571102.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【必杀技】纯享版高品质（持续更新） - YouTube,https://www.youtube.com/watch?v=8rbDynUckb4&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=2,,deepfake,1700978472593.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【够钟】纯享版高品质（持续更新） - YouTube,https://www.youtube.com/watch?v=T6oLEruHSo0&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0,,deepfake,1700978449910.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【思觉失调】纯享版高品质（持续更新）cover刘浩龙 - YouTube,https://www.youtube.com/watch?v=pLWBAEtrY3k,,deepfake,1700978029542.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【钟无艳】纯享版高品质（持续更新）cover.谢安琪 - YouTube,https://www.youtube.com/watch?v=w5wk7_Hru44,,deepfake,1700967888807.0,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《后来的我们》cover.五月天 在某处 另一个你 留下了在那里 另一个我 微笑着另一个我们 还深爱着代替我们永恒着,https://www.bilibili.com/video/BV1Bs4y1T7Ka/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《可惜没如果》cover.林俊杰 倘若那天把该说的话好好说该体谅的不执着如果那天我,https://www.bilibili.com/video/BV1cs4y1M7jv/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《少女的祈祷》cover.杨千嬅 然而天父并未体恤好人到我睁开眼无明灯指引,https://www.bilibili.com/video/BV1sh4y1973V/?spm_id_from=pageDriver&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Japanese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《スパークル（火花）》 你的名字插曲,https://www.bilibili.com/video/BV11X4y1h7aw/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【天才与白痴】纯享版高品质（持续更新）cover古巨基 - YouTube,https://www.youtube.com/watch?v=m3kIL2CEdF4&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=4,,deepfake,1700978593176.0,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《最长的电影》cover 周杰伦 再给我两分钟让我把记忆结成冰,https://www.bilibili.com/video/BV1bT411t7vG/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《可惜我是水瓶座》cover.杨千嬅 如何笨到底但到底还是我,https://www.bilibili.com/video/BV1ns4y1Q7BX/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《水星记》cover.郭顶 还要多远才能进入你的心还要多久才能和你接近,https://www.bilibili.com/video/BV1ec411A7sE/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《晚风心里吹》cover.阿梨粤 愿晚风心里吹 吹散我的泪似栖身花舞堆人间多少美景 都留来伴你,https://www.bilibili.com/video/BV1ah411w7Xp/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《追光者》cover.岑宁儿 我可以跟在你身后像影子追着光梦游我可以等在这路口不管你会不会经过,https://www.bilibili.com/video/BV1hk4y1x7P8/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《献世》 cover.陈小春 眼泪还是留给天抚慰你是前度 何必听我吠再不走 有今生 无下世你是否想我 起这个毒誓,https://www.bilibili.com/video/BV1po4y137AB/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《她说》cover.林俊杰 等不到天黑 烟火不会太完美回忆烧成灰 还是等不到结尾,https://www.bilibili.com/video/BV1hu411s7BA/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Eason_Chan,【AI陈奕迅】《体面》cover.于文文,https://www.bilibili.com/video/BV1Yo4y1u7mr/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《分分钟需要你》cover.林子祥 愿我会揸火箭 带你到天空去在太空中两人住,https://www.bilibili.com/video/BV1Po4y1V7WE/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《爱与诚》cover.古巨基 别再做情人 做只猫 做只狗 不做情人,https://www.bilibili.com/video/BV1Bc411P7ko/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《无赖》cover.郑中基 还喜欢我 我这种无赖是话你蠢 还是很伟大,https://www.bilibili.com/video/BV1ra4y1u7xa/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【恋无可恋】纯享版高品质（持续更新）cover古巨基 - YouTube,https://www.youtube.com/watch?v=yLTMD-jpEK8&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=5,,deepfake,1700978616152.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【无赖】纯享版高品质（持续更新）cover郑中基 - YouTube,https://www.youtube.com/watch?v=5ZT_ABQ3oCc&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=6,,deepfake,1700978647420.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【可惜我是水瓶座】纯享版高品质（持续更新）cover杨千嬅 - YouTube,https://www.youtube.com/watch?v=8QmcHCAhrcE&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=7,,deepfake,1700978711481.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【不浪漫罪名】纯享版高品质（持续更新）cover.王杰 - YouTube,https://www.youtube.com/watch?v=kRoofvu5Gvk&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=30,,deepfake,1700980923211.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【飞花】纯享版高品质（持续更新）cover.李克勤 - YouTube,https://www.youtube.com/watch?v=LfRwqz0eSpk&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=29,,deepfake,1700980904042.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【16号爱人】纯享版高品质（持续更新）cover.容祖儿 - YouTube,https://www.youtube.com/watch?v=UptLMrgMEBs&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=28,,deepfake,1700980886580.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【甘心替代你】纯享版高品质（持续更新）cover.郑伊健 - YouTube,https://www.youtube.com/watch?v=WPWKZx0mbTo&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=27,,deepfake,1700980870616.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【倾城】纯享版高品质（持续更新）cover.许美静 - YouTube,https://www.youtube.com/watch?v=cgeIzC9HCVA&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=24,,deepfake,1700980756607.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【给自己的情书】纯享版高品质（持续更新）cover.王菲 - YouTube,https://www.youtube.com/watch?v=O2KULpNUY94&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=23,,deepfake,1700980740862.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【好心分手】纯享版高品质（持续更新）cover.卢巧音 - YouTube,https://www.youtube.com/watch?v=KLPqQapmi6s&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=22,,deepfake,1700980726101.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【怯】纯享版高品质（持续更新）cover.容祖儿 - YouTube,https://www.youtube.com/watch?v=pmiAo5PBAag&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=21,,deepfake,1700980702715.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【友共情】纯享版高品质（持续更新）cover.古巨基 - YouTube,https://www.youtube.com/watch?v=4HxEblnSdns&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=18,,deepfake,1700980614253.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【天梯】纯享版高品质（持续更新）cover.C AllStar - YouTube,https://www.youtube.com/watch?v=FtDZb8dZkyM&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=17,,deepfake,1700980586125.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【合久必婚】纯享版高品质（持续更新）cover李克勤 - YouTube,https://www.youtube.com/watch?v=CNX2rAPiIBw&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=16,,deepfake,1700980551902.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【相依为命】纯享版高品质（持续更新）cover陈小春 - YouTube,https://www.youtube.com/watch?v=QPN7WciwN38&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=15,,deepfake,1700980532591.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【爱是最大权力】纯享版高品质（持续更新）cover郑中基 - YouTube,https://www.youtube.com/watch?v=B0MrPXlDu2s&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=13,,deepfake,1700980306948.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【没人坐的梳化】纯享版高品质（持续更新）cover刘浩龙 - YouTube,https://www.youtube.com/watch?v=fvo1-r9RrJo&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=12,,deepfake,1700980283624.0,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【爱与诚】纯享版高品质（持续更新）cover古巨基 - YouTube,https://www.youtube.com/watch?v=nJ8dyElExmU&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=11,,deepfake,1700980265458.0,True,False
+Mandarin,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【好想好想】纯享版高品质（持续更新）cover古巨基 - YouTube,https://www.youtube.com/watch?v=gGPd0PsOt64&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=10,,deepfake,1700978884482.0,True,False
+Cantonese,,youtube,Eason_Chan,《是但求其愛》陳奕迅 Eason Chan [Official MV] - YouTube,https://www.youtube.com/watch?v=bJHCgo85irM&list=PLLTqOUR8f6fPfkd2_njvuTF7GDnuFpF-G&index=10,,bonafide,1711497870152.0,True,False
+Cantonese,Sovits4.0,,Eason_Chan,【AI陈奕迅】《下一站天后》,https://www.bilibili.com/video/BV1dP411q7XN/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,youtube,Eason_Chan,【AI音乐】AI陈奕迅【心淡】纯享版高品质（持续更新）cover容祖儿 - YouTube,https://www.youtube.com/watch?v=lpx55qzyM90&list=PLU9IfQaxnUfUynWBXcj2Od0dipPyB_Rt0&index=9,,deepfake,1700978747319.0,True,False
+Cantonese,,,Eason_Chan,073. 人车志,https://www.bilibili.com/video/BV1Jo4y1a7pA?p=73,T02,bonafide,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Drown (AI Cover) (Justin Timberlake),https://youtube.com/watch?v=baTRiD4Zrmg,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,ROSÉ & JUSTIN BIEBER - Stupid In Love (Original By MAX) [AI Cover],https://youtube.com/watch?v=c1BwRzAn3qQ,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Baby ft. Ludacris - YouTube,https://www.youtube.com/watch?v=kffacxfA7G4,,bonafide,1711590433080.0,True,False
+English,unknown,youtube,Justin Bieber,USHER & Justin Bieber - Somebody To Love - Super Bowl 2024 Half-Time Show (AI),https://youtube.com/watch?v=z1lQBf2P2EI,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Company - YouTube,https://www.youtube.com/watch?v=gdx7gN1UyX0,,bonafide,1711590508740.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - What Do You Mean? - YouTube,https://www.youtube.com/watch?v=DK_0jXPuIr0,,bonafide,1711590573763.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Love Yourself (PURPOSE : The Movement) - YouTube,https://www.youtube.com/watch?v=oyEuk8j8imI,,bonafide,1711590591786.0,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Girl Of My Dreams,https://youtube.com/watch?v=eNu_BBRfLJQ,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - I'll Show You - YouTube,https://www.youtube.com/watch?v=PfGaX8G0f2E,,bonafide,1711590716743.0,True,False
+English,unknown,youtube,Justin Bieber,Stay With Me - Justin Bieber (AI Cover),https://youtube.com/watch?v=qbQW2Th9xh0,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - As Long As You Love Me ft. Big Sean - YouTube,https://www.youtube.com/watch?v=R4em3LKQCAQ,,bonafide,1711590745814.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Boyfriend - YouTube,https://www.youtube.com/watch?v=4GuqB1BQVr4,,bonafide,1711590649975.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Yummy (Official Video) - YouTube,https://www.youtube.com/watch?v=8EJ3zbKTWQ8,,bonafide,1711590666276.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - One Time (Official Music Video) - YouTube,https://www.youtube.com/watch?v=CHVhwcOg6y8,,bonafide,1711590686413.0,True,False
+English,unknown,youtube,Justin Bieber,Collide - Justin Bieber (AI COVER),https://youtube.com/watch?v=pMmJuGynJ2E,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Chris Brown & Justin Bieber - Under The Influence (Ai Cover),https://youtube.com/watch?v=PtLGm69kc5A,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Never Say Never ft. Jaden - YouTube,https://www.youtube.com/watch?v=_Z5-P9v3F8w,,bonafide,1711590611938.0,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber Stitches Ai,https://youtube.com/watch?v=sgz1bf-Nf7Q,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Nothing's gonna change my love for you - Justin Bieber ( AI Cover),https://youtube.com/watch?v=0i2kujgQEe0,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Mistletoe (Official Music Video) - YouTube,https://www.youtube.com/watch?v=LUjn3RpkcKY,,bonafide,1711590797309.0,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Best Part (Ai Cover Song),https://youtube.com/watch?v=v_3wS1dzr_s,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Better Than This | Lauv - Justin Bieber & Billie Eilish (AI Cover) ♡,https://youtube.com/watch?v=viead4QTNao,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Shape of You - Justin Bieber (AI Cover),https://youtube.com/watch?v=f8pVSei9D4U,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Sexy Love,https://youtube.com/watch?v=faY-yuglc6Y,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber New song Will i see you ai cover 2024,https://youtube.com/watch?v=fdRhF_dLDZo,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Can You Feel The Love Tonight - Justin Bieber (AI Cover),https://youtube.com/watch?v=fhn_uLDuXbQ,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Bad Habits (Acoustic) - Justin Bieber [Ai Cover - Ed Sheeran],https://youtube.com/watch?v=VSxu36nmATk,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Wet In Bed - Justin Bieber (AI COVER),https://youtube.com/watch?v=vVH0-Fjtwqo,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber | Stereo Hearts (AI Cover),https://youtube.com/watch?v=WCXwgyEaIlA,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,I Believe I Can Fly - R. Kelly (Justin Bieber AI Cover),https://youtube.com/watch?v=G3ntqOlO6XQ,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Easy on me | Justin Bieber | [ AI COVER ],https://youtube.com/watch?v=GcBDpVj2EFw,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Stay / Justin Bieber Ai Cover,https://youtube.com/watch?v=aV3foM1asZM,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Thinking out Loud - Justin Bieber (AI Cover),https://youtube.com/watch?v=gM6nHoS3bsg,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,I like You So Much And You’ll Know It - Justin Bieber ( Ai Cover ),https://youtube.com/watch?v=hSWKGQ3Cz_E,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Lord And Savior (Ft. Sam Rivera & Limodaze) Ai Cover,https://youtube.com/watch?v=IJK5cGSkBto,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Snooze - AI Cover,https://youtube.com/watch?v=it776mSjiuU,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber 😎 / Usher daddy's Home Cover AI...,https://youtube.com/watch?v=izfKyb10oKY,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Anyone - YouTube,https://www.youtube.com/watch?v=KIK3azN4w34,,bonafide,1711590962031.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - What Do You Mean? (Lyric Video) - YouTube,https://www.youtube.com/watch?v=NywWB67Z7zQ,,bonafide,1711590931792.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - All That Matters - YouTube,https://www.youtube.com/watch?v=JC2yu2a9sHk,,bonafide,1711590892089.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Never Let You Go - YouTube,https://www.youtube.com/watch?v=3ExWsVFJlFo,,bonafide,1711590876989.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Ghost - YouTube,https://www.youtube.com/watch?v=Fp8msa5uYsc,,bonafide,1711590855503.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - One Less Lonely Girl - YouTube,https://www.youtube.com/watch?v=LXUSaVw3Mvk,,bonafide,1711590838595.0,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Love Me - YouTube,https://www.youtube.com/watch?v=qdDVtFvJwUc,,bonafide,1711590815959.0,True,False
+English,unknown,youtube,Justin Bieber,Till my heartaches end by Justin Bieber AI COVER,https://youtube.com/watch?v=HKvvplCPCK8,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber New version I Don't Care ai cover 2024,https://youtube.com/watch?v=aShAzpNknlQ,,deepfake,,True,False
+English,,youtube,Justin Bieber,Justin Bieber - Sorry (PURPOSE : The Movement) - YouTube,https://www.youtube.com/watch?v=fRh_vgS2dFE,,bonafide,1711590547889.0,True,False
+English,unknown,youtube,Justin Bieber,When i met you by Justin bieber COVER AI,https://youtube.com/watch?v=QXWdK2yetRk,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Nothing’s gonna change my love for you … [ Justin Bieber AI cover ] + |lyric + vietsub|,https://youtube.com/watch?v=5mlMRhLQpV8,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Shadow (Ai cover),https://youtube.com/watch?v=4jOjFI7SURY,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Drivers License - Justin Bieber (AI Cover),https://youtube.com/watch?v=6yFI2p_0AwY,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Lord And Savior - Justin Bieber,https://youtube.com/watch?v=724kUK39rEw,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Tyla - Water (Justin Bieber - AI Cover),https://youtube.com/watch?v=7LjoITUBukk,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Worth The Risk - Justin Bieber,https://youtube.com/watch?v=ABddnHV67yA,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Angels Like You - Miley Cyrus (Justin Bieber Al Cover),https://youtube.com/watch?v=87wNlUQK_xo,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,There's nothing holding me back By Justin bieber 😎 AI COVEr,https://youtube.com/watch?v=lQzhqEC0nzQ,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Lose You To Love Me ( AI Cover ),https://youtube.com/watch?v=LUdz91m8l0g,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,If I Let You Go - Justin Biber ( Ai Cover),https://youtube.com/watch?v=56-FH3dXZyM,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Giver (AI),https://youtube.com/watch?v=Nzz5pCGLQs8,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Drunk Text - Henry Moodie (Justin Bieber AI Cover),https://youtube.com/watch?v=riVp4rUi2Xo,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,All of Me - John Legend (Justin Bieber AI Cover),https://youtube.com/watch?v=8qlvuYjA0JA,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber New song lord and savior ai cover 2024,https://youtube.com/watch?v=35tfA-8l6Wo,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Nunu (Ft. Poo Bear),https://youtube.com/watch?v=PLbnl3Lomd8,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Just Two of Us - Justin Bieber (Ai) Lyrics,https://youtube.com/watch?v=9ccaW72lDQY,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber Anything 4 Me Ai,https://youtube.com/watch?v=1HqjYukyxB8,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Bebecita - Justin Bieber,https://youtube.com/watch?v=A5ypPvnXrEM,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - I will sing of your love forever,https://youtube.com/watch?v=A4Z5QR338C4,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Let Go (Bizzle Version),https://youtube.com/watch?v=RO6uZ6CX2UE,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Raining In Manila - Justin Bieber (AI COVER),https://youtube.com/watch?v=3421gyAPsag,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber - Best Part (AI),https://youtube.com/watch?v=rp9HWEt__LM,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber New song good Time bizzle ai cover 2024,https://youtube.com/watch?v=2HcOWXQY6SQ,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Justin Bieber | Too Good At Goodbyes |,https://youtube.com/watch?v=1kRJgXwKKPY,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber,Blinding Lights - Justin Bieber (AI Cover),https://youtube.com/watch?v=2VmhCd8qhQA,,deepfake,,True,False
+Mandarin,,,Li_Jian,李健-爱的四季 - 感恩母亲节沙画(高清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=12&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-美若黎明(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=6&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-风吹麦浪 (《女人的战争》电视剧片尾曲)(标清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=16&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-故乡山川,https://www.bilibili.com/video/BV1sW411E72N/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-贝加尔湖畔 (《无心法师》网络剧插曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=4&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,unknown,,Li_Jian,AI李健《如愿》cover 王菲,https://www.bilibili.com/video/BV1AP411Q7Tr/?spm_id_from=333.788.recommend_more_video.6&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,,,Li_Jian,李健-当你老了 母亲节纪念沙画(超清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=5&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-春风十里不如你 (《春风十里不如你》电视剧主题曲)(高清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=14&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-传奇 (《李春天的春天》电视剧主题曲)(高清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=7&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-Feeling Good(超清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=18&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-心升明月 (2012年旅游卫视频道主题曲)(标清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=15&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-一往情深的恋人(标清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=28&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-城市之光 (《心理罪之城市之光》电影回归版主题曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=11&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-如果可以 (《搜索》电影主题曲)(高清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=26&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-向往 (第二版) (《女人的战争》电视剧片头曲-《闪闪发亮》电视剧片尾曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=8&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-爱出色 (《爱出色》电影主题曲)(标清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=13&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】唯一 【告五人】,https://www.bilibili.com/video/BV1ns4y1X7ex/?spm_id_from=333.788.recommend_more_video.1&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】蓝莲花,https://www.bilibili.com/video/BV1xX4y1E7r7/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】每一次想你,https://www.bilibili.com/video/BV1DF411Z7qJ/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】礼物,https://www.bilibili.com/video/BV1cP411t7cN/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,sovits,,Li_Jian,【AI李健】如愿【王菲】,https://www.bilibili.com/video/BV1bX4y1y7v1/?spm_id_from=333.337.search-card.all.click,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,「 AI 翻唱 」李健 - 《离人》,https://www.bilibili.com/video/BV1684y1M7fC/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】爱情,https://www.bilibili.com/video/BV1ax4y1d7bn/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,https://github.com/svc-develop-team/so-vits-svc,,Li_Jian,【AI李健】我记得【赵雷】 我来给ai李健伴唱,https://www.bilibili.com/video/BV1Sc411P7uY/?spm_id_from=333.337.search-card.all.click&vd_source=6773a02315422cd9e9d1490e5baec619,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】那些年（cover.胡夏）,https://www.bilibili.com/video/BV1b84y1o7Y2/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】这世界那么多人【莫文蔚】,https://www.bilibili.com/video/BV13h4y1b7vf/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】十年（cover.陈奕迅）,https://www.bilibili.com/video/BV11X4y177uE/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】水星记,https://www.bilibili.com/video/BV1jP411C7oP/?spm_id_from=333.788.recommend_more_video.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,,,Li_Jian,李健-等待黎明 (《百团大战》电影主题曲)(超清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=19&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-一念一生 (电视剧《庆余年》主题曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=3&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-你一言我一语 (《一句顶一万句》电影主题曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=25&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-假如爱有天意 (《太平轮•彼岸》电影推广曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=10&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-为你而来 (《爱的妇产科》电视剧片尾曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=17&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-等我遇见你 (《北京遇上西雅图之不二情书》电影主题曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=20&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-懂得(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=2&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健 - MV - 官方版合集 持续更新,https://www.bilibili.com/video/BV1GS4y1Y7u7/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健线上演唱《水流众生》，配上藏腔太好听了，犹如一次心灵洗礼,https://www.bilibili.com/video/BV1Xa41137wr/?spm_id_from=333.788.recommend_more_video.1&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-故乡 (《小偷家族》电影宣传曲)(超清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=22&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-抚仙湖 (《大唐女将樊梨花》电视剧片尾曲)(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=9&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,李健-深海之寻(蓝光),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=23&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Li_Jian,【李健】袖手旁观【我是歌手】,https://www.bilibili.com/video/BV1Dt411w7qg/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】曾经是情侣,https://www.bilibili.com/video/BV1Xx4y197E4/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,,,Li_Jian,李健-异乡人(高清),https://www.bilibili.com/video/BV1GS4y1Y7u7?p=30&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,unknown,,Li_Jian,【AI李健】稻香,https://www.bilibili.com/video/BV1o841117cx/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Mandarin,,bilibili,Li_Jian,李健-风一样自由(超清)_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1GS4y1Y7u7?p=21&vd_source=bda8c28f9763524b2b9bd9962b1b4120,,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《如春娇》cover.刘莉旻 余春娇的故事,https://www.bilibili.com/video/BV1As4y117Td/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,https://github.com/svc-develop-team/so-vits-svc,,Miriam_Yeung,【AI杨千嬅】《痴情司》有谁情痴得，不怕天地变,https://www.bilibili.com/video/BV1zs4y1v7qD/?spm_id_from=333.999.0.0&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《我的骄傲》cover.容祖儿,https://www.bilibili.com/video/BV1PW4y1R79B/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《慕容雪》cover.薛凯琪 我不是我 你转身一走苏州里的不是我,https://www.bilibili.com/video/BV1bs4y1T7t3/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,,Miriam_Yeung,【AI杨千嬅】《喜帖街》cover.谢安琪 就似这一区曾经称得上美满甲天下,https://www.bilibili.com/video/BV14W4y1D7k4/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《任我行》cover.陈奕迅,https://www.bilibili.com/video/BV1Hu411Y7w1/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《灰姑娘》cover.梁咏琪 若仇恨你 感觉很差无奈这灰姑娘绝不怕,https://www.bilibili.com/video/BV19a4y1u7TP/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,"楊千嬅 - 嫁給愛情 (劇集 ""多功能老婆"" 主題曲) Official MV",https://www.youtube.com/watch?v=grh0bKLUxyk&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=10,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《16号爱人》cover.容祖儿 我以前是冠军 怎会惯 做后备爱人,https://www.bilibili.com/video/BV17X4y1C7Ab/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《心之科学》cover.杨千嬅 情人不爱你 还不爱你 凭什么否定你月光 有人捞起 有人瞧不起,https://www.bilibili.com/video/BV1yz4y1b7H1/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《一格格》cover.卫兰 缠住吻住春风吹住我吗缠住吻住郁金香是你吗缠住吻住诗画歌颂爱吗拍逐幅逐幅恋爱定格,https://www.bilibili.com/video/BV1Sk4y1s7m2/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《白玫瑰》cover.陈奕迅 怎么冷酷却仍然美丽 得不到的 从来矜贵身处劣势 如何不攻心计 流露敬畏试探你的法规,https://www.bilibili.com/video/BV1Qh4y1t78Q/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,,Miriam_Yeung,【AI杨千嬅】《富士山下》cover.陈奕迅 前尘硬化像石头 随缘地抛下便逃走,https://www.bilibili.com/video/BV1uk4y1T724/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,Miriam Yeung - 楊千嬅 -《假如讓我說下去》MV,https://www.youtube.com/watch?v=n2cB8kHA7No&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=7,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《一丝不挂》cover.陈奕迅,https://www.bilibili.com/video/BV1kX4y1b7Ls/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,Miriam Yeung - 楊千嬅 -《Miriam Yeung》MV,https://www.youtube.com/watch?v=33zOkV1ey84&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=23,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 來生舞 (歌詞版) [Official] [官方],https://www.youtube.com/watch?v=v0LOssvopnI&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=122,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Kissing Everywhere,https://www.youtube.com/watch?v=m_XGVZgJ60Q&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=3,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Fei Nu Zheng Zhuan,https://www.youtube.com/watch?v=8fUW3SLRzS0&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=8,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《杂技》cover.卫兰 然后我　假装潇洒对你偷欢偷不到妒忌花心痴心竟然同样不震撼你,https://www.bilibili.com/video/BV1oP411R7Hm/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,,Miriam_Yeung,【AI杨千嬅】《怯》cover.容祖儿 傻得我过分期求明天 以为你会在眼前,https://www.bilibili.com/video/BV1hs4y1Q7Qq/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《晚风心里吹》cover.阿梨粤 愿等你一辈子 真情留住你 梦里归家那一扇灯,https://www.bilibili.com/video/BV1T24y1M7eW/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 冰點 (Official Music Video),https://www.youtube.com/watch?v=C4Kg-R5JY4U&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=79,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,原來過得很快樂,https://www.youtube.com/watch?v=e6cgCK69i1Y&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=39,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 最好的債 (歌詞版) [Official] [官方],https://www.youtube.com/watch?v=nG6WborlovE&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=21,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《夏日倾情》cover.黎明,https://www.bilibili.com/video/BV1W14y1D7U9/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,Miriam Yeung - 楊千嬅 -《野孩子》MV,https://www.youtube.com/watch?v=ECfztqRvnNc&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=2,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《小城大事》Official MV,https://www.youtube.com/watch?v=WJaufugjeSQ&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=15,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《煉金術》Official MV（電影《煎釀叄寶》主題曲）,https://www.youtube.com/watch?v=y87LmH8OkRU&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=12,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《花與愛麗斯》Official MV,https://www.youtube.com/watch?v=_LkByglNWpo&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=123,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《小星星》Official MV,https://www.youtube.com/watch?v=1rPhXb-j2Pw&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=19,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 剛剛好 MV [Official] [官方],https://www.youtube.com/watch?v=0_gSlGY1VQo&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=61,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Yung,https://www.youtube.com/watch?v=OVq640Vgsbk&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=9,T02,bonafide,,True,False
+Mandarin,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《大城大事》(國）Official MV（粵：小城大事）,https://www.youtube.com/watch?v=4PXb73v5I0c&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=46,T02,bonafide,,True,False
+Mandarin,,,Miriam_Yeung,A Maiden's Prayer,https://www.youtube.com/watch?v=UiLmSS418Go&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=4,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 愛人 (Official Music Video),https://www.youtube.com/watch?v=3VjzDB0MRo8&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=49,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Miriam Yeung - 楊千嬅 -《可惜我是水瓶座》MV,https://www.youtube.com/watch?v=Fz0erNNpTGQ,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Miriam Yeung - 楊千嬅 -《一千零一個》MV,https://www.youtube.com/watch?v=TYu7Q0Hc2MI&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=34,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《處處吻》Official MV,https://www.youtube.com/watch?v=ZMGJEOnuVDw&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=6,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Yi Ge Ren De Tong Hua,https://www.youtube.com/watch?v=AEZ2xHlyPLo&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=57,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 有發生過 (Official Music Video),https://www.youtube.com/watch?v=4EuoPKIBOOA&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=53,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《最佳损友》故事的主角 来年陌生的是昨日最亲的某某,https://www.bilibili.com/video/BV1qP41117Hk/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,youtube,Miriam_Yeung,【AI楊千嬅】《月球下的人》Cover. 李幸倪 - YouTube,https://www.youtube.com/watch?v=m7IgUBNG26U,,deepfake,1707893149412.0,True,False
+Cantonese,unknown,,Miriam_Yeung,【AI杨千嬅】《失忆蝴蝶》cover.陈奕迅,https://www.bilibili.com/video/BV1TM4y177qm/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,youtube,Miriam_Yeung,【AI楊千嬅】《痛愛》Cover. 容祖兒 - YouTube,https://www.youtube.com/watch?v=oA9wuFrNi6Y,,deepfake,1707893158667.0,True,False
+Cantonese,unknown,youtube,Miriam_Yeung,【AI楊千嬅】《怯》cover.容祖兒 傻得我過分期求明天 以為你會在眼前 - YouTube,https://www.youtube.com/watch?v=4_Pi2UcdwG0,,deepfake,1702604412706.0,True,False
+Cantonese,unknown,youtube,Miriam_Yeung,【AI楊千嬅】《16號愛人》Cover.容祖兒 我以前是冠軍 怎會慣 做後備愛人 - YouTube,https://www.youtube.com/watch?v=RnS9gWboNyo,,deepfake,1707892800563.0,True,False
+Cantonese,unknown,,Miriam_Yeung,【AI杨千嬅】《单车》cover.陈奕迅 难离难舍想抱紧些茫茫人生好像荒野,https://www.bilibili.com/video/BV1fN411S7UH/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 - 小城大事,https://www.youtube.com/watch?v=b9OfkOtKTVM&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=5,T02,bonafide,,True,False
+Cantonese,unknown,youtube,Miriam_Yeung,【AI杨千嬅】《杂技》Cover.卫兰 然后我　假装潇洒对你偷欢偷不到妒忌花心痴心竟然同样不震撼你 - YouTube,https://www.youtube.com/watch?v=s6pPWlS10ck,,deepfake,1707893192278.0,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《大傻》Official MV,https://www.youtube.com/watch?v=xAyAc3V2DUo&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=97,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 少女的祈禱 (Official Music Video),https://www.youtube.com/watch?v=CvKvXNiXQZc&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=28,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung《你會愛的人》[Official MV],https://www.youtube.com/watch?v=FU88c18Mlos&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=96,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung -《烈女》Official MV,https://www.youtube.com/watch?v=iCp3yL-Q6nM&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=13,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,"楊千嬅 Miriam - 無雙 (劇集 ""三個女人一個「因」"" 主題曲) Official MV",https://www.youtube.com/watch?v=Zmr5gWFD5Rk&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=35,T02,bonafide,,True,False
+Cantonese,Sovits4.0,,Miriam_Yeung,【AI杨千嬅】《阿牛》cover.陈奕迅 他不要我再拾回旧好,https://www.bilibili.com/video/BV1bg4y1K7kx/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,unknown,youtube,Miriam_Yeung,【AI杨千嬅】《我的骄傲》Cover.容祖儿 - YouTube,https://www.youtube.com/watch?v=4TpBgn8UA9Q,,deepfake,1707893172661.0,True,False
+Cantonese,,,Miriam_Yeung,Miriam Yeung - 楊千嬅 -《姊妹》MV,https://www.youtube.com/watch?v=TEiNvQtA8og&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=22,T02,bonafide,,True,False
+Cantonese,,,Miriam_Yeung,Xiang Zuo Zou Xiang You Zou (Live),https://www.youtube.com/watch?v=VpCOK6jUiIw&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=137,T02,bonafide,,True,False
+Cantonese,https://github.com/svc-develop-team/so-vits-svc,,Miriam_Yeung,【AI杨千嬅】《心淡》cover容祖儿,https://www.bilibili.com/video/BV1kz4y1v7uK/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,deepfake,,True,False
+Cantonese,,,Miriam_Yeung,楊千嬅 Miriam Yeung - 再見二丁目 (Official Music Video),https://www.youtube.com/watch?v=uhxS1iMfVvw&list=OLAK5uy_njSKJRlzfjLG6VJww7CJlor-qEdue-k8Y&index=11,T02,bonafide,,True,False
+Korean,,youtube,Oh_Hyuk,LOVE YA! - YouTube,https://www.youtube.com/watch?v=-o7lgP1VPJk&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=24,,bonafide,1710137073183.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 그 때 헤어지면 돼 (AI cover) - YouTube,https://www.youtube.com/watch?v=zkyz9l0MkBU,,deepfake,1710137065361.0,True,False
+Korean,,youtube,Oh_Hyuk,Ohio - YouTube,https://www.youtube.com/watch?v=6HHy5YyWmvc&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=21,,bonafide,1710136951663.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 바라봐줘요 (AI cover) - YouTube,https://www.youtube.com/watch?v=G_pKUqcbsT0,,deepfake,1710136880049.0,True,False
+Korean,,youtube,Oh_Hyuk,[MV] hyukoh(혁오) _ Gondry(공드리) - YouTube,https://www.youtube.com/watch?v=u3RAU0T2RC4,,bonafide,1710136921614.0,True,False
+Korean,,youtube,Oh_Hyuk,Wi Ing Wi Ing - YouTube,https://www.youtube.com/watch?v=bVrW1eDMtL8&list=RDEMWDA2oLzxAw2zFW4NVoYV5Q&index=22,,bonafide,1710136867775.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 그대만 있다면 (AI cover) - YouTube,https://www.youtube.com/watch?v=sIw6UBZcKcU,,deepfake,1710136843474.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 미소속에 비친 그대 (AI cover) - YouTube,https://www.youtube.com/watch?v=1bPM7-GHXtE,,deepfake,1710136937014.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 옛사랑 (AI cover) - YouTube,https://www.youtube.com/watch?v=0RFb_hnHqw8,,deepfake,1710137086547.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,OHHYUK 오혁 / K. will 케이윌 - 내 사랑 내 곁에 [AI Cover] - YouTube,https://www.youtube.com/watch?v=Gj0hJzOovxs,,deepfake,1710137147342.0,True,False
+Korean,,youtube,Oh_Hyuk,Paul - YouTube,https://www.youtube.com/watch?v=bH6ZvLhUx5o&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=28,,bonafide,1710137155475.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,OHHYUK 오혁 / 하현상 - 불꽃놀이 [AI Cover] - YouTube,https://www.youtube.com/watch?v=T7tBXAvxC6M,,deepfake,1710137166792.0,True,False
+Korean,,youtube,Oh_Hyuk,Tokyo Inn - YouTube,https://www.youtube.com/watch?v=gLxnWbG1gjs&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=39,,bonafide,1710137180025.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,OHHYUK 오혁 : 김건모 서울의 달 AI Cover - YouTube,https://www.youtube.com/watch?v=Dwk8AsDZ7-k,,deepfake,1710137192392.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,"OHHYUK 오혁 / Car, the Garden 카더가든 - Closely Far Away 가까운 듯 먼 그대여 [AI Cover] - YouTube",https://www.youtube.com/watch?v=oyuTecqdvkI,,deepfake,1710137212492.0,True,False
+Korean,,youtube,Oh_Hyuk,Mer - YouTube,https://www.youtube.com/watch?v=cmXcwH0WGi0&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=41,,bonafide,1710137223081.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,OHHYUK 오혁 / 조용필 - Bounce [AI Cover] - YouTube,https://www.youtube.com/watch?v=9VE4kQyKL1c,,deepfake,1710137232738.0,True,False
+Korean,,youtube,Oh_Hyuk,Hyukoh (혁오) - Our Place - YouTube,https://www.youtube.com/watch?v=V5The8KCVQ4&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=32,,bonafide,1710137245293.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,OHHYUK 오혁 / 하현상 - 파랑 골목 [AI Cover] - YouTube,https://www.youtube.com/watch?v=7mlyV0Ak_CA,,deepfake,1710137407710.0,True,False
+Korean,,youtube,Oh_Hyuk,Jesus lived in a motel room - YouTube,https://www.youtube.com/watch?v=Q2azdZwRkgc,,bonafide,1710137470643.0,True,False
+Korean,,youtube,Oh_Hyuk,소녀 A Little Girl - YouTube,https://www.youtube.com/watch?v=PfpERIQXIrk&list=RDEMWDA2oLzxAw2zFW4NVoYV5Q&start_radio=1,,bonafide,1710136804196.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - instagram (AI cover) - YouTube,https://www.youtube.com/watch?v=8O8pibJWoDg,,deepfake,1710136785581.0,True,False
+Korean,,youtube,Oh_Hyuk,Hooka - YouTube,https://www.youtube.com/watch?v=DE4WWnK7wg0&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=28,,bonafide,1710137098159.0,True,False
+Korean,,youtube,Oh_Hyuk,Big Bird - YouTube,https://www.youtube.com/watch?v=yEoD23XfHWs&list=RDEMhJ2dZs4-A9m2-IAZ99_yvw&index=40,,bonafide,1710137201225.0,True,False
+Korean,,youtube,Oh_Hyuk,TOMBOY - YouTube,https://www.youtube.com/watch?v=zC8RrOA0spo&list=RDEMWDA2oLzxAw2zFW4NVoYV5Q&index=6,,bonafide,1710136832055.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 내 마음에 비친 내 모습 (AI cover) - YouTube,https://www.youtube.com/watch?v=rFr0gk3achk,,deepfake,1710136817713.0,True,False
+Korean,unknown,youtube,Oh_Hyuk,오혁 - 좋은 밤 좋은 꿈 (AI cover) - YouTube,https://www.youtube.com/watch?v=9csvc2w9T7E,,deepfake,1709869656125.0,True,False
+Korean,,youtube,Oh_Hyuk,소녀_오혁/가사포함 - YouTube,https://www.youtube.com/watch?v=OZFjPlKZ0H8,,bonafide,1709869700191.0,True,False
+Korean,,youtube,Park Myung-soo,Fool's Love - YouTube,https://www.youtube.com/watch?v=B5zUl_ninqQ&list=OLAK5uy_ncA5cHnFRzUxr_q1nnfOBtnUrHV7P8DCA&index=5,,bonafide,1710896137336.0,True,False
+Korean,,youtube,Park Myung-soo,Farewell of you - YouTube,https://www.youtube.com/watch?v=OLf2RWBBrx0&list=OLAK5uy_ncA5cHnFRzUxr_q1nnfOBtnUrHV7P8DCA&index=6,,bonafide,1710896159039.0,True,False
+Korean,unknown,youtube,Park Myung-soo,[AI커버] 박명수 - 회상 | 장범준 - 회상 AI COVER - YouTube,https://www.youtube.com/watch?v=rYQzcH-tw24&list=PLwKW0tTzC7gsNSGqWicqjKTW5ojhQRrjE&index=11,,deepfake,1710896149884.0,True,False
+Korean,unknown,youtube,Park Myung-soo,[AI커버] 박명수 - 흔들리는 꽃들속에서 네 샴푸향이 느껴진거야 | 장범준 - 흔들흔들 AI COVER - YouTube,https://www.youtube.com/watch?v=HHKGGgVyek0&list=PLwKW0tTzC7gsNSGqWicqjKTW5ojhQRrjE&index=10,,deepfake,1710896126800.0,True,False
+Korean,,youtube,Park Myung-soo,Happening - YouTube,https://www.youtube.com/watch?v=Rke4rFNqqPo&list=OLAK5uy_ncA5cHnFRzUxr_q1nnfOBtnUrHV7P8DCA&index=4,,bonafide,1710896109061.0,True,False
+Korean,unknown,youtube,Park Myung-soo,[AI커버] 박명수 - 인연 | 이승철 - 인연 AI COVER - YouTube,https://www.youtube.com/watch?v=CFu4j2ZoARI&list=PLwKW0tTzC7gsNSGqWicqjKTW5ojhQRrjE&index=8,,deepfake,1710896098256.0,True,False
+Korean,,youtube,Park Myung-soo,Two Face - YouTube,https://www.youtube.com/watch?v=g9_BsqlmM2I&list=OLAK5uy_ncA5cHnFRzUxr_q1nnfOBtnUrHV7P8DCA&index=3,,bonafide,1710896082595.0,True,False
+Korean,unknown,youtube,Park Myung-soo,[AI커버] 박명수 - 예뻤어 | 데이식스 - 예뻤어 AI COVER - YouTube,https://www.youtube.com/watch?v=6-9taNlnPdQ&list=PLwKW0tTzC7gsNSGqWicqjKTW5ojhQRrjE&index=6,,deepfake,1710896065170.0,True,False
+Korean,,youtube,Park Myung-soo,Fool - YouTube,https://www.youtube.com/watch?v=qyR7TKL4hE4&list=OLAK5uy_ncA5cHnFRzUxr_q1nnfOBtnUrHV7P8DCA&index=2,,bonafide,1710896051978.0,True,False
+Korean,,youtube,Park Myung-soo,Prince of the sea - YouTube,https://www.youtube.com/watch?v=dK_EnUm7i24,,bonafide,1709871311021.0,True,False
+Korean,unknown,youtube,Park Myung-soo,[AI커버] 박명수 - 밤양갱 | 비비 - 밤양갱 AI COVER - YouTube,https://www.youtube.com/watch?v=VD-zLMpnH7k,,deepfake,1709871289208.0,True,False
+Korean,unknown,youtube,Park Myung-soo,[AI커버] 박명수 - HEARTBREAKER | GD - HEARTBREAKER AI COVER - YouTube,https://www.youtube.com/watch?v=m13shbu9ugo&list=PLwKW0tTzC7gsNSGqWicqjKTW5ojhQRrjE&index=5,,deepfake,1710895968397.0,True,False
+Korean,,youtube,Park_Hyo-shin,HAPPY TOGETHER - YouTube,https://www.youtube.com/watch?v=yyb0QuHuIOU&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=18,,bonafide,1710136686071.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"요즘 박효신이 부르는 ""사랑했잖아""(린) - YouTube",https://www.youtube.com/watch?v=G-okcLonA2U,,deepfake,1710136701863.0,True,False
+Korean,,youtube,Park_Hyo-shin,LOVER - YouTube,https://www.youtube.com/watch?v=1kChcxolGCI&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=19,,bonafide,1710136711501.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,일단 한번 들어보세요. AI박효신 - 열애중 - YouTube,https://www.youtube.com/watch?v=Zq07sLVjz5w,,deepfake,1710136724445.0,True,False
+Korean,,youtube,Park_Hyo-shin,동경 - YouTube,https://www.youtube.com/watch?v=xdQZqb0glnI&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=28,,bonafide,1710136737605.0,True,False
+Korean,,youtube,Park_Hyo-shin,박효신(Park Hyo Shin) - 야생화(Wild Flower) Special Video - YouTube,https://www.youtube.com/watch?v=OxgiiyLp5pk,,bonafide,1709869543278.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"이 노래 다들 아시죠? AI박효신의 ""삭제"" - YouTube",https://www.youtube.com/watch?v=5SUA3AzlNkg,,deepfake,1710136752144.0,True,False
+Korean,,youtube,Park_Hyo-shin,바보 - YouTube,https://www.youtube.com/watch?v=0dF_f2uHvbc&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=27,,bonafide,1710136758330.0,True,False
+Korean,,youtube,Park_Hyo-shin,Home - YouTube,https://www.youtube.com/watch?v=iJYYqKi5J6c&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=8,,bonafide,1710136425192.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,이 노래를 대장님 목소리로? AI박효신 - 인사(범진) - YouTube,https://www.youtube.com/watch?v=9pPTY8VDG6w,,deepfake,1710136395309.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"연우 형.. 노래좀 빌릴께💦 AI박효신의 ""반성문"" - YouTube",https://www.youtube.com/watch?v=dF6WkHEsOKQ,,deepfake,1710136671528.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,박효신 - 사건의 지평선 │ 윤하 원곡 │ Park Hyo-shin (AI voice cover) - YouTube,https://www.youtube.com/watch?v=4aVP5QFCP1U,,deepfake,1709869522362.0,True,False
+Korean,,youtube,Park_Hyo-shin,After Love (사랑한 후에) - YouTube,https://www.youtube.com/watch?v=7c3wuDMuCkk&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=16,,bonafide,1710136658097.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"요즘 박효신이 불러주는 ""숲""(최유리) - YouTube",https://www.youtube.com/watch?v=Gj4ABEATON4,,deepfake,1710136523883.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,사르르 녹습니다. AI박효신 - 흰 눈 - YouTube,https://www.youtube.com/watch?v=u3_7SpKVOOY,,deepfake,1710136437816.0,True,False
+Korean,,youtube,Park_Hyo-shin,해줄 수 없는 일 - YouTube,https://www.youtube.com/watch?v=PW28RZsFqp4&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=13,,bonafide,1710136533400.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"일단 한번 들어보세요... AI박효신 ""조금 취했어"" - YouTube",https://www.youtube.com/watch?v=Dg1TzAWJn0M,,deepfake,1710136649370.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,드디어 떴다. 12박효신 - 오래된 노래(스탠딩에그) - YouTube,https://www.youtube.com/watch?v=qU0lXLKFoqo,,deepfake,1710136549919.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,FT아일랜드 노래를 박효신이 부르면? AI박효신 - 사랑하는 법을 몰라서 - YouTube,https://www.youtube.com/watch?v=b6pDb5IGGnw,,deepfake,1710136463276.0,True,False
+Korean,,youtube,Park_Hyo-shin,추억은 사랑을 닮아 - YouTube,https://www.youtube.com/watch?v=KaOzQqE-fwQ&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=15,,bonafide,1710136563562.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"최초공개) 박효신AI가 부르는 ""거리에서"" (가사/고퀄) | AI커버 - YouTube",https://www.youtube.com/watch?v=Pno0vMuE7T8,,deepfake,1709869060464.0,True,False
+Korean,,youtube,Park_Hyo-shin,눈의 꽃 - YouTube,https://www.youtube.com/watch?v=AqwyuF0Rp8k,,bonafide,1709869143300.0,True,False
+Korean,,youtube,Park_Hyo-shin,Breath - YouTube,https://www.youtube.com/watch?v=V3yHzAPUGWg&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=10,,bonafide,1710136470727.0,True,False
+Korean,unknown,youtube,Park_Hyo-shin,"박효신의 감성 ""시간을 거슬러"" (AI박효신) - YouTube",https://www.youtube.com/watch?v=pr69pRmlCRY,,deepfake,1710136493119.0,True,False
+Korean,,youtube,Park_Hyo-shin,좋은사람 - YouTube,https://www.youtube.com/watch?v=LJFwDfP8J7A&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=9,,bonafide,1710136445068.0,True,False
+Korean,,youtube,Park_Hyo-shin,Gift (Gift) - YouTube,https://www.youtube.com/watch?v=haM03BYST8c&list=RDEMbN8zZTkWK4hSABNKpC11Ng&index=12,,bonafide,1710136504850.0,True,False
+Korean,,youtube,RIIZE,RIIZE 라이즈 'Memories' MV - YouTube,https://www.youtube.com/watch?v=2H0duKgnYgE&ab_channel=SMTOWN,,bonafide,1700283935464.0,True,False
+English,,youtube,RIIZE,Get A Guitar (English Version) - YouTube,https://www.youtube.com/watch?v=kIe1sI64Wmo&ab_channel=RIIZE-Topic,,bonafide,1700283976854.0,True,False
+Korean,unknown,youtube,RIIZE,[AI COVER] RIIZE - Loverboy - YouTube,https://www.youtube.com/watch?v=a_u7a15QVf4&ab_channel=meaisae,,deepfake,1700284281968.0,True,False
+English,unknown,bilibili,RIIZE,RIIZE[AI Cover] 'Perfect Night' by LE SSERAFIM_哔哩哔哩_bilibili,https://www.bilibili.com/video/BV1uG41197zt/?spm_id_from=333.337.search-card.all.click&vd_source=c8aaf53e27e4c82b70ff3bd1f2a11bd4,,deepfake,1700284033761.0,True,False
+Korean,,youtube,RIIZE,RIIZE 라이즈 'Talk Saxy' MV - YouTube,https://www.youtube.com/watch?v=gJMheHHf4GQ&ab_channel=SMTOWN,,bonafide,1700283910194.0,True,False
+Korean,,youtube,RIIZE,RIIZE 라이즈 'Get A Guitar' MV - YouTube,https://www.youtube.com/watch?v=iUw3LPM7OBU&ab_channel=SMTOWN,,bonafide,1700283923809.0,True,False
+Mandarin,,,Teresa_Teng,【高音质】邓丽君 《甜蜜蜜》【1979】,https://www.bilibili.com/video/BV1ET4y1A7aq/?spm_id_from=333.788.recommend_more_video.-1&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Teresa_Teng,邓丽君老歌《往事只能回味》回味无穷最经典的舞曲,https://www.bilibili.com/video/BV1C34y177dB/?spm_id_from=333.788.recommend_more_video.5&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Teresa_Teng,经典老歌《但愿人长久》，邓丽君美妙歌声，天籁之音，满满的回忆,https://www.bilibili.com/video/BV1R3411Q7Kb/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Cantonese,sovits,,Teresa_Teng,[ai邓丽君]富士山下,https://www.bilibili.com/video/BV1oX4y187Nw/?spm_id_from=333.337.search-card.all.click,T02,deepfake,,True,False
+Mandarin,,,Teresa_Teng,邓丽君《月亮代表我的心》怀旧金曲,https://www.bilibili.com/video/BV1Hb411v7Hm/?spm_id_from=333.788.recommend_more_video.-1&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Cantonese,,,Teresa_Teng,"粤语歌曲《风霜伴我行》,邓丽君歌声委婉，天籁之音，君韵永存",https://www.bilibili.com/video/BV1Qe411A7Rx/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Teresa_Teng,邓丽君《恰似你的温柔》经典金曲,https://www.bilibili.com/video/BV1Mb411U7Et/?spm_id_from=333.788.recommend_more_video.4&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Teresa_Teng,邓丽君演唱《红豆》歌声悠扬，经典动听，让人回味无穷,https://www.bilibili.com/video/BV1LV4y1P7yJ/?spm_id_from=333.788.recommend_more_video.2&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,Sovits4.0,,Teresa_Teng,【AI 鄧麗君】富士山下 cover 陳奕迅 《逝者已矣，生者如斯，音容犹在，AI重生》,https://www.youtube.com/watch?v=Z2zR_TXda8g,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Teresa_Teng,【AI 鄧麗君】新鴛鴦蝴蝶夢 cover 黃安 （在人间已是癫 何苦要上青天）,https://www.youtube.com/watch?v=t9FT-ocxNng,T02,deepfake,,True,False
+Mandarin,,,Teresa_Teng,邓丽君《独上西楼》，歌声婉转动听，独具韵味，唱出落寞冷清境界,https://www.bilibili.com/video/BV1RA411X7g8/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Cantonese,,,Teresa_Teng,邓丽君经典粤语歌曲《向日葵》，没了柔弱女儿形象，把人心唱乱,https://www.bilibili.com/video/BV1WK41197Jo/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,Sovits4.0,,Teresa_Teng,【AI 邓丽君】反方向的钟 cover 周杰伦 （模型刚开始训，希望大家多鼓励）,https://www.youtube.com/watch?v=7FUjNuEOmQ4&list=PLqil1-qewx9gJ39jqbuV1nGkKTBW_hP85&index=2,T02,deepfake,,True,False
+Mandarin,Sovits4.0,,Teresa_Teng,【AI 鄧麗君】千里之外 cover 費玉清 （生死難猜 用一生去等待）,https://www.youtube.com/watch?v=CvsJOe_-zXE&list=PLqil1-qewx9gJ39jqbuV1nGkKTBW_hP85,T02,deepfake,,True,False
+Mandarin,,,Teresa_Teng,邓丽君 - 《我只在乎你》官方MV,https://www.bilibili.com/video/BV144411p7tG/?spm_id_from=333.337.search-card.all.click&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+Mandarin,,,Teresa_Teng,邓丽君经典歌曲《我和你》，歌声甜美柔情，不知道听醉了多少人,https://www.bilibili.com/video/BV1Se4y1u7w5/?spm_id_from=333.788&vd_source=bda8c28f9763524b2b9bd9962b1b4120,T02,bonafide,,True,False
+English,unknown,youtube,Ariana Grande | Justin Bieber,Justin Bieber - Love Lies ft. Ariana Grande (Ai Cover),https://youtube.com/watch?v=1kGKvcpdyGM,,deepfake,,True,False
+Mandarin,,youtube,JJ_Lin | Li_Jian,林俊傑 JJ Lin / 李健 Li Jian -《江南》 River South - JJ20 現場版 Live in Wuhan - YouTube,https://www.youtube.com/watch?v=gCOAR3QWCeQ,,bonafide,1711496810483.0,True,False
+Mandarin,unknown,youtube,Jay_Chou | Stefanie_Sun | Jolin_Tsai | Eason_Chan | Li_Ronghao | G.E.M.,AI 華流全明星給你唱《心牆》！【周杰倫|孫燕姿|蔡依林|陳奕迅|李榮浩|鄧紫棋】 - YouTube,https://www.youtube.com/watch?v=tx1pHYEXTLw,,deepfake,1706660850435.0,True,False
+English,unknown,youtube,Justin Bieber | Ariana Grande,Ariana Grande&Justin Bieber-Cruel summer(acoustic ver.) (원곡:Taylor swift) #ai커버,https://youtube.com/watch?v=n8dXrzM6aTU,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber | Justin Bieber,Justin Bieber - Kehlani & Phora – Cupids Curse (Ai Cover),https://youtube.com/watch?v=9jrV5GHNaQQ,,deepfake,,True,False
+English,unknown,youtube,Justin Bieber | Justin Bieber,Justin Bieber sings welcome to San Andreas AI cover,https://youtube.com/watch?v=IRfZyUiPpfc,,deepfake,,True,False

@@ -1,0 +1,58 @@
+Language,Model,Platform,Singer,Title,Url,SingFake_Set,Bonafide Or Deepfake,Created At,is_test_A,is_test_B
+Persian,unknown,,Bili Aylish,Ghalbami Pas,https://dl.nicmusic.net/nicmusic/034/014/Ghalbami%20Pas%20-%20Bili%20Aylish%20Majid%20Razavi.mp3,T04,deepfake,,False,True
+Persian,,,Bili Aylish,Lo Vas A Olvidar,https://dl.baarzesh.net/music/2021/1/Billie%20Eilish_Lo_Vas_A_Olvidar_128.mp3,T04,bonafide,,False,True
+Persian,unknown,,Bili Aylish,Aseman Eshgh,https://dl.nicmusic.net/nicmusic/034/014/Aseman%20Eshgh%20-%20Bili%20Aylish%20Shajarian.mp3,T04,deepfake,,False,True
+Persian,unknown,,Bili Aylish,Adat,https://dl.nicmusic.net/nicmusic/034/014/Adat%20-%20Bili%20Aylish%20Sohrab%20Pakzad.mp3,T04,deepfake,,False,True
+Persian,,,Dariush,Masloob,https://dl.dibamusics.com/full/Dariush/Dariush%20-%20Masloob.mp3,T04,bonafide,,False,True
+Persian,unknown,,Dariush,Bezanam Naft Dar Biad,https://dl.nicmusic.net/nicmusic/035/003/Bezanam%20Naft%20dar%20Biad%20-%20Daroush.mp3,T04,deepfake,,False,True
+Persian,,,Ebi,Derakht Ebi,https://dl.dibamusics.com/full/ebi/Ebi%20-%20Derakht.mp3,T04,bonafide,,False,True
+Persian,unknown,,Ebi,Dare Ghandon Ebi,https://dl.nicmusic.net/nicmusic/035/003/Amo%20Porang%20Dare%20Ghandon%20-%20Ebi.mp3,T04,deepfake,,False,True
+Persian,,,Farhad,Booye Eydi,https://dl.dibamusics.com/golchin/farhad/Farhad%20-%20Booye%20Eydi.mp3,T04,bonafide,,False,True
+Persian,unknown,,Farhad,Mordab,https://dl.nicmusic.net/nicmusic/034/044/Farhad%20-%20Mordab.mp3,T04,deepfake,,False,True
+Persian,,,Hayde,Saghare Hasti,https://dl.dibamusics.com/full/h/Hayedeh%20-%20Saghareh%20Hasti.mp3,T04,bonafide,,False,True
+Persian,,,Hayde,Zendegi,https://dl.dibamusics.com/full/h/Hayedeh%20-%20Zendeghi.mp3,T04,bonafide,,False,True
+Persian,unknown,,Hayde,Gangestere Amol,https://dl.nicmusic.net/nicmusic/035/003/Gangester%20-%20Hayde.mp3,T04,deepfake,,False,True
+Persian,unknown,,Hayde,Derakht,https://dl.nicmusic.net/nicmusic/035/003/Hayede%20-%20Derakht.mp3,T04,deepfake,,False,True
+Persian,unknown,,Hayde,Delam Khast,https://dl.nicmusic.net/nicmusic/034/014/Delam%20khast%20-%20Ivan%20band%20Hayde.mp3,T04,deepfake,,False,True
+Persian,,,Hayde,Saghi,https://dl.dibamusics.com/full/h/Hayedeh%20-%20Saghi.mp3,T04,bonafide,,False,True
+Persian,,,Hayde,Nagoo Nemiam,https://dl.dibamusics.com/full/h/Hayedeh%20-%20Nagoo%20Nemiam.mp3,T04,bonafide,,False,True
+Persian,,,Hichkas,Ye Mosht Sarbaz,https://dl2.hitseda.com/Music/ak/ahang-sazi/hichkas_ye_mosht_sarbaz_128_.mp3,T04,bonafide,,False,True
+Persian,unknown,,Hichkas,Shalvar Palangi,https://dl.nicmusic.net/nicmusic/036/046/Shalvar%20Palangi%20-%20Hichkas.mp3,T04,deepfake,,False,True
+Persian,,,Hichkas,Anjam Vazife,https://dl2.hitseda.com/Music/ak/hickas/01%20Hichkas%20-%20Anjam%20Vazife.mp3,T04,bonafide,,False,True
+Persian,,,Hichkas,Ye Rooze Khoob Miad,https://dl2.hitseda.com//Music/ak/hickas/Hichkas%20-%20Ye%20Rooze%20Khoob%20Miyad%20%28128%29.mp3,T04,bonafide,,False,True
+Persian,,,Hichkas,Bar Pa,https://dl2.hitseda.com//Music/ak/hickas/09%20-%20Barpa.mp3,T04,bonafide,,False,True
+Persian,,,Hichkas,Ashegham,https://dl2.hitseda.com/Music/ak/hickas/Hichkas-Ashegham%20%5B128%5D%20.mp3,T04,bonafide,,False,True
+Persian,unknown,,Hichkas,Tekie,https://dl.nicmusic.net/nicmusic/036/046/Hichkas%20-%20Lori.mp3,T04,deepfake,,False,True
+Persian,unknown,,Hichkas,Sargashteh,https://dl.hitava.ir/musics/Hichkas/Manam-Sargashete-Hichkas.mp3,T04,deepfake,,False,True
+Persian,unknown,,Hichkas,YakoozaHichkas,https://dl.hitava.ir/musics/Hichka/DYakuza-Hichka.mp3,T04,deepfake,,False,True
+Persian,unknown,,Hichkas,Jenab Sarvan,https://dl.hitava.ir/musics/Hichkas/rozegar-Badie-Hichkas.mp3,T04,deepfake,,False,True
+Persian,,,Hiden,Rakab,https://dl.melonmusic.ir/Music/Mehrad%20Hidden%20-%20Rakab%20(320).mp3,T04,bonafide,,False,True
+Persian,unknown,,Hiden,Dokhteh Bandar,https://dl.hitava.ir/musics/Mehrad%20Hidden/dokhteh-bandar-Mehrad-Hidden.mp3,T04,deepfake,,False,True
+Persian,unknown,,Ho3ein,Fateheh,https://www.youtube.com/watch?v=PGBzGszoHrQ,T04,deepfake,,False,True
+Persian,,,Ho3ein,Man,https://dl.dibamusics.com/golchin/Ho3ein/Ho3ein%20-%20Man.mp3,T04,bonafide,,False,True
+Persian,,,Ho3ein,Bonbast,https://dl.dibamusics.com/golchin/Ho3ein/Ho3ein%20-%20Bonbast.mp3,T04,bonafide,,False,True
+Persian,,,Ho3ein,Khafan,https://dl.dibamusics.com/golchin/Ho3ein/Ho3ein%20-%20Khafan.mp3,T04,bonafide,,False,True
+Persian,unknown,,Ho3ein,Kado,https://dl3.ofoghmusic.ir/music/a/ahang-jadid/Ahang-jadidKadoo-320.mp3,T04,deepfake,,False,True
+Persian,unknown,,Ho3ein,Ye Vaghta,https://dl.melonmusic.ir/Music/Ho3ein%20-%20Ye%20Vaghta%20(320).mp3,T04,deepfake,,False,True
+Persian,unknown,,Khalse,Behet Ghol Midam Khalse,https://dl.hitava.ir/musics/Sepehr%20Khalse/Behet-Ghol-Midam-Sepehr-Khalse.mp3,T04,deepfake,,False,True
+Persian,,,Khalse,Jumong,https://dl.dibamusics.com/dl/1401/12/Sepehr-Khalse-&-038;-TassMoney-Jumong-dibamusics-128.mp3,T04,bonafide,,False,True
+Persian,,,Mahasti,Benevisim,https://dl.dibamusics.com/full/m/Mahasti%20-%20Bia%20Benevisim.mp3,T04,bonafide,,False,True
+Persian,unknown,,Mahasti,Bazam Neshati Roberom ,https://dl.nicmusic.net/nicmusic/034/014/Bazam%20Neshati%20Roberom.mp3,T04,deepfake,,False,True
+Persian,,,Pashe,Sonati,https://persian1.cdn.asset.aparat.com/aparat-video/c76147c177b2282333308ecf76fde1ca45881121-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjQxOTU5MzVhMzhmZDViODcxNWQ3OTUyNmIzNGUxOTZjIiwiZXhwIjoxNjkzNDQyMTg1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.vpboxcrquAZHZ6sPYfaQ-aC4LYKpfbVZ6eptzIGBtTI,T04,bonafide,,False,True
+Persian,unknown,,Pashe,Takzib,https://dl.nicmusic.net/nicmusic/036/046/Takzib%20Hipha%20Pashe.mp3,T04,deepfake,,False,True
+Persian,unknown,,Shadmehr,To Ke Manaye Eshghi,https://dl.hitava.ir/musics/Shadmehr%20Aghili/Ay-Eshgh-Shadmehr-Aghili.mp3,T04,deepfake,,False,True
+Persian,unknown,,Shadmehr,NavazeshEbi,https://dl.hitava.ir/musics/shadmehr/hoosh-masnoie-Navazesh-Ebi-shadmehr.mp3,T04,deepfake,,False,True
+Persian,,,Shadmehr,Hamishegi,https://www.appahang1.com/cdn/tracks-mp3/1395/09/5397164765689076521647656890168816476568904315.mp3,T04,bonafide,,False,True
+Persian,,,Shadmehr,Sabab,https://dl.dibamusics.com/full/Shadmehr/Shadmehr-Sabab.mp3.mp3,T04,bonafide,,False,True
+Persian,,,Shamaee Zadeh,Bishtar Bishtar Shamae Zade,https://dl.dibamusics.com/full/Hassan/Hassan%20Shamaizadeh%20-%20Bishtar%20Bishtar.mp3,T04,bonafide,,False,True
+Persian,unknown,,Shamaee Zadeh,Dafi,https://dl.nicmusic.net/nicmusic/035/058/Hasan_Shamaeizadeh_Dafi.mp3,T04,deepfake,,False,True
+Persian,unknown,,Shaye,Yakooza,https://dl.hitava.ir/musics/Shayea/Yakuza-Shayea.mp3,T04,deepfake,,False,True
+Persian,,,Shaye,Amade Bash,https://dl.dibamusics.com/golchin/Shayea/shayea_amade_bash.mp3,T04,bonafide,,False,True
+Persian,,,Tataloo,Man Bahat Ghahram,https://www.appahang1.com/cdn/tracks-mp3/1400/01/9538164783195268151647831952983016478319524669.mp3,T04,bonafide,,False,True
+Persian,unknown,,Tataloo,Panjareh,https://dl.gosong.ir/song/1402/03/05/Amir%20Tataloo%20-%20Tolou%20%5B320%5D.mp3,T04,deepfake,,False,True
+Persian,unknown,,Tataloo,Dare Ghandon,https://dl.nicmusic.net/nicmusic/036/046/Dar%20Ghandon%20-%20Tatalo.mp3,T04,deepfake,,False,True
+Persian,,,Tataloo,Navazesh,https://www.appahang1.com/cdn/tracks-mp3/1395/09/8433164765650145851647656501242516476565014322.mp3,T04,bonafide,,False,True
+Persian,unknown,,Tataloo,Behet Ghol Midam,https://dl.hitava.ir/musics/Amir%20Tataloo/Hooshe-Masnooi-Yeganeh-Amir-Tataloo.mp3,T04,deepfake,,False,True
+Persian,,,Tataloo,Treadmill,https://www.appahang1.com/cdn/tracks-mp3/1398/04/8637164778565544331647785655623816477856554893.mp3,T04,bonafide,,False,True
+Persian,unknown,,khlase,Bishtar Bishtar,https://dl.gosong.ir/song/1402/04/16/Sepehr%20Khalse%20-%20Bishtar%20Bishtar%20%5B320%5D.mp3,T04,deepfake,,False,True
+Persian,,,khlase,Salibi,https://dl.dibamusics.com/dl/1401/12/Sepehr-Khalse-Salibi-dibamusics-320.mp3,T04,bonafide,,False,True

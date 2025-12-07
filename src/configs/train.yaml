@@ -1,0 +1,20 @@
+experiment_name: mamba_base
+
+datamodule:
+  _target_: dataloader.SingFakeDataModule
+  data_dir: /mnt/data/kusnierz/audio-data/SingFake/downloads
+  batch_size: 32
+
+model:
+  _target_: model.AudioDeepfakeModel
+  sample_rate: 16000
+  n_fft: 1024
+  n_mels: 64
+  d_model: 64
+  d_state: 16
+  d_conv: 4
+  expand: 2
+  lr: 0.0001
+
+training:
+  epochs: 50

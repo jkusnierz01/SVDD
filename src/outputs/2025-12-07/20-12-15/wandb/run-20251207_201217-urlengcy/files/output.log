@@ -1,0 +1,22 @@
+Unknown label in file: Validation_The_Landlord's_Cat_【AI_房东的猫】-《形容》_糟了，怎么能那么好听！COVER沈以诚_unknown, last part: unknown
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+
+  | Name              | Type              | Params | Mode  | FLOPs
+------------------------------------------------------------------------
+0 | loss_fn           | BCEWithLogitsLoss | 0      | train | 0
+1 | accuracy          | BinaryAccuracy    | 0      | train | 0
+2 | spectrogram_layer | MelSpectrogram    | 0      | train | 0
+3 | linear            | Linear            | 8.3 K  | train | 0
+4 | mamba_layer       | Mamba             | 32.6 K | train | 0
+5 | linear_2          | Linear            | 65     | train | 0
+------------------------------------------------------------------------
+41.0 K    Trainable params
+0         Non-trainable params
+41.0 K    Total params
+0.164     Total estimated model params size (MB)
+14        Modules in train mode
+0         Modules in eval mode
+0         Total Flops
+Epoch 0:   3%|███▉                                                                                                                                  | 22/746 [00:06<03:45,  3.21it/s, v_num=ngcy, train/acc_step=1.000, train/loss_step=0.665]
+
+Detected KeyboardInterrupt, attempting graceful shutdown ...

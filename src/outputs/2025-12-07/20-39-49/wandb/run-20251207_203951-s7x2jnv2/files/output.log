@@ -1,0 +1,28 @@
+Unknown label in file: Validation_The_Landlord's_Cat_【AI_房东的猫】-《形容》_糟了，怎么能那么好听！COVER沈以诚_unknown, last part: unknown
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name              | Type              | Params | Mode  | FLOPs
+------------------------------------------------------------------------
+0 | loss_fn           | BCEWithLogitsLoss | 0      | train | 0
+1 | accuracy          | BinaryAccuracy    | 0      | train | 0
+2 | spectrogram_layer | MelSpectrogram    | 0      | train | 0
+3 | linear            | Linear            | 4.2 K  | train | 0
+4 | mamba_layer       | Mamba             | 32.6 K | train | 0
+5 | linear_2          | Linear            | 65     | train | 0
+------------------------------------------------------------------------
+36.9 K    Trainable params
+0         Non-trainable params
+36.9 K    Total params
+0.147     Total estimated model params size (MB)
+14        Modules in train mode
+0         Modules in eval mode
+0         Total Flops
+Sanity Checking DataLoader 0:  50%|██████████████████████████████████████████████████████████████████████████████████████▌                                                                                      | 1/2 [00:00<00:00,  1.31it/s]
+
+Detected KeyboardInterrupt, attempting graceful shutdown ...
+Exception ignored in: <module 'threading' from '/home/kusnierz/.local/share/uv/python/cpython-3.11.12-linux-x86_64-gnu/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/home/kusnierz/.local/share/uv/python/cpython-3.11.12-linux-x86_64-gnu/lib/python3.11/threading.py", line 1541, in _shutdown
+    def _shutdown():
+
+KeyboardInterrupt:

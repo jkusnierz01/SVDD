@@ -1,0 +1,21 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+
+  | Name              | Type              | Params | Mode  | FLOPs
+------------------------------------------------------------------------
+0 | loss_fn           | BCEWithLogitsLoss | 0      | train | 0
+1 | accuracy          | BinaryAccuracy    | 0      | train | 0
+2 | spectrogram_layer | MelSpectrogram    | 0      | train | 0
+3 | linear            | Linear            | 8.3 K  | train | 0
+4 | mamba_layer       | Mamba             | 32.6 K | train | 0
+5 | linear_2          | Linear            | 65     | train | 0
+------------------------------------------------------------------------
+41.0 K    Trainable params
+0         Non-trainable params
+41.0 K    Total params
+0.164     Total estimated model params size (MB)
+14        Modules in train mode
+0         Modules in eval mode
+0         Total Flops
+Epoch 0:  34%|█████████████████████████████████████████████                                                                                        | 253/746 [01:26<02:48,  2.93it/s, v_num=ltd6, train/acc_step=1.000, train/loss_step=0.613]
+
+Detected KeyboardInterrupt, attempting graceful shutdown ...

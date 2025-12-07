@@ -1,0 +1,64 @@
+Unknown label in file: T04_Khalse_Jumong_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Saghare_Hasti_Bonafide, last part: Bonafide
+Unknown label in file: T04_Ebi_Dare_Ghandon_Ebi_Spoof, last part: Spoof
+Unknown label in file: T04_Ebi_Derakht_Ebi_Bonafide, last part: Bonafide
+Unknown label in file: T04_Bili Aylish_The_30th_Bonafide, last part: Bonafide
+Unknown label in file: T04_Farhad_Booye_Eydi_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hichkas_Tekie_Spoof, last part: Spoof
+Unknown label in file: Validation_The_Landlord's_Cat_【AI_房东的猫】-《形容》_糟了，怎么能那么好听！COVER沈以诚_unknown, last part: unknown
+Unknown label in file: T04_Ho3ein_Man_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Nagoo_Nemiam_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hichkas_Anjam_Vazife_Bonafide, last part: Bonafide
+Unknown label in file: T04_Shadmehr_Sabab_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Delam_Khast_Spoof, last part: Spoof
+Unknown label in file: T04_Ho3ein_Khafan_Bonafide, last part: Bonafide
+Unknown label in file: T04_Farhad_Mordab_Spoof, last part: Spoof
+Unknown label in file: T04_Mahasti_Bazam_Neshati_Roberom__Spoof, last part: Spoof
+Unknown label in file: T04_Mahasti_Benevisim_Bonafide, last part: Bonafide
+Unknown label in file: T04_Bili Aylish_Ghalbami_Pas_Spoof, last part: Spoof
+Unknown label in file: T04_Dariush_Bezanam_Naft_Dar_Biad_Spoof, last part: Spoof
+Unknown label in file: T04_Bili Aylish_Adat_Spoof, last part: Spoof
+Unknown label in file: T04_Pashe_Takzib_Spoof, last part: Spoof
+Unknown label in file: T04_Bili Aylish_Lo_Vas_A_Olvidar_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Saghi_Bonafide, last part: Bonafide
+Unknown label in file: T04_Dariush_Masloob_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Derakht_Spoof, last part: Spoof
+Unknown label in file: T04_Bili Aylish_When_The_Party_Is_Over_Bonafide, last part: Bonafide
+Unknown label in file: T04_Shaye_Amade_Bash_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hichkas_Ashegham_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Gangestere_Amol_Spoof, last part: Spoof
+Unknown label in file: T04_Shamaee Zadeh_Dafi_Spoof, last part: Spoof
+Unknown label in file: T04_Ho3ein_Bonbast_Bonafide, last part: Bonafide
+Unknown label in file: T04_Tataloo_Panjareh_Spoof, last part: Spoof
+Unknown label in file: T04_Bili Aylish_Aseman_Eshgh_Spoof, last part: Spoof
+Unknown label in file: T04_Haydeh_Cheshmat_Mese_Ye_Naghashie_Nabe_Spoof, last part: Spoof
+Unknown label in file: T04_Hichkas_Ye_Mosht_Sarbaz_Bonafide, last part: Bonafide
+Unknown label in file: T04_Shamaee Zadeh_Bishtar_Bishtar_Shamae_Zade_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hichkas_Ye_Rooze_Khoob_Miad_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hayde_Zendegi_Bonafide, last part: Bonafide
+Unknown label in file: T04_khlase_Salibi_Bonafide, last part: Bonafide
+Unknown label in file: T04_Hichkas_Shalvar_Palangi_Spoof, last part: Spoof
+Unknown label in file: T04_khlase_Bishtar_Bishtar_Spoof, last part: Spoof
+Unknown label in file: T04_Hichkas_Bar_Pa_Bonafide, last part: Bonafide
+Unknown label in file: T04_Tataloo_Dare_Ghandon_Spoof, last part: Spoof
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+
+  | Name              | Type              | Params | Mode  | FLOPs
+------------------------------------------------------------------------
+0 | loss_fn           | BCEWithLogitsLoss | 0      | train | 0
+1 | accuracy          | BinaryAccuracy    | 0      | train | 0
+2 | spectrogram_layer | MelSpectrogram    | 0      | train | 0
+3 | linear            | Linear            | 8.3 K  | train | 0
+4 | mamba_layer       | Mamba             | 32.6 K | train | 0
+5 | linear_2          | Linear            | 65     | train | 0
+------------------------------------------------------------------------
+41.0 K    Trainable params
+0         Non-trainable params
+41.0 K    Total params
+0.164     Total estimated model params size (MB)
+14        Modules in train mode
+0         Modules in eval mode
+0         Total Flops
+Epoch 0:   2%|██▋                                                                                                                                   | 15/746 [00:04<03:49,  3.18it/s, v_num=vamt, train/acc_step=1.000, train/loss_step=0.647]
+
+Detected KeyboardInterrupt, attempting graceful shutdown ...

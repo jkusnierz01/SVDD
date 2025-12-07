@@ -15,7 +15,7 @@ class AudioDataset(Dataset):
     def __init__(self, files, labels):
         self.files = files
         self.labels = labels
-        self.max_len = 4000000
+        self.max_len = 4 000000
 
     def __getitem__(self, index):
         wav, sr = torchaudio.load(self.files[index])

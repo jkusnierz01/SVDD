@@ -48,13 +48,10 @@ class AudioDeepfakeModel(L.LightningModule):
         x = self.mamba_layer(x)
         
         if lengths is not None:
-            # Oblicz ile timestepów ma mel-spectrogram dla każdej próbki
-            # MelSpectrogram z hop_length=512 (domyślne) daje: time ≈ samples // hop_length
-            hop_length = 512  # domyślne dla MelSpectrogram
+            hop_length = 512  
             mel_lengths = lengths // hop_length
             mel_lengths = mel_lengths.clamp(min=1, max=x.size(1))  # zabezpieczenie
             
-            # Weź ostatni prawdziwy timestep dla każdej próbki
             batch_idx = torch.arange(x.size(0), device=x.device)
             last = x[batch_idx, mel_lengths - 1, :]  # (B, d_model)
         else:

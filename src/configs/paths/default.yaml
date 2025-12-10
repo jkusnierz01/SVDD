@@ -1,0 +1,3 @@
+singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/spectrograms
+
+output_dir: /mnt/data/kusnierz/repos/SVDD/output

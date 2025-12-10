@@ -6,3 +6,7 @@ defaults:
   - logger: wandb
   - trainer: default
   - paths: default
+
+
+
+cpk_path: /mnt/data/kusnierz/repos/SVDD/output/checkpoints/epoch_epoch=062.ckpt

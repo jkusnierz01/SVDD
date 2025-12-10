@@ -1,0 +1,11 @@
+_target_: data.singfake_dataloader.SingFakeDataModule
+data_dir: ${paths.singfake_data_dir}
+batch_size: 32
+num_workers: 8
+
+
+sample_rate: 16000
+n_fft: 1024
+n_mels: 80
+hop_length: 512
+max_len: 8000000

@@ -1,0 +1,4 @@
+defaults:
+  - model_checkpoint
+  - early_stopping
+  - rich_progress_bar

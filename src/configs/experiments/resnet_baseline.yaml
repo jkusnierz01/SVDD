@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - override /model: aasist
+
+data:
+  batch_size: 12
+  num_workers: 4
+  drop_last: True
+  loader_type: "wav"
+
+paths:
+  singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/data_after_separation/mdx_extra/
+
+trainer:
+  max_epochs: 100

@@ -1,6 +1,7 @@
 import hydra
-from omegaconf import DictConfig
+from omegaconf import DictConfig, OmegaConf
 from hydra.utils import instantiate
+from hydra.core.hydra_config import HydraConfig
 
 import wandb
 import rootutils
@@ -10,19 +11,20 @@ ROOT = rootutils.setup_root(".", indicator=".project-root", pythonpath=True)
 
 @hydra.main(config_path="configs", config_name="train.yaml", version_base="1.1")
 def main(cfg: DictConfig):
+    datamodule = instantiate(cfg.data)
     model = instantiate(cfg.model)
-    
+
     logger = instantiate(cfg.logger)
+
     callbacks = []
     if cfg.get("callbacks"):
         for _, cb_conf in cfg.callbacks.items():
             if "_target_" in cb_conf:
                 callbacks.append(instantiate(cb_conf))
-    trainer = instantiate(cfg.trainer, logger = logger, callbacks=callbacks)
-    
-    datamodule = instantiate(cfg.data)
+    trainer = instantiate(cfg.trainer, logger=logger, callbacks=callbacks)
+
     trainer.fit(model=model, datamodule=datamodule)
-    
+
     wandb.finish()
 
 

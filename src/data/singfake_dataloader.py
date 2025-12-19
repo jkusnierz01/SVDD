@@ -1,36 +1,32 @@
 import lightning as L
 from torch.utils.data import DataLoader
 from pathlib import Path
-from .base import AudioDataset
-from torch.nn.utils.rnn import pad_sequence
-import torch
+import os
+from .base_datasets import LongAudioDataset, SingFakeShortDataModule
+from .base_datasets import collate_fn
+
 
 LABEL_MAP = {"bonafide": 1, "spoof": 0}
 
 
-def collate_fn(batch):
-    # batch to lista krotek (mel_spec, label)
-    features, labels = zip(*batch)
-
-    # Zapisz oryginalne długości (potrzebne dla Mamby/Maskowania!)
-    lengths = torch.tensor([f.size(0) for f in features])
-
-    # Paduj sekwencje do najdłuższej w batchu (batch_first=True -> [Batch, Time, Feat])
-    features_padded = pad_sequence(features, batch_first=True, padding_value=0.0)
-
-    labels = torch.stack(labels)
-
-    return features_padded, labels, lengths
-
-
 class SingFakeDataModule(L.LightningDataModule):
     def __init__(
-        self, data_dir: str, batch_size: int, num_workers: int, **dataset_kwargs
+        self,
+        data_dir: str,
+        batch_size: int,
+        num_workers: int,
+        drop_last: bool,
+        loader_type: str = "precomputed",  # wav or spectrogram
+        **dataset_kwargs,
     ):
         super().__init__()
         self.data_dir = data_dir
         self.batch_size = batch_size
         self.num_workers = num_workers
+        self.loader_type = loader_type
+        self.drop_last = drop_last
+        self.is_mixture = False
+
         self.dataset_kwargs = dataset_kwargs
 
     def setup(self, stage):
@@ -54,46 +50,54 @@ class SingFakeDataModule(L.LightningDataModule):
             if key in groups:
                 groups[key]["files"].append(full_filename)
                 groups[key]["labels"].append(label_int)
-
-        self.training_dataset = AudioDataset(
-            groups["Training"]["files"],
-            groups["Training"]["labels"],
-            **self.dataset_kwargs,
-        )
-        self.validation_dataset = AudioDataset(
-            groups["Validation"]["files"],
-            groups["Validation"]["labels"],
-            **self.dataset_kwargs,
-        )
-        self.test_t01 = AudioDataset(
-            groups["T01"]["files"],
-            groups["T01"]["labels"],
-            **self.dataset_kwargs,
-        )
-        self.test_t02 = AudioDataset(
-            groups["T02"]["files"],
-            groups["T02"]["labels"],
-            **self.dataset_kwargs,
-        )
-        self.test_t03 = AudioDataset(
-            groups["T03"]["files"],
-            groups["T03"]["labels"],
-            **self.dataset_kwargs,
-        )
-        self.test_t04 = AudioDataset(
-            groups["T04"]["files"],
-            groups["T04"]["labels"],
-            **self.dataset_kwargs,
-        )
+        if self.loader_type == "precomputed":
+            self.training_dataset = LongAudioDataset(
+                groups["Training"]["files"],
+                groups["Training"]["labels"],
+                **self.dataset_kwargs,
+            )
+            self.validation_dataset = LongAudioDataset(
+                groups["Validation"]["files"],
+                groups["Validation"]["labels"],
+                **self.dataset_kwargs,
+            )
+            self.test_t01 = LongAudioDataset(
+                groups["T01"]["files"],
+                groups["T01"]["labels"],
+                **self.dataset_kwargs,
+            )
+            self.test_t02 = LongAudioDataset(
+                groups["T02"]["files"],
+                groups["T02"]["labels"],
+                **self.dataset_kwargs,
+            )
+            self.test_t03 = LongAudioDataset(
+                groups["T03"]["files"],
+                groups["T03"]["labels"],
+                **self.dataset_kwargs,
+            )
+            self.test_t04 = LongAudioDataset(
+                groups["T04"]["files"],
+                groups["T04"]["labels"],
+                **self.dataset_kwargs,
+            )
+        else:
+            self.training_dataset = SingFakeShortDataModule(
+                data_dir=self.data_dir,
+                is_mixture=self.is_mixture,
+                target_sr=16000,
+                mode=self.loader_type,
+            )
 
     def train_dataloader(self):
         return DataLoader(
             self.training_dataset,
             batch_size=self.batch_size,
             shuffle=True,
+            drop_last=self.drop_last,
             num_workers=self.num_workers,
             collate_fn=collate_fn,
-            pin_memory=True
+            pin_memory=True,
         )
 
     def val_dataloader(self):

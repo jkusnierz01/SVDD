@@ -1,0 +1,13 @@
+preprocessing:
+  input_dir: "/mnt/data/kusnierz/audio-data/WildSVDD/downloads"
+  output_dir: "/mnt/data/kusnierz/audio-data/WildSVDD/spectrograms"
+
+transform:
+  mel_spec: False
+  spec: True
+
+audio:
+  sample_rate: 16000
+  n_fft: 1024
+  hop_length: 256
+  n_mels: 80

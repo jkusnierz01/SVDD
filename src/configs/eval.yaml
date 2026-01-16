@@ -1,12 +1,30 @@
+# @package _global_
 defaults:
-  - _self_
   - data: singfake
   - model: base
-  - callbacks: default
   - logger: wandb
   - trainer: default
   - paths: default
+  - _self_
+
+data:
+  loader_type: "spectrogram"
+  use_collate: False
+  # batch_size: 12
+  # num_workers: 4
+  n_fft: 512
+  hop_length: 160
+  win_length: 512
+
+model:
+  input_dim: 257
+
+paths:
+  singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/data_after_separation/split_dump
+
+logger:
+  name: "mamba_short_context_test"
+  tags: ["mamba_short", "test", "short"]
 
 
-
-cpk_path: /mnt/data/kusnierz/repos/SVDD/output/checkpoints/epoch_epoch=062.ckpt
+cpk_path: "/mnt/data/kusnierz/repos/SVDD/outputs/2025-12-28/00-45-08/checkpoints/epoch_epoch=011.ckpt"

@@ -87,5 +87,4 @@ class CombinedAudioDataModule(L.LightningDataModule):
             self.sing_dm.test_t04_dataloader()
         ]
         loaders.extend(sing_loaders)
-        
         return loaders

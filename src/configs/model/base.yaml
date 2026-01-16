@@ -1,6 +1,5 @@
 _target_: models.mamba.MambaDeepfakeModel
-n_mels: ${data.n_mels}
-hop_length: ${data.hop_length}
+input_dim: 80
 n_layers: 2
 d_model: 64
 d_state: 16

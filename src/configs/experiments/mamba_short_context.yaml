@@ -1,0 +1,18 @@
+# @package _global_
+data:
+  loader_type: "spectrogram"
+  use_collate: False
+  n_fft: 512
+  hop_length: 160
+  win_length: 512
+
+model:
+  input_dim: 257
+
+logger:
+  name: "mamba_short_context"
+  tags: ["mamba", "short"]
+
+
+paths:
+  singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/data_after_separation/split_dump

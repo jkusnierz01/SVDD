@@ -1,7 +1,6 @@
 import hydra
-from omegaconf import DictConfig, OmegaConf
+from omegaconf import DictConfig
 from hydra.utils import instantiate
-from hydra.core.hydra_config import HydraConfig
 
 import wandb
 import rootutils
@@ -24,7 +23,6 @@ def main(cfg: DictConfig):
     trainer = instantiate(cfg.trainer, logger=logger, callbacks=callbacks)
 
     trainer.fit(model=model, datamodule=datamodule)
-
     wandb.finish()
 
 

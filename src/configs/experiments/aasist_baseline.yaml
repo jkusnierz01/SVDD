@@ -7,9 +7,13 @@ data:
   num_workers: 4
   drop_last: True
   loader_type: "wav"
+  use_collate: False
+
+logger:
+  name: "aasist_baseline"
 
 paths:
-  singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/data_after_separation/mdx_extra/
+  singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/data_after_separation/split_dump
 
 trainer:
   max_epochs: 100

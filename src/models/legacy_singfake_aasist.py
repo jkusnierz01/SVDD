@@ -467,8 +467,15 @@ class Residual_block(nn.Module):
 
 
 class Model(nn.Module):
-    def __init__(self, d_args):
+    def __init__(self, d_args=None, **kwargs):
         super().__init__()
+
+        if d_args is None:
+            d_args = kwargs
+        elif kwargs:
+            raise ValueError(
+                "Pass either `d_args` (nested config) or flat keyword args, not both."
+            )
 
         self.d_args = d_args
         filts = d_args["filts"]

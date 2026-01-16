@@ -1,14 +1,12 @@
 from torch.utils.data import Dataset
 import torchaudio
 import torch
-import torch.nn as nn
 from torch.nn.utils.rnn import pad_sequence
-import torchaudio
 import librosa
 import numpy as np
 from torch import Tensor
-import os
 from pathlib import Path
+
 
 def collate_fn(batch):
     features, labels = zip(*batch)
@@ -30,7 +28,8 @@ class LongAudioDataset(Dataset):
         n_fft: int,
         hop_length: int,
         n_mels: int,
-        max_len: int
+        max_len: int,
+        **kwargs,
     ):
         self.files = files
         self.labels = labels
@@ -51,7 +50,7 @@ class LongAudioDataset(Dataset):
         # wav, sr = torchaudio.load(self.files[index])
         # if wav.shape[0] > 1:
         #     wav = wav.mean(dim=0, keepdim=True)
-        
+
         mel_spec = torch.load(self.files[index], weights_only=False)
         label = self.labels[index]
 
@@ -68,91 +67,74 @@ class LongAudioDataset(Dataset):
         mel_spec = (mel_spec - mel_spec.mean()) / (mel_spec.std() + 1e-6)
         # mel_spec = mel_spec.squeeze(0)
         # mel_spec = mel_spec.transpose(0, 1)
-        
+
         return mel_spec, torch.tensor(label, dtype=torch.float)
 
     def __len__(self):
         return len(self.files)
-    
-    
-class RawAudioDataset(Dataset):
-    def __init__(self):
-        super().__init__()
-    
-    
-    def __getitem__(self, index):
-        pass
-    
-    
-    def __len__(self):
-        return len(self.files)
-    
-    
-# code taken from SingFake repo
-# https://github.com/yongyizang/SingFake/tree/main
-# SingFake/models/feat+resnet/dataset.py
-class SingFakeShortDataModule(Dataset):
+
+
+class SingFakeShortDataset(Dataset):
     def __init__(
-        self, data_dir: str, is_mixture: bool, target_sr:int, mode:str = "raw"
+        self,
+        files: list[Path],
+        labels: list[int],
+        target_sr: int,
+        mode: str = "raw",
+        **kwargs,
     ):
         super().__init__()
-        self.data_dir = data_dir
-        self.is_mixture = is_mixture
+        self.files = files
+        self.labels = labels
         self.target_sr = target_sr
-        self.cut = 64000
         self.mode = mode
+        self.cut = 64000
         
-        
-        self.file_list = []
-        data_path = Path(self.data_dir)
-        if self.is_mixture:
-            self.target_path = data_path / "mixtures"
-        else:
-            self.target_path = data_path / "vocals"
-        
-        assert self.target_path.exists(), f"{self.target_path} does not exist!"
-        
-        for file in os.listdir(self.target_path):
-            if file.endswith(".flac"):
-                self.file_list.append(file[:-5])
+        self.n_fft = kwargs.get("n_fft", 512)
+        self.hop_length = kwargs.get("hop_length", 160)
+        self.win_length = kwargs.get("win_length", 512)
 
-        # self.lfcc = LFCC(320, 160, 512, 16000, 20, with_energy=False)
         if self.mode == "spectrogram":
-            self.spec_transform = torchaudio.transforms.Spectrogram(n_fft=512, hop_length=160, win_length=512, power=2, normalized=True)
-        
+            self.spec_transform = torchaudio.transforms.Spectrogram(
+                n_fft=self.n_fft, hop_length=self.hop_length, win_length=self.win_length, power=2, normalized=True
+            )
+
     def __len__(self):
-        return len(self.file_list)
-    
+        return len(self.files)
+
     def __getitem__(self, index):
-        key = self.file_list[index]
-        file_path = os.path.join(self.target_path, key + ".flac")
-        # X, _ = sf.read(file_path, samplerate=self.target_sr)
+        file_path = self.files[index]
+        y = self.labels[index]
+
         try:
-            X, _ = librosa.load(file_path, sr=self.target_sr, mono=False)
+            X, _ = librosa.load(str(file_path), sr=self.target_sr, mono=False)
             X = librosa.util.normalize(X)
-        except Exception as e:
-            print(f"Error loading {file_path}")
-            return self.__getitem__(np.random.randint(len(self.file_list)))
-        if X.shape[0] > 1:
-            channel_id = np.random.randint(X.shape[0])
-            X = X[channel_id]
+        except Exception:
+            return self.__getitem__(np.random.randint(len(self.files)))
+
+        if X.ndim > 1 and X.shape[0] > 1:
+            X = X[np.random.randint(X.shape[0])]
+
         X_pad = pad_random(X, self.cut)
         sample = Tensor(X_pad)
-        # x_inp = self.lfcc(xx_inp.unsqueeze(0))
-        if self.mode == "spectrogram":
-            sample = self.spec_transform(sample.unsqueeze(0))#.squeeze(0).transpose(0, 1)
 
-        y = int(key.split("_")[0]) # TO BE CHECKED
-        return sample, y
-    
+        if self.mode == "spectrogram":
+            sample = self.spec_transform(sample.unsqueeze(0))
+            sample = torch.transpose(sample, 1, 2)
+            sample = sample.squeeze(0)
+
+        return sample, torch.tensor(y, dtype=torch.long)
+
+
 def pad_random(x: np.ndarray, max_len: int = 64600):
     x_len = x.shape[0]
     # if duration is already long enough
-    if x_len >= max_len:
-        stt = np.random.randint(x_len - max_len)
-        return x[stt:stt + max_len]
-
-    # if too short
-    num_repeats = int(max_len / x_len) + 1
-    padded_x = np.tile(x, (num_repeats))[:max_len]
-    return padded_x 
+    if x_len > max_len:
+        stt = np.random.randint(x_len - max_len + 1)  # +1, aby high > 0
+        return x[stt : stt + max_len]
+    elif x_len < max_len:
+        num_repeats = int(max_len / x_len) + 1
+        padded_x = np.tile(x, (num_repeats))[:max_len]
+        return padded_x
+    else:  # x_len == max_len
+        return x

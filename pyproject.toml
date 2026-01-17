@@ -24,4 +24,5 @@ dependencies = [
     "torchcodec>=0.9.0",
     "wandb>=0.23.1",
     "yt-dlp>=2025.12.8",
+    "transformers>=4.57.3",
 ]

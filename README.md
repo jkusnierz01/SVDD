@@ -12,3 +12,6 @@ Singing Voice Deepfake Detection
 1. To preprocess downloaded datasets you can use scripts under `scripts/processing/`. Right now scripts are prepared ONLY for SingFake dataset.
 2. First: `simulate_codec_singfake.py` -> `demucs_vad_singfake.py` -> `split_singfake.py`
 3. It will allow you to create data that matches dataloaders and created datasets.
+
+
+

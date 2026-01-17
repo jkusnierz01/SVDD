@@ -4316,6 +4316,7 @@ dependencies = [
     { name = "torchaudio" },
     { name = "torchcodec" },
     { name = "tqdm" },
+    { name = "transformers" },
     { name = "wandb" },
     { name = "yt-dlp" },
 ]
@@ -4339,6 +4340,7 @@ requires-dist = [
     { name = "torchaudio", specifier = ">=2.9.1" },
     { name = "torchcodec", specifier = ">=0.9.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
+    { name = "transformers", specifier = ">=4.57.3" },
     { name = "wandb", specifier = ">=0.23.1" },
     { name = "yt-dlp", specifier = ">=2025.12.8" },
 ]

@@ -205,8 +205,8 @@ def process_real_single_row(row: dict, audio_dir: Path):
         "outtmpl": filepath_no_ext,
         
         "cookiefile": "cookies.txt",
-        "sleep_interval": 10,
-        "max_sleep_interval": 20,
+        "sleep_interval": 1,
+        "max_sleep_interval": 3,
         "ignoreerrors": True,
         
         "noplaylist": True,

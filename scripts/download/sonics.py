@@ -175,6 +175,8 @@ def process_real_single_row(row: dict, audio_dir: Path):
     filename = f"{split}_{safe_singer}_{safe_title}_{spoof_type}.flac"
     filepath = audio_dir / filename
     filepath_str = str(filepath)
+    
+    filepath_no_ext = str(filepath).rsplit('.', 1)[0]
 
     meta = {
         "dataset": "Sonics",
@@ -196,9 +198,17 @@ def process_real_single_row(row: dict, audio_dir: Path):
 
     ydl_opts = {
         "format": "bestaudio/best",
-        "extractaudio": True,
-        "audioformat": "flac",
-        "outtmpl": filepath_str,
+        "postprocessors": [{
+            "key": "FFmpegExtractAudio",
+            "preferredcodec": "flac",
+        }],
+        "outtmpl": filepath_no_ext,
+        
+        "cookiefile": "cookies.txt",
+        "sleep_interval": 10,
+        "max_sleep_interval": 20,
+        "ignoreerrors": True,
+        
         "noplaylist": True,
         "quiet": True,
         "no_warnings": True,
@@ -256,7 +266,7 @@ def main():
     
     parser.add_argument("--output_dir", required=True, help="path to dir where HF snapshot + processed data will be stored")
     parser.add_argument("--download",  action="store_true", help="download dataset snapshot from HF")
-    parser.add_argument("--workers", type=int, default=4, help="Number of parallel download threads")
+    parser.add_argument("--workers", type=int, default=16, help="Number of parallel download threads")
     
     args = parser.parse_args()
 

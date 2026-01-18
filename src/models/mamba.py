@@ -8,14 +8,14 @@ from src.utils.utils import wandb_log_cm
 from typing import Callable, Optional
 
 
-class MambaBlock(L.LightningModule):
+class MambaBlock(nn.Module):
     def __init__(
         self,
         d_model: int,
         d_state: int,
         d_conv: int,
         expand: int,
-        dropout: int
+        dropout: int = 0.0
     ):
         super().__init__()
         self.norm_layer = nn.LayerNorm(d_model)
@@ -25,39 +25,23 @@ class MambaBlock(L.LightningModule):
             d_conv=d_conv,
             expand=expand,
         )
-        
         self.dropout = nn.Dropout(dropout)
         
     def forward(self, x: torch.Tensor):
-        x_norm = self.norm_layer(x)
-        x_mamba = self.mamba_layer(x_norm)
+        residual = x
+        x = self.norm_layer(x)
+        x = self.mamba_layer(x)
         x = self.dropout(x)
-        x_out = x_mamba + x
-        return x_out
+        output = residual + x
+        return output
 
-
-class MambaDeepfakeModel(L.LightningModule):
-    def __init__(
-        self,
-        input_dim: int,
-        d_model: int,
-        d_state: int,
-        d_conv: int,
-        expand: int,
-        n_layers: int,
-        dropout: int,
-        optimizer: Callable,
-        scheduler: Optional[Callable] = None,
-    ):
+class BaseDeepfakeModel(L.LightningModule):
+    def __init__(self, optimizer: Callable, scheduler: Optional[Callable] = None):
         super().__init__()
-        self.save_hyperparameters()
-        self.n_layers = n_layers
+        
         self.optimizer_fn = optimizer
         self.scheduler_fn = scheduler
         
-        self.validation_outputs = {'predictions': [], 'targets': []}
-        self.test_outputs = {}
-
         self.loss_fn = nn.BCEWithLogitsLoss()
         self.accuracy = torchmetrics.Accuracy(task="binary")
         self.precision = torchmetrics.Precision(task="binary")
@@ -66,34 +50,11 @@ class MambaDeepfakeModel(L.LightningModule):
         self.eer = torchmetrics.classification.EER(task="binary")
         self.conf_matrix = torchmetrics.ConfusionMatrix(task='binary')
 
-        ## Model
-        self.linear = nn.Linear(input_dim, d_model)
-        self.layers = nn.ModuleList(
-            [
-                MambaBlock(
-                    d_model=d_model, d_state=d_state, d_conv=d_conv, expand=expand, dropout=dropout
-                )
-                for _ in range(self.n_layers)
-            ]
-        )
-        self.linear_2 = nn.Linear(d_model, 1)
-
-    def forward(self, x: torch.Tensor, lengths: torch.Tensor = None):
-        x = self.linear(x)
-        for layer in self.layers:
-            x = layer(x)
-        if lengths is not None:
-            batch_idx = torch.arange(x.size(0), device=x.device)
-            last = x[batch_idx, lengths - 1, :]
-        else:
-            last = x[:, -1, :]
-
-        logit = self.linear_2(last)
-        return logit
-
+        self.validation_outputs = {'predictions': [], 'targets': []}
+        self.test_outputs = {}
+    
     def configure_optimizers(self):
         optimizer = self.optimizer_fn(self.parameters())
-
         if self.scheduler_fn is not None:
             scheduler = self.scheduler_fn(optimizer=optimizer)
             return {
@@ -103,18 +64,13 @@ class MambaDeepfakeModel(L.LightningModule):
                     "monitor": "val/loss",
                 },
             }
-
         return {"optimizer": optimizer}
-
-
+    
     def training_step(self, train_batch, batch_idx):
         #to work with short dataset
-        if len(train_batch) == 3:
-            x, y_true, x_len = train_batch
-        else:
-            x, y_true = train_batch
-            x_len = None
-        y_pred = self(x, lengths=x_len).squeeze(-1)
+        # x -> [batch, z1, z2]
+        x, y_true = train_batch
+        y_pred = self(x).squeeze(-1)
         loss = self.loss_fn(y_pred, y_true.float())
         probs = torch.sigmoid(y_pred)
         preds = (probs > 0.5).int()
@@ -122,15 +78,11 @@ class MambaDeepfakeModel(L.LightningModule):
         self.log("train/acc", acc, on_epoch=True, prog_bar=True)
         self.log("train/loss", loss, on_epoch=True, prog_bar=True)
         return loss
-
+    
     def validation_step(self, val_batch, batch_idx):
         #to work with short dataset
-        if len(val_batch) == 3:
-            x, y_true, x_len = val_batch
-        else:
-            x, y_true = val_batch
-            x_len = None
-        y_pred = self(x, lengths=x_len).squeeze(-1)
+        x, y_true = val_batch
+        y_pred = self(x).squeeze(-1)
         loss = self.loss_fn(y_pred, y_true.float())
         probs = torch.sigmoid(y_pred)
         preds = (probs > 0.5).int()
@@ -173,15 +125,9 @@ class MambaDeepfakeModel(L.LightningModule):
         self.validation_outputs = {'predictions': [], 'targets': []}
     
     def test_step(self, batch, batch_idx, dataloader_idx: int = 0):
-        #to work with short dataset
-        if len(batch) == 3:
-            x, y_true, x_len = batch
-        else:
-            x, y_true = batch
-            x_len = None
-        
+        x, y_true = batch
         y_true = y_true.float()
-        y_pred = self(x, lengths=x_len).squeeze(-1)
+        y_pred = self(x).squeeze(-1)
         loss = self.loss_fn(y_pred, y_true.float())
         
         if dataloader_idx not in self.test_outputs:
@@ -202,8 +148,8 @@ class MambaDeepfakeModel(L.LightningModule):
             all_targets = torch.cat(outputs["targets"], dim=0)
 
             # Convert to probs and preds
-            probs = torch.softmax(all_logits, dim=1)[:, 1]
-            preds = torch.argmax(all_logits, dim=1)
+            probs = torch.sigmoid(all_logits)
+            preds = (probs > 0.5).int()
 
             # Confusion matrix (zostaje)
             self.conf_matrix.update(preds, all_targets)
@@ -212,23 +158,16 @@ class MambaDeepfakeModel(L.LightningModule):
 
             # Metrics (zostaje)
             self.eer.update(probs, all_targets)
-            eer_val = self.eer.compute()
-
             self.f1.update(preds, all_targets)
-            f1_val = self.f1.compute()
-
             self.precision.update(preds, all_targets)
-            precision_val = self.precision.compute()
-
             self.recall.update(preds, all_targets)
-            recall_val = self.recall.compute()
 
             rows.append([
                 int(dataloader_idx),
-                float(eer_val),
-                float(f1_val),
-                float(precision_val),
-                float(recall_val),
+                float(self.eer.compute()),
+                float(self.f1.compute()),
+                float(self.precision.compute()),
+                float(self.recall.compute()),
             ])
 
             # Reset (zostaje)
@@ -253,3 +192,100 @@ class MambaDeepfakeModel(L.LightningModule):
         })
 
         self.test_outputs.clear()
+
+class MambaDeepfakeModel(BaseDeepfakeModel):
+    def __init__(
+        self,
+        input_dim: int,
+        d_model: int,
+        d_state: int,
+        d_conv: int,
+        expand: int,
+        n_layers: int,
+        dropout: int,
+        optimizer: Callable,
+        scheduler: Optional[Callable] = None,
+    ):
+        super().__init__(optimizer=optimizer, scheduler=scheduler)
+        self.save_hyperparameters()
+        
+        ## MOdel
+        self.n_layers = n_layers
+        self.linear = nn.Linear(input_dim, d_model)
+        self.layers = nn.ModuleList(
+            [
+                MambaBlock(
+                    d_model=d_model, d_state=d_state, d_conv=d_conv, expand=expand, dropout=dropout
+                )
+                for _ in range(self.n_layers)
+            ]
+        )
+        self.linear_2 = nn.Linear(d_model, 1)
+
+    def forward(self, x: torch.Tensor):
+        x = self.linear(x)
+        for layer in self.layers:
+            x = layer(x)
+        last = x[:, -1, :]
+        logit = self.linear_2(last)
+        return logit
+
+    
+        
+class BidirectionalMambaModel(BaseDeepfakeModel):
+    def __init__(
+        self,
+        input_dim: int,
+        d_model: int,
+        d_state: int,
+        d_conv: int,
+        expand: int,
+        n_layers: int,
+        dropout: int,
+        optimizer: Callable,
+        scheduler: Optional[Callable] = None,
+    ):
+        super().__init__(optimizer=optimizer, scheduler=scheduler)
+        self.save_hyperparameters()
+
+        ## Model
+        self.n_layers = n_layers
+        self.linear = nn.Linear(input_dim, d_model)
+        self.mamba_forward = nn.ModuleList(
+            [
+                MambaBlock(
+                    d_model=d_model, d_state=d_state, d_conv=d_conv, expand=expand, dropout=dropout
+                )
+                for _ in range(self.n_layers)
+            ]
+        )
+        self.mamba_backward = nn.ModuleList(
+            [
+                MambaBlock(
+                    d_model=d_model, d_state=d_state, d_conv=d_conv, expand=expand, dropout=dropout
+                )
+                for _ in range(self.n_layers)
+            ]
+        )
+        self.linear_2 = nn.Linear(d_model, 1)
+        
+    
+    # [batch_size, 6000, 2048]
+    def forward(self, vector: torch.Tensor):
+        backward = torch.flip(vector, [1])
+        x_forward = self.linear(vector)
+        x_backward = self.linear(backward)
+        
+        for layer in self.mamba_forward:
+            x_forward = layer(x_forward)
+        
+        for layer in self.mamba_backward:
+            x_backward = layer(x_backward)
+        
+        # [12000, d_model]
+        x_backward = torch.flip(x_backward, [1])
+        out = x_forward + x_backward
+        out = out.mean(dim=1)
+        
+        logit = self.linear_2(out)
+        return logit

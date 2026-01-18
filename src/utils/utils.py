@@ -34,3 +34,4 @@ def wandb_log_cm(cm: torch.Tensor, key: str):
 
     wandb.log({key: wandb.Image(fig)})
     plt.close(fig)
+    

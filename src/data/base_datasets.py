@@ -18,57 +18,32 @@ def collate_fn(batch):
 
     return features_padded, labels, lengths
 
-
+# ------------------------
+# SPECTROGRAMS
+# ------------------------
 class LongAudioDataset(Dataset):
     def __init__(
         self,
         files: list[str],
         labels: list[int],
-        sample_rate: int,
-        n_fft: int,
-        hop_length: int,
-        n_mels: int,
-        max_len: int,
-        **kwargs,
+        transform: bool = False,
     ):
         self.files = files
         self.labels = labels
-        self.sample_rate = sample_rate
-        self.n_fft = n_fft
-        self.n_mels = n_mels
-        self.hop_len = hop_length
-        self.max_len = max_len
-
-        # self.spec_transform = nn.Sequential(
-        #     torchaudio.transforms.MelSpectrogram(
-        #         sample_rate=self.sample_rate, n_fft=self.n_fft, n_mels=self.n_mels, hop_length=self.hop_len
-        #     ),
-        #     torchaudio.transforms.AmplitudeToDB()
-        # )
-
+        if transform:
+            self.transform = lambda x: (x - x.mean()) / (x.std() + 1e-6)
+        else:
+            self.transform = None
+        
     def __getitem__(self, index):
-        # wav, sr = torchaudio.load(self.files[index])
-        # if wav.shape[0] > 1:
-        #     wav = wav.mean(dim=0, keepdim=True)
-
-        mel_spec = torch.load(self.files[index], weights_only=False)
+        # [time, freq]
+        data = torch.load(self.files[index], map_location="cpu", weights_only=True)
         label = self.labels[index]
 
-        # real_len = wav.shape[1]
-        # if real_len < self.max_len:
-        #     pad_amt = self.max_len - real_len
-        #     wav = torch.nn.functional.pad(wav, (0, pad_amt))
-        # else:
-        #     wav = wav[:, : self.max_len]
-        #     real_len = self.max_len
+        if self.transform:
+            data = self.transform(data)
 
-        # mel_spec = self.spec_transform(wav)
-        # Odejmujemy średnią z CAŁEGO tensora, nie po wymiarze
-        mel_spec = (mel_spec - mel_spec.mean()) / (mel_spec.std() + 1e-6)
-        # mel_spec = mel_spec.squeeze(0)
-        # mel_spec = mel_spec.transpose(0, 1)
-
-        return mel_spec, torch.tensor(label, dtype=torch.float)
+        return data, torch.tensor(label, dtype=torch.float32)
 
     def __len__(self):
         return len(self.files)
@@ -112,6 +87,7 @@ class SingFakeShortDataset(Dataset):
         except Exception:
             return self.__getitem__(np.random.randint(len(self.files)))
 
+        # one of channels if not mono sample
         if X.ndim > 1 and X.shape[0] > 1:
             X = X[np.random.randint(X.shape[0])]
 
@@ -138,3 +114,25 @@ def pad_random(x: np.ndarray, max_len: int = 64600):
         return padded_x
     else:  # x_len == max_len
         return x
+    
+class FeaturesDataset(Dataset):
+    def __init__(self, files: list[list[str]], labels: list[int]):
+        super().__init__()
+        self.files = files
+        self.labels = labels
+
+    def __len__(self):
+        return len(self.files)
+
+    def __getitem__(self, index):
+        item = self.files[index]
+        label = self.labels[index]
+
+        w2v_path, mert_path = item
+        w2v_tensor = torch.load(w2v_path, weights_only=False)
+        mert_tensor = torch.load(mert_path, weights_only=False)
+
+        sample = torch.concat((w2v_tensor, mert_tensor), dim=1)
+
+        # sample to cos w stylu [6000, 2048]
+        return sample, torch.tensor(label, dtype=torch.long)

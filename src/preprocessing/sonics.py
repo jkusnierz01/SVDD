@@ -6,8 +6,11 @@ import torchaudio.transforms as T
 import torch.nn.functional as F
 import torch
 import random
+import numpy as np
 from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor, AutoModel
 from torch.utils.data import Dataset, DataLoader
+import json
+from src.utils.preprocessing import pad_loop_torch
 
 class ChunkedAudioDataset(Dataset):
     def __init__(self, file_paths, sample_rate, total_len_sec=120, chunk_len_sec=30):
@@ -28,7 +31,10 @@ class ChunkedAudioDataset(Dataset):
             
             wav, sr = torchaudio.load(path)
             if wav.shape[0] > 1:
-                wav = torch.mean(wav, dim=0, keepdim=True)
+                # OR MEAN
+                # wav = torch.mean(wav, dim=0, keepdim=True)
+                channel_idx = torch.randint(0, wav.shape[0], (1,)).item()
+                wav = wav[channel_idx : channel_idx + 1]
 
             # 2. Resample
             if sr != self.sample_rate:
@@ -36,14 +42,7 @@ class ChunkedAudioDataset(Dataset):
                 wav = resampler(wav)
 
             # 3. Padding / Cutting do pełnych 120s (total_len)
-            curr_samples = wav.shape[1]
-            if curr_samples > self.total_samples:
-                # Random crop (jeśli plik dłuższy niż 120s)
-                start = random.randint(0, curr_samples - self.total_samples)
-                wav = wav[:, start:start + self.total_samples]
-            elif curr_samples < self.total_samples:
-                # Padding zerami na końcu
-                wav = F.pad(wav, (0, self.total_samples - curr_samples))
+            wav = pad_loop_torch(wav, self.total_samples)
 
             # --- KLUCZOWY MOMENT: CIĘCIE NA KAWAŁKI ---
             # wav ma teraz [1, 120s]. Chcemy [4, 30s].
@@ -61,7 +60,8 @@ class ChunkedAudioDataset(Dataset):
             # Zwracamy pusty tensor o poprawnym kształcie, żeby DataLoader nie padł
             return torch.zeros(self.num_chunks, self.chunk_samples), "ERROR"
 
-
+# now sonics but can be done to process the same way all files
+# then change name to FeaturePreprocessor
 class SonicsPreprocessor(BaseProcessor):
     def __init__(
         self,
@@ -114,7 +114,7 @@ class SonicsPreprocessor(BaseProcessor):
             chunk_len_sec=self.chunk_len_sec
         )
         dataloader = DataLoader(dataset, batch_size=self.batch_size, shuffle=False, num_workers=8, pin_memory=True)
-
+        index = [] 
         for batch_chunks, filenames in tqdm(dataloader, desc="Processing Batches"):
             """
             potencjalnie do dodania attention mask wskazujące padding zerami do wav2vec i mert.
@@ -179,8 +179,24 @@ class SonicsPreprocessor(BaseProcessor):
                 
                 # --- ZAPIS ---
                 for i, stem in enumerate(clean_filenames):
-                    torch.save(final_w2v[i], w2v_out_dir / f"{stem}.pt")
-                    torch.save(final_mert[i], mert_out_dir / f"{stem}.pt")
+                    w2v_path = w2v_out_dir / f"{stem}.pt"
+                    mert_path = mert_out_dir / f"{stem}.pt"
+                    torch.save(final_w2v[i], w2v_path)
+                    torch.save(final_mert[i], mert_path)
+                    
+                    index.append({
+                        "stem": stem,
+                        "wav2vec": str(w2v_path),
+                        "mert": str(mert_path)
+                    })
+                    
             except Exception as e:
                 print(f"Error processing batch {clean_filenames}: {e}")
                 continue
+        try:
+            json_path = self.output_dir / "index.json"   
+            with open(json_path, "w", encoding="utf-8") as jf:
+                json.dump(index, jf, indent=2, ensure_ascii=False)
+            print(f"Saved index files: {json_path}")
+        except Exception as e:
+            print(f"Failed to write index files: {e}")

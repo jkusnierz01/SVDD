@@ -3,9 +3,7 @@ from torch.utils.data import DataLoader
 from pathlib import Path
 from .base_datasets import AudioDataset
 from .base_datasets import collate_fn
-
-LABEL_MAP = {"bonafide": 1, "spoof": 0, "deepfake": 0}
-
+from src.utils.dataset import LABEL_MAP
 
 class WildSVDDDataModule(L.LightningDataModule):
     def __init__(

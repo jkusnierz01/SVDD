@@ -1,0 +1,10 @@
+_target_: src.preprocessing.spectrograms.SpectrogramsProcessor
+
+
+sample_rate: 16000
+total_len_sec: 120
+batch_size: 1 
+n_fft: 1024    
+hop_length: 256 
+n_mels: 128    
+transform_type: "mel-spectrogram"

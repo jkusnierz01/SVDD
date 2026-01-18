@@ -3,20 +3,10 @@ from torch.utils.data import DataLoader
 from pathlib import Path
 from .base_datasets import LongAudioDataset, SingFakeShortDataset
 from .base_datasets import collate_fn
+from src.utils.dataset import parse_split_label_singfake
 
-LABEL_MAP = {"bonafide": 1, "spoof": 0}
+
 SPLITS = {"Training", "Validation", "T01", "T02", "T03", "T04"}
-
-
-def base_stem(stem: str) -> str:
-    return stem.split("__seg", 1)[0]
-
-def parse_split_label(stem: str):
-    base = base_stem(stem)
-    parts = base.split("_")
-    split = parts[0]
-    label = parts[-1].lower()
-    return split, LABEL_MAP[label]
 
 
 class SingFakeDataModule(L.LightningDataModule):
@@ -56,7 +46,7 @@ class SingFakeDataModule(L.LightningDataModule):
                 continue
             filename = full_filename.stem
             try:
-                key, label_int = parse_split_label(filename)
+                key, label_int = parse_split_label_singfake(filename)
             except Exception as e:
                 print(f"Bad filename: {filename} ({e})")
                 continue
@@ -148,7 +138,6 @@ class SingFakeDataModule(L.LightningDataModule):
             shuffle=True,
             drop_last=self.drop_last,
             num_workers=self.num_workers,
-            collate_fn=collate_fn if self.use_collate else None,
             pin_memory=True,
         )
 
@@ -157,7 +146,6 @@ class SingFakeDataModule(L.LightningDataModule):
             self.validation_dataset,
             batch_size=self.batch_size,
             num_workers=self.num_workers,
-            collate_fn=collate_fn if self.use_collate else None,
         )
 
     def test_dataloader(self):
@@ -166,24 +154,20 @@ class SingFakeDataModule(L.LightningDataModule):
                 self.test_t01,
                 batch_size=self.batch_size,
                 num_workers=self.num_workers,
-                collate_fn=collate_fn if self.use_collate else None,
             ),
             DataLoader(
                 self.test_t02,
                 batch_size=self.batch_size,
                 num_workers=self.num_workers,
-                collate_fn=collate_fn if self.use_collate else None,
             ),
             DataLoader(
                 self.test_t03,
                 batch_size=self.batch_size,
                 num_workers=self.num_workers,
-                collate_fn=collate_fn if self.use_collate else None,
             ),
             DataLoader(
                 self.test_t04,
                 batch_size=self.batch_size,
                 num_workers=self.num_workers,
-                collate_fn=collate_fn if self.use_collate else None,
             ),
         ]

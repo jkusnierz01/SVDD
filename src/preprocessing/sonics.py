@@ -1,6 +1,7 @@
 from src.preprocessing.base import BaseProcessor
 from pathlib import Path
 from tqdm import tqdm
+import numpy as np
 import torchaudio
 import torchaudio.transforms as T
 import torch
@@ -207,10 +208,12 @@ class SonicsPreprocessor(BaseProcessor):
 
                     
                     for i, stem in enumerate(clean_filenames):
-                        w2v_path = w2v_out_dir / f"{stem}.pt"
-                        mert_path = mert_out_dir / f"{stem}.pt"
-                        torch.save(final_w2v[i], w2v_path)
-                        torch.save(final_mert[i], mert_path)
+                        w2v_path = w2v_out_dir / f"{stem}.npy"
+                        mert_path = mert_out_dir / f"{stem}.npy"
+                        
+                        # Save as numpy array to avoid Pickle/PyTorch version issues
+                        np.save(w2v_path, final_w2v[i].numpy())
+                        np.save(mert_path, final_mert[i].numpy())
 
                         index.append(
                             {"stem": stem, "wav2vec": str(w2v_path), "mert": str(mert_path)}

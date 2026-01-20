@@ -129,8 +129,10 @@ class FeaturesDataset(Dataset):
         label = self.labels[index]
 
         w2v_path, mert_path = item
-        w2v_tensor = torch.load(w2v_path, weights_only=False)
-        mert_tensor = torch.load(mert_path, weights_only=False)
+        w2v_numpy = np.load(w2v_path)
+        mert_numpy = np.load(mert_path)
+        w2v_tensor = torch.from_numpy(w2v_numpy)
+        mert_tensor = torch.from_numpy(mert_numpy)
 
         sample = torch.concat((w2v_tensor, mert_tensor), dim=1)
 

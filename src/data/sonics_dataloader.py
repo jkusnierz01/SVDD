@@ -83,5 +83,36 @@ class SonicsDataModule(L.LightningDataModule):
         
         
 class SonicsSpectttraLoader(L.LightningDataModule):
-    ...
-    # TO DO
+    def __init__(self, data_dir:str, batch_size: int, num_workers: int):
+        super().__init__()
+        self.data_dir = Path(data_dir)
+        self.batch_size = batch_size
+        self.num_workers = num_workers
+        
+    def setup(self, stage):
+        groups = {k: {"files": [], "labels": []} for k in SPLITS}
+            
+        for file in self.data_dir.iterdir():
+            stem = file.stem
+            elements = stem.strip("_")
+            
+    #     stem = item.get("stem", None)
+    #     w2v_path = item.get("wav2vec", None)
+    #     mert_path = item.get("mert", None)
+        
+    #     if not all([w2v_path, mert_path, stem]):
+    #         continue
+        
+    #     split, label = parse_split_label(stem)
+        
+    #     if split in groups:
+    #         groups[split]['files'].append((w2v_path, mert_path))
+    #         groups[split]['labels'].append(label)
+    
+    def test_dataloader(self):
+        return DataLoader(
+            dataset=self.test_dataset,
+            batch_size=self.batch_size,
+            shuffle=False,
+            num_workers=self.num_workers
+        )

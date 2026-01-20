@@ -32,28 +32,22 @@ class ChunkedAudioDataset(Dataset):
                 channel_idx = torch.randint(0, wav.shape[0], (1,)).item()
                 wav = wav[channel_idx : channel_idx + 1]
 
-            # 2. Resample
             if sr != self.sample_rate:
                 resampler = T.Resample(orig_freq=sr, new_freq=self.sample_rate)
                 wav = resampler(wav)
 
-            # 3. Padding / Cutting do pełnych 120s (total_len)
+
             wav = pad_loop_torch(wav, self.total_samples)
 
-            # --- KLUCZOWY MOMENT: CIĘCIE NA KAWAŁKI ---
-            # wav ma teraz [1, 120s]. Chcemy [4, 30s].
+            # [1, 120s] - [4, 30s].
             # unfold tnie tensor na okna.
-            # dimension=1 (czas), size=chunk_samples, step=chunk_samples (bez overlapa dla prostoty)
-
             chunks = wav.squeeze(0).unfold(0, self.chunk_samples, self.chunk_samples)
 
-            # chunks shape: [4, chunk_samples] (dla 120s i 30s okna)
-            # Jeśli okno nie dzieli się idealnie, unfold odrzuci resztkę, co jest OK.
+            # chunks shape: [4, chunk_samples]
 
             return chunks, path.stem
 
         except Exception as e:
-            # Zwracamy pusty tensor o poprawnym kształcie, żeby DataLoader nie padł
             return torch.zeros(self.num_chunks, self.chunk_samples), "ERROR"
 
 
@@ -100,7 +94,7 @@ class SonicsPreprocessor(BaseProcessor):
 
         print(f"loading procesor & model for music... {self.mert_model_name}")
         mert_processor = Wav2Vec2FeatureExtractor.from_pretrained(
-            self.mert_model_name, trust_remote_code=True
+            self.mert_model_name, trust_remote_code=True, 
         )
         mert_model = AutoModel.from_pretrained(
             self.mert_model_name, trust_remote_code=True
@@ -124,6 +118,7 @@ class SonicsPreprocessor(BaseProcessor):
             pin_memory=True,
         )
         index = []
+        resampler_mert = T.Resample(orig_freq=16000, new_freq=24000)
         for batch_chunks, filenames in tqdm(dataloader, desc="Processing Batches"):
             """
             potencjalnie do dodania attention mask wskazujące padding zerami do wav2vec i mert.
@@ -141,8 +136,6 @@ class SonicsPreprocessor(BaseProcessor):
             num_chunks = batch_chunks.shape[1]
             chunk_len = batch_chunks.shape[2]
 
-            # --- SHAPE GYMNASTICS 1: FLATTEN ---
-            # Musimy spłaszczyć wymiar batcha i chunków, żeby model widział to jako jedną długą listę sampli
             # [Batch, 4, Len] -> [Batch * 4, Len]
             flat_input = batch_chunks.view(-1, chunk_len).numpy()
 
@@ -150,8 +143,6 @@ class SonicsPreprocessor(BaseProcessor):
                 with torch.no_grad():
                     # Używamy autocast dla FP16 (szybkość x2, pamięć /2)
                     with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
-                        # --- A. Wav2Vec (Speech) ---
-                        # Normalize & Prepare
                         inputs_w2v = wav2vec_processor(
                             flat_input,
                             sampling_rate=self.sample_rate,
@@ -160,32 +151,29 @@ class SonicsPreprocessor(BaseProcessor):
                         )
                         inputs_w2v = inputs_w2v.input_values.to(self.device)
 
-                        # Inference
+
                         out_w2v = wav2vec_model(inputs_w2v).last_hidden_state
                         # out_w2v shape: [Batch * 4, Seq_Len_Per_Chunk, 1024]
 
-                        # --- B. MERT (Music) ---
+                        tensor_16k = torch.from_numpy(flat_input)
+                        tensor_24k = resampler_mert(tensor_16k)
+                        flat_input_24k = tensor_24k.numpy()
+
                         inputs_mert = mert_processor(
-                            flat_input,
-                            sampling_rate=self.sample_rate,
+                            flat_input_24k,
+                            sampling_rate=24000,
                             return_tensors="pt",
                             padding=False,
                         )
                         inputs_mert = inputs_mert.input_values.to(self.device)
 
-                        # Inference
                         out_mert = mert_model(inputs_mert).last_hidden_state
                         # out_mert shape: [Batch * 4, Seq_Len_Per_Chunk, 1024]
-
-                    # --- SHAPE GYMNASTICS 2: RESHAPE & STITCH ---
-                    # Teraz musimy to poskładać z powrotem.
-                    # seq_len_per_chunk to np. 149 ramek dla 30s
 
                     seq_len = out_w2v.shape[1]
                     hidden_dim = out_w2v.shape[2]
 
-                    # 1. Rozdzielamy z powrotem na [Batch, 4, Seq_Len, Dim]
-                    # .float() konwertuje z powrotem z FP16 na FP32 do zapisu
+
                     out_w2v = (
                         out_w2v.view(current_batch_size, num_chunks, seq_len, hidden_dim)
                         .float()
@@ -197,9 +185,6 @@ class SonicsPreprocessor(BaseProcessor):
                         .cpu()
                     )
 
-                    # 2. Sklejamy chunki (wymiar 1 i 2 -> czas)
-                    # Chcemy: [Batch, Total_Seq_Len, Dim]
-                    # flatten(1, 2) łączy wymiar chunków z wymiarem czasu
 
                     final_w2v = out_w2v.flatten(1, 2)
                     final_mert = out_mert.flatten(1, 2)

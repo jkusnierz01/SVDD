@@ -25,31 +25,32 @@ class ChunkedAudioDataset(Dataset):
 
     def __getitem__(self, idx):
         path = self.file_paths[idx]
-        # try:
-        wav, sr = torchaudio.load(path)
-        if wav.shape[0] > 1:
-            # OR MEAN
-            # wav = torch.mean(wav, dim=0, keepdim=True)
-            channel_idx = torch.randint(0, wav.shape[0], (1,)).item()
-            wav = wav[channel_idx : channel_idx + 1]
+        try:
+            wav, sr = torchaudio.load(path)
+            if wav.shape[0] > 1:
+                # OR MEAN
+                # wav = torch.mean(wav, dim=0, keepdim=True)
+                channel_idx = torch.randint(0, wav.shape[0], (1,)).item()
+                wav = wav[channel_idx : channel_idx + 1]
 
-        if sr != self.sample_rate:
-            resampler = T.Resample(orig_freq=sr, new_freq=self.sample_rate)
-            wav = resampler(wav)
+            if sr != self.sample_rate:
+                resampler = T.Resample(orig_freq=sr, new_freq=self.sample_rate)
+                wav = resampler(wav)
 
 
-        wav = pad_loop_torch(wav, self.total_samples)
+            wav = pad_loop_torch(wav, self.total_samples)
 
-        # [1, 120s] - [4, 30s].
-        # unfold tnie tensor na okna.
-        chunks = wav.squeeze(0).unfold(0, self.chunk_samples, self.chunk_samples)
+            # [1, 120s] - [4, 30s].
+            # unfold tnie tensor na okna.
+            chunks = wav.squeeze(0).unfold(0, self.chunk_samples, self.chunk_samples)
 
-        # chunks shape: [4, chunk_samples]
+            # chunks shape: [4, chunk_samples]
 
-        return chunks, path.stem
+            return chunks, path.stem
 
-        # except Exception as e:
-        #     return torch.zeros(self.num_chunks, self.chunk_samples), "ERROR"
+        except Exception as e:
+            print(e)
+            return torch.zeros(self.num_chunks, self.chunk_samples), "ERROR"
 
 
 # now sonics but can be done to process the same way all files

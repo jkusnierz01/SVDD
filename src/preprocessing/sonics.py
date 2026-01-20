@@ -118,7 +118,6 @@ class SonicsPreprocessor(BaseProcessor):
             pin_memory=True,
         )
         index = []
-        resampler_mert = T.Resample(orig_freq=16000, new_freq=24000)
         for batch_chunks, filenames in tqdm(dataloader, desc="Processing Batches"):
             """
             potencjalnie do dodania attention mask wskazujące padding zerami do wav2vec i mert.
@@ -141,8 +140,9 @@ class SonicsPreprocessor(BaseProcessor):
 
             try:
                 with torch.no_grad():
-                    # Używamy autocast dla FP16 (szybkość x2, pamięć /2)
+                    
                     with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
+                        
                         inputs_w2v = wav2vec_processor(
                             flat_input,
                             sampling_rate=self.sample_rate,
@@ -153,22 +153,18 @@ class SonicsPreprocessor(BaseProcessor):
 
 
                         out_w2v = wav2vec_model(inputs_w2v).last_hidden_state
-                        # out_w2v shape: [Batch * 4, Seq_Len_Per_Chunk, 1024]
-
-                        tensor_16k = torch.from_numpy(flat_input)
-                        tensor_24k = resampler_mert(tensor_16k)
-                        flat_input_24k = tensor_24k.numpy()
+                        # out_w2v shape: [Batch * 4, Seq_Len_Per_Chunk, 768]
 
                         inputs_mert = mert_processor(
-                            flat_input_24k,
-                            sampling_rate=24000,
+                            flat_input,
+                            sampling_rate=16000,
                             return_tensors="pt",
                             padding=False,
                         )
                         inputs_mert = inputs_mert.input_values.to(self.device)
 
                         out_mert = mert_model(inputs_mert).last_hidden_state
-                        # out_mert shape: [Batch * 4, Seq_Len_Per_Chunk, 1024]
+                        # out_mert shape: [Batch * 4, Seq_Len_Per_Chunk, 768]
 
                     seq_len = out_w2v.shape[1]
                     hidden_dim = out_w2v.shape[2]
@@ -189,7 +185,7 @@ class SonicsPreprocessor(BaseProcessor):
                     final_w2v = out_w2v.flatten(1, 2)
                     final_mert = out_mert.flatten(1, 2)
 
-                    # --- ZAPIS ---
+                    
                     for i, stem in enumerate(clean_filenames):
                         w2v_path = w2v_out_dir / f"{stem}.pt"
                         mert_path = mert_out_dir / f"{stem}.pt"

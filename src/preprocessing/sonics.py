@@ -146,7 +146,7 @@ class SonicsPreprocessor(BaseProcessor):
                         
                         inputs_mert = mert_processor(
                             flat_input,
-                            sampling_rate=16000,
+                            sampling_rate=24000,
                             return_tensors="pt",
                             padding=False,
                         )
@@ -160,7 +160,7 @@ class SonicsPreprocessor(BaseProcessor):
                         
                         inputs_w2v = wav2vec_processor(
                             flat_input_16k,
-                            sampling_rate=self.sample_rate,
+                            sampling_rate=16000,
                             return_tensors="pt",
                             padding=False,
                         )

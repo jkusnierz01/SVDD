@@ -118,6 +118,7 @@ class SonicsPreprocessor(BaseProcessor):
             pin_memory=True,
         )
         index = []
+        resampler_w2v = T.Resample(orig_freq=24000, new_freq=16000)
         for batch_chunks, filenames in tqdm(dataloader, desc="Processing Batches"):
             """
             potencjalnie do dodania attention mask wskazujące padding zerami do wav2vec i mert.
@@ -143,18 +144,6 @@ class SonicsPreprocessor(BaseProcessor):
                     
                     with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
                         
-                        inputs_w2v = wav2vec_processor(
-                            flat_input,
-                            sampling_rate=self.sample_rate,
-                            return_tensors="pt",
-                            padding=False,
-                        )
-                        inputs_w2v = inputs_w2v.input_values.to(self.device)
-
-
-                        out_w2v = wav2vec_model(inputs_w2v).last_hidden_state
-                        # out_w2v shape: [Batch * 4, Seq_Len_Per_Chunk, 768]
-
                         inputs_mert = mert_processor(
                             flat_input,
                             sampling_rate=16000,
@@ -164,19 +153,50 @@ class SonicsPreprocessor(BaseProcessor):
                         inputs_mert = inputs_mert.input_values.to(self.device)
 
                         out_mert = mert_model(inputs_mert).last_hidden_state
-                        # out_mert shape: [Batch * 4, Seq_Len_Per_Chunk, 768]
+                        # out_mert shape: [Batch * 4, Seq_Len_Per_Chunk_MERT, 1024]
+                        
+                        tensor_16k = resampler_w2v(torch.from_numpy(flat_input))
+                        flat_input_16k = tensor_16k.numpy()
+                        
+                        inputs_w2v = wav2vec_processor(
+                            flat_input_16k,
+                            sampling_rate=self.sample_rate,
+                            return_tensors="pt",
+                            padding=False,
+                        )
+                        inputs_w2v = inputs_w2v.input_values.to(self.device)
+
+                        out_w2v = wav2vec_model(inputs_w2v).last_hidden_state
+                        # out_w2v shape: [Batch * 4, Seq_Len_Per_Chunk_WAV2VEC, 1024]
+
+                        # INTERPOLACJA MERT NA WAV2VEC
+                        target_len = out_w2v.shape[1]
+                        
+                        # [Batch, Time, Dim] -> [Batch, Dim, Time] (bo interpolate działa na ostatnim wymiarze)
+                        out_mert_transposed = out_mert.transpose(1, 2)
+                        
+                        out_mert_aligned = torch.nn.functional.interpolate(
+                            out_mert_transposed, 
+                            size=target_len, 
+                            mode='linear', 
+                            align_corners=False
+                        )
+                        # [Batch, Dim, Time] -> [Batch, Time, Dim]
+                        out_mert = out_mert_aligned.transpose(1, 2)
+
 
                     seq_len = out_w2v.shape[1]
-                    hidden_dim = out_w2v.shape[2]
+                    hidden_dim_w2v = out_w2v.shape[2]
+                    hidden_dim_mert = out_mert.shape[2]
 
 
                     out_w2v = (
-                        out_w2v.view(current_batch_size, num_chunks, seq_len, hidden_dim)
+                        out_w2v.view(current_batch_size, num_chunks, seq_len, hidden_dim_w2v)
                         .float()
                         .cpu()
                     )
                     out_mert = (
-                        out_mert.view(current_batch_size, num_chunks, seq_len, hidden_dim)
+                        out_mert.view(current_batch_size, num_chunks, seq_len, hidden_dim_mert)
                         .float()
                         .cpu()
                     )

@@ -1,9 +1,9 @@
 # src/configs/preprocessing/sonics.yaml
 _target_: preprocessing.sonics.SonicsPreprocessor
-sample_rate: 16000
+sample_rate: 24000
 total_len_sec: 120
 chunk_len_sec: 30
 batch_size: 8
 num_workers: 8
-wav2vec_model_name: facebook/wav2vec2-base
-mert_model_name: m-a-p/MERT-v1-95M
+wav2vec_model_name: facebook/wav2vec2-xls-r-300m
+mert_model_name: m-a-p/MERT-v1-330M

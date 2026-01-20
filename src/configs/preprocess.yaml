@@ -3,5 +3,5 @@ defaults:
   - preprocessing: sonics
 
 paths:
-  input_dir: /mnt/data/kusnierz/audio-data/Sonics/all_data
-  output_dir: /mnt/data/kusnierz/audio-data/Sonics/preprocessed
+  input_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/all_data
+  output_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed

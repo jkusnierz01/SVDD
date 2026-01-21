@@ -26,6 +26,17 @@ class SonicsDataModule(L.LightningDataModule):
         with open(str(index_file), "r") as file:
             data = json.load(file)
             
+        import random
+        random.seed(42) # Dla powtarzalności
+        # Weź tylko 5000 próbek (lub mniej) zamiast całego zbioru
+        # To przyspieszy epokę i zmniejszy zużycie RAM
+        USE_SUBSET = True
+        SUBSET_SIZE = 5000 
+        
+        if USE_SUBSET and len(data) > SUBSET_SIZE:
+             data = random.sample(data, SUBSET_SIZE)
+             print(f"WARNING: Using subset of {SUBSET_SIZE} samples for speed!")    
+            
         for item in data:
             stem = item.get("stem", None)
             w2v_path = item.get("wav2vec", None)

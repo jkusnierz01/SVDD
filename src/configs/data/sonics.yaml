@@ -1,4 +1,4 @@
 _target_: data.sonics_dataloader.SonicsDataModule
 data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed
-batch_size: 32
+batch_size: 26
 num_workers: 4

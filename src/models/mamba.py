@@ -282,7 +282,6 @@ class BidirectionalMambaModel(BaseDeepfakeModel):
         for layer in self.mamba_backward:
             x_backward = layer(x_backward)
         
-        # [12000, d_model]
         x_backward = torch.flip(x_backward, [1])
         out = x_forward + x_backward
         out = out.mean(dim=1)

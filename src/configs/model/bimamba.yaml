@@ -1,0 +1,21 @@
+_target_: models.mamba.BidirectionalMambaModel
+input_dim: 2048
+n_layers: 10
+d_model: 1024
+d_state: 16
+d_conv: 4
+expand: 2
+dropout: 0.0
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.001
+  weight_decay: 0.0005
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 10

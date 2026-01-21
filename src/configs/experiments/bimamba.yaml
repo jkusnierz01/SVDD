@@ -1,0 +1,8 @@
+default:
+  - override /model: bimamba
+  - override /data: sonics
+
+
+logger:
+  name: "bimamba"
+  tags: ["bimamba", "features", "w2v", "mert"]

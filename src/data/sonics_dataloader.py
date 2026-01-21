@@ -23,7 +23,7 @@ class SonicsDataModule(L.LightningDataModule):
         if not index_file:
             raise ValueError("No index file found!")
         
-        with open(index_file, "r") as file:
+        with open(str(index_file), "r") as file:
             data = json.load(file)
             
         for item in data:

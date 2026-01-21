@@ -70,6 +70,10 @@ class BaseDeepfakeModel(L.LightningModule):
         #to work with short dataset
         # x -> [batch, z1, z2]
         x, y_true = train_batch
+        if batch_idx == 0:
+            print(f"DEBUG Batch 0 stats: Mean={x.mean():.4f}, Std={x.std():.4f}, Min={x.min():.4f}, Max={x.max():.4f}")
+            if x.std() < 1e-5:
+                print("WARNING: Input features have zero variance! Model collapse imminent.")
         y_pred = self(x).squeeze(-1)
         loss = self.loss_fn(y_pred, y_true.float())
         probs = torch.sigmoid(y_pred)

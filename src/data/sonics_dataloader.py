@@ -50,7 +50,7 @@ class SonicsDataModule(L.LightningDataModule):
             labels=groups['valid']['labels']
         )
             
-        self.valid_dataset = FeaturesDataset(
+        self.test_dataset = FeaturesDataset(
             files=groups['test']['files'],
             labels=groups['test']['labels']
         )
@@ -61,7 +61,9 @@ class SonicsDataModule(L.LightningDataModule):
             dataset=self.training_dataset,
             batch_size=self.batch_size,
             shuffle=True,
-            num_workers=self.num_workers
+            num_workers=self.num_workers,
+            pin_memory=True,
+            persistent_workers=True
         )
         
     def val_dataloader(self):
@@ -69,7 +71,9 @@ class SonicsDataModule(L.LightningDataModule):
             dataset=self.valid_dataset,
             batch_size=self.batch_size,
             shuffle=False,
-            num_workers=self.num_workers
+            num_workers=self.num_workers,
+            pin_memory=True,
+            persistent_workers=True
         )
         
         

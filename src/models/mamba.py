@@ -251,6 +251,7 @@ class BidirectionalMambaModel(BaseDeepfakeModel):
 
         ## Model
         self.n_layers = n_layers
+        self.pool = nn.AvgPool1d(kernel_size=4, stride=4)
         self.linear = nn.Linear(input_dim, d_model)
         self.mamba_forward = nn.ModuleList(
             [
@@ -273,6 +274,10 @@ class BidirectionalMambaModel(BaseDeepfakeModel):
     
     # [batch_size, 6000, 2048]
     def forward(self, vector: torch.Tensor):
+        vector = vector.transpose(1, 2) # [B, 2048, 6000]
+        vector = self.pool(vector)      # [B, 2048, 1500]
+        vector = vector.transpose(1, 2)
+        
         backward = torch.flip(vector, [1])
         x_forward = self.linear(vector)
         x_backward = self.linear(backward)

@@ -1,7 +1,7 @@
 import hydra
 from omegaconf import DictConfig
 from hydra.utils import instantiate
-
+import torch
 import wandb
 import rootutils
 
@@ -10,6 +10,7 @@ ROOT = rootutils.setup_root(".", indicator=".project-root", pythonpath=True)
 
 @hydra.main(config_path="configs", config_name="train.yaml", version_base="1.1")
 def main(cfg: DictConfig):
+    torch.set_float32_matmul_precision('medium') 
     datamodule = instantiate(cfg.data)
     model = instantiate(cfg.model)
 

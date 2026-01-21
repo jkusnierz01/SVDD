@@ -207,6 +207,7 @@ class MambaDeepfakeModel(BaseDeepfakeModel):
         scheduler: Optional[Callable] = None,
     ):
         super().__init__(optimizer=optimizer, scheduler=scheduler)
+        print(f"DEBUG INICJALIZACJA MODELU: n_layers={n_layers}")
         self.save_hyperparameters()
         
         ## MOdel

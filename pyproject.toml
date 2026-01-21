@@ -27,4 +27,5 @@ dependencies = [
     "transformers>=4.57.3",
     "huggingface-hub>=0.36.0",
     "torch>=2.9.1",
+    "mamba>=0.11.3",
 ]

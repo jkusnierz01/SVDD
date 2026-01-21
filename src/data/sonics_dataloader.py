@@ -39,6 +39,9 @@ class SonicsDataModule(L.LightningDataModule):
             if split in groups:
                 groups[split]['files'].append((w2v_path, mert_path))
                 groups[split]['labels'].append(label)
+        import collections
+        print("TRAIN Labels distribution:", collections.Counter(groups['train']['labels']))
+        print("VALID Labels distribution:", collections.Counter(groups['valid']['labels']))
                 
         self.training_dataset = FeaturesDataset(
             files=groups['train']['files'],

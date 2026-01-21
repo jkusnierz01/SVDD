@@ -1,4 +1,4 @@
-import pytorch_lightning as L
+import lightning as L
 from pathlib import Path
 import json
 from src.utils.dataset import parse_split_label

@@ -1,5 +1,5 @@
 from mamba_ssm.modules.mamba_simple import Mamba
-import pytorch_lightning as L
+import lightning as L
 import torch
 import torch.nn as nn
 import torchmetrics

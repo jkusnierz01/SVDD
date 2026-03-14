@@ -40,7 +40,9 @@ class ChunkedAudioDataset(Dataset):
                 wav = resampler(wav)
 
             if self.lowpass_cutoff_hz is not None:
-                wav = AF.lowpass_biquad(wav, sample_rate=self.sample_rate, cutoff_freq=self.lowpass_cutoff_hz)
+                target_sr = self.lowpass_cutoff_hz * 2
+                wav = T.Resample(self.sample_rate, target_sr)(wav)
+                wav = T.Resample(target_sr, self.sample_rate)(wav)
 
             wav = pad_loop_torch(wav, self.total_samples)
 

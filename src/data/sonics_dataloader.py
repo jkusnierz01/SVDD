@@ -27,7 +27,7 @@ class SonicsDataModule(L.LightningDataModule):
             data = json.load(file)
             
         import random
-        random.seed(42) # Dla powtarzalności
+        random.seed(4) # Dla powtarzalności
         # Weź tylko 5000 próbek (lub mniej) zamiast całego zbioru
         # To przyspieszy epokę i zmniejszy zużycie RAM
         USE_SUBSET = True

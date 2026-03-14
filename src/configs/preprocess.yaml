@@ -4,4 +4,4 @@ defaults:
 
 paths:
   input_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/all_data
-  output_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed
+  output_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed_test

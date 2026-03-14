@@ -7,3 +7,5 @@ batch_size: 4
 num_workers: 8
 wav2vec_model_name: facebook/wav2vec2-xls-r-300m
 mert_model_name: m-a-p/MERT-v1-330M
+lowpass_cutoff_hz: 7000
+limit_files: 100

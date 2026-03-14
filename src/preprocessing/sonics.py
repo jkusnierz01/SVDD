@@ -4,6 +4,7 @@ from tqdm import tqdm
 import numpy as np
 import torchaudio
 import torchaudio.transforms as T
+import torchaudio.functional as AF
 import torch
 from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor, AutoModel
 from torch.utils.data import Dataset, DataLoader
@@ -12,11 +13,12 @@ from src.utils.preprocessing import pad_loop_torch
 
 
 class ChunkedAudioDataset(Dataset):
-    def __init__(self, file_paths, sample_rate, total_len_sec=120, chunk_len_sec=30):
+    def __init__(self, file_paths, sample_rate, total_len_sec=120, chunk_len_sec=30, lowpass_cutoff_hz=None):
         self.file_paths = file_paths
         self.sample_rate = sample_rate
         self.total_samples = int(total_len_sec * sample_rate)
         self.chunk_samples = int(chunk_len_sec * sample_rate)
+        self.lowpass_cutoff_hz = lowpass_cutoff_hz
 
         self.num_chunks = self.total_samples // self.chunk_samples
 
@@ -37,6 +39,8 @@ class ChunkedAudioDataset(Dataset):
                 resampler = T.Resample(orig_freq=sr, new_freq=self.sample_rate)
                 wav = resampler(wav)
 
+            if self.lowpass_cutoff_hz is not None:
+                wav = AF.lowpass_biquad(wav, sample_rate=self.sample_rate, cutoff_freq=self.lowpass_cutoff_hz)
 
             wav = pad_loop_torch(wav, self.total_samples)
 
@@ -68,6 +72,8 @@ class SonicsPreprocessor(BaseProcessor):
         batch_size: int,
         wav2vec_model_name: str = "facebook/wav2vec2-xls-r-300m",
         mert_model_name: str = "m-a-p/MERT-v1-330M",
+        lowpass_cutoff_hz: int = None,
+        limit_files: int = None,
     ):
         self.device = device
         self.input_dir = Path(input_dir)
@@ -79,6 +85,8 @@ class SonicsPreprocessor(BaseProcessor):
         self.num_workers = num_workers
         self.wav2vec_model_name = wav2vec_model_name
         self.mert_model_name = mert_model_name
+        self.lowpass_cutoff_hz = lowpass_cutoff_hz
+        self.limit_files = limit_files
 
     def preprocess(self):
         w2v_out_dir = self.output_dir / "wav2vec"
@@ -106,11 +114,16 @@ class SonicsPreprocessor(BaseProcessor):
         mert_model.eval()
 
         files = list(self.input_dir.rglob("*.flac"))
+        if self.limit_files is not None:
+            files = files[:self.limit_files]
+            print(f"[DEBUG] limit_files={self.limit_files}, processing {len(files)} files")
+
         dataset = ChunkedAudioDataset(
             file_paths=files,
             sample_rate=self.sample_rate,
             total_len_sec=self.total_len_sec,
             chunk_len_sec=self.chunk_len_sec,
+            lowpass_cutoff_hz=self.lowpass_cutoff_hz,
         )
         dataloader = DataLoader(
             dataset,

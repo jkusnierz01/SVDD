@@ -1,4 +1,7 @@
 _target_: data.sonics_dataloader.SonicsDataModule
-data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed
+#data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed
+data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed_pooled_fp16
 batch_size: 32
 num_workers: 4
+transform:
+  _target_: data.data_augmentation.EmbeddingDataAugmentation

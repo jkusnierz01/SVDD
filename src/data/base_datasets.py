@@ -115,11 +115,15 @@ def pad_random(x: np.ndarray, max_len: int = 64600):
     else:  # x_len == max_len
         return x
     
+# ------------------------
+# EMBEDDINGS
+# ------------------------
 class FeaturesDataset(Dataset):
-    def __init__(self, files: list[list[str]], labels: list[int]):
+    def __init__(self, files: list[list[str]], labels: list[int], transform: bool | None = None):
         super().__init__()
         self.files = files
         self.labels = labels
+        self.transform = transform
 
     def __len__(self):
         return len(self.files)
@@ -135,6 +139,27 @@ class FeaturesDataset(Dataset):
         mert_tensor = torch.from_numpy(mert_numpy)
 
         sample = torch.concat((w2v_tensor, mert_tensor), dim=1)
+        
+        if self.transform:
+            sample = self.transform(sample)
 
         # sample to cos w stylu [6000, 2048]
         return sample, torch.tensor(label, dtype=torch.long)
+
+
+class PooledFeaturesDataset(Dataset):
+    """Loads pre-pooled fp16 tensors [1500, 2048] written by precompute_pooled.py."""
+    def __init__(self, files: list[str], labels: list[int], transform=None):
+        super().__init__()
+        self.files = files
+        self.labels = labels
+        self.transform = transform
+
+    def __len__(self):
+        return len(self.files)
+
+    def __getitem__(self, index):
+        sample = torch.from_numpy(np.load(self.files[index])).float()  # fp16 -> fp32
+        if self.transform is not None:
+            sample = self.transform(sample)
+        return sample, torch.tensor(self.labels[index], dtype=torch.long)

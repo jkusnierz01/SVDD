@@ -1,0 +1,14 @@
+# src/configs/preprocessing/mom.yaml
+_target_: preprocessing.two_class_dir.TwoClassDirPreprocessor
+deepfake_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/MoM/deepfake
+bonafide_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/MoM/bonafide
+extensions: [".mp3"]
+sample_rate: 16000
+total_len_sec: 120
+chunk_len_sec: 30
+batch_size: 4
+num_workers: 4
+wav2vec_model_name: facebook/wav2vec2-xls-r-300m
+mert_model_name: m-a-p/MERT-v1-330M
+lowpass_cutoff_hz: null
+limit_files: null

@@ -1,11 +1,12 @@
 # src/configs/preprocessing/sonics.yaml
 _target_: preprocessing.sonics.SonicsPreprocessor
-sample_rate: 24000
+input_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/all_data_16k_mono
+sample_rate: 16000
 total_len_sec: 120
 chunk_len_sec: 30
 batch_size: 4
 num_workers: 8
 wav2vec_model_name: facebook/wav2vec2-xls-r-300m
 mert_model_name: m-a-p/MERT-v1-330M
-lowpass_cutoff_hz: 7000
-limit_files: 100
+lowpass_cutoff_hz: null
+limit_files: null

@@ -29,4 +29,5 @@ dependencies = [
     "torch>=2.9.1",
     "mamba>=0.11.3",
     "polars>=1.39.0",
+    "datasets>=4.8.4",
 ]

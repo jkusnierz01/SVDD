@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /data: mom
+  - override /model: bimamba
+
+logger:
+  name: "eval_mom"
+  tags: ["test", "mom", "ood", "bimamba", "w2v", "mert", "features"]
+
+# cpk_path: /path/to/checkpoint.ckpt

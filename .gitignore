@@ -4,3 +4,4 @@ src/outputs
 cookies.txt
 __pycache__/
 .ipynb_checkpoints/
+*.txt

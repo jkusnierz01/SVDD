@@ -2,10 +2,22 @@ from mamba_ssm.modules.mamba_simple import Mamba
 import lightning as L
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
+import numpy as np
 import torchmetrics
 import wandb
 from src.utils.utils import wandb_log_cm
 from typing import Callable, Optional
+
+
+class SmoothedBCEWithLogitsLoss(nn.Module):
+    def __init__(self, smoothing: float = 0.1):
+        super().__init__()
+        self.smoothing = smoothing
+
+    def forward(self, logits: torch.Tensor, targets: torch.Tensor) -> torch.Tensor:
+        targets = targets * (1.0 - self.smoothing) + 0.5 * self.smoothing
+        return F.binary_cross_entropy_with_logits(logits, targets)
 
 
 class MambaBlock(nn.Module):
@@ -36,13 +48,13 @@ class MambaBlock(nn.Module):
         return output
 
 class BaseDeepfakeModel(L.LightningModule):
-    def __init__(self, optimizer: Callable, scheduler: Optional[Callable] = None):
+    def __init__(self, optimizer: Callable, scheduler: Optional[Callable] = None, label_smoothing: float = 0.1):
         super().__init__()
-        
+
         self.optimizer_fn = optimizer
         self.scheduler_fn = scheduler
-        
-        self.loss_fn = nn.BCEWithLogitsLoss()
+
+        self.loss_fn = SmoothedBCEWithLogitsLoss(smoothing=label_smoothing)
         self.accuracy = torchmetrics.Accuracy(task="binary")
         self.precision = torchmetrics.Precision(task="binary")
         self.recall = torchmetrics.Recall(task="binary")
@@ -67,13 +79,12 @@ class BaseDeepfakeModel(L.LightningModule):
         return {"optimizer": optimizer}
     
     def training_step(self, train_batch, batch_idx):
-        #to work with short dataset
-        # x -> [batch, z1, z2]
         x, y_true = train_batch
         if batch_idx == 0:
             print(f"DEBUG Batch 0 stats: Mean={x.mean():.4f}, Std={x.std():.4f}, Min={x.min():.4f}, Max={x.max():.4f}")
             if x.std() < 1e-5:
                 print("WARNING: Input features have zero variance! Model collapse imminent.")
+
         y_pred = self(x).squeeze(-1)
         loss = self.loss_fn(y_pred, y_true.float())
         probs = torch.sigmoid(y_pred)
@@ -82,50 +93,42 @@ class BaseDeepfakeModel(L.LightningModule):
         self.log("train/acc", acc, on_epoch=True, prog_bar=True)
         self.log("train/loss", loss, on_epoch=True, prog_bar=True)
         return loss
-    
+
+    def on_train_epoch_end(self):
+        self.accuracy.reset()
+
     def validation_step(self, val_batch, batch_idx):
-        #to work with short dataset
         x, y_true = val_batch
         y_pred = self(x).squeeze(-1)
         loss = self.loss_fn(y_pred, y_true.float())
-        probs = torch.sigmoid(y_pred)
-        preds = (probs > 0.5).int()
-        precision = self.precision(preds, y_true)
-        recall = self.recall(preds, y_true)
-        self.log("val/precision", precision, on_epoch=True, prog_bar=True)
-        self.log("val/recall", recall, on_epoch=True, prog_bar=True)
         self.log("val/loss", loss, on_epoch=True, prog_bar=True)
-        
-        # Append, not overwrite
         self.validation_outputs['predictions'].append(y_pred)
         self.validation_outputs['targets'].append(y_true)
         return loss
-    
+
     def on_validation_epoch_end(self):
         all_logits = torch.cat(self.validation_outputs['predictions'], dim=0)
         all_targets = torch.cat(self.validation_outputs['targets'], dim=0)
-        
-        # Convert to probs and preds
+
         probs = torch.sigmoid(all_logits)
         preds = (probs > 0.5).int()
-        
-        # Update and compute only what you want (e.g., EER and F1)
-        # self.conf_matrix.update(preds, all_targets)
-        # cm = self.conf_matrix.compute()
-        
+
         self.eer.update(probs, all_targets)
-        eer_val = self.eer.compute()
-        self.log('val/eer', eer_val)
-        
         self.f1.update(preds, all_targets)
-        f1_val = self.f1.compute()
-        self.log('val/f1', f1_val)
-        
-        # Reset
+        self.precision.update(preds, all_targets)
+        self.recall.update(preds, all_targets)
+
+        self.log('val/eer', self.eer.compute(), prog_bar=True)
+        self.log('val/f1', self.f1.compute(), prog_bar=True)
+        self.log('val/precision', self.precision.compute())
+        self.log('val/recall', self.recall.compute())
+
         self.eer.reset()
         self.f1.reset()
+        self.precision.reset()
+        self.recall.reset()
         self.conf_matrix.reset()
-        
+
         self.validation_outputs = {'predictions': [], 'targets': []}
     
     def test_step(self, batch, batch_idx, dataloader_idx: int = 0):
@@ -149,7 +152,7 @@ class BaseDeepfakeModel(L.LightningModule):
 
         for dataloader_idx, outputs in self.test_outputs.items():
             all_logits = torch.cat(outputs["predictions"], dim=0)
-            all_targets = torch.cat(outputs["targets"], dim=0)
+            all_targets = torch.cat(outputs["targets"], dim=0).long()
 
             # Convert to probs and preds
             probs = torch.sigmoid(all_logits)
@@ -246,17 +249,19 @@ class BidirectionalMambaModel(BaseDeepfakeModel):
         d_conv: int,
         expand: int,
         n_layers: int,
-        dropout: int,
-        optimizer: Callable,
+        dropout: float,
+        label_smoothing: float = 0.1,
+        optimizer: Callable = None,
         scheduler: Optional[Callable] = None,
     ):
-        super().__init__(optimizer=optimizer, scheduler=scheduler)
+        super().__init__(optimizer=optimizer, scheduler=scheduler, label_smoothing=label_smoothing)
         self.save_hyperparameters()
 
         ## Model
         self.n_layers = n_layers
-        self.pool = nn.AvgPool1d(kernel_size=4, stride=4)
-        self.linear = nn.Linear(input_dim, d_model)
+        # self.pool = nn.AvgPool1d(kernel_size=4, stride=4)
+        self.linear_forward  = nn.Linear(input_dim, d_model)
+        self.linear_backward = nn.Linear(input_dim, d_model)
         self.mamba_forward = nn.ModuleList(
             [
                 MambaBlock(
@@ -273,18 +278,20 @@ class BidirectionalMambaModel(BaseDeepfakeModel):
                 for _ in range(self.n_layers)
             ]
         )
-        self.linear_2 = nn.Linear(d_model, 1)
+        self.linear_2 = nn.Linear(2 * d_model, 1)
         
     
-    # [batch_size, 6000, 2048]
+    # [batch_size, 1500, 2048]  (pre-pooled by precompute_pooled.py)
+    # [batch_size, 6000, 2048] if without pooling in precomputation
     def forward(self, vector: torch.Tensor):
-        vector = vector.transpose(1, 2) # [B, 2048, 6000]
-        vector = self.pool(vector)      # [B, 2048, 1500]
-        vector = vector.transpose(1, 2)
-        
+        # Instance normalization: remove domain-specific statistics per sample
+        mean = vector.mean(dim=(1, 2), keepdim=True)
+        std = vector.std(dim=(1, 2), keepdim=True) + 1e-6
+        vector = (vector - mean) / std
+
         backward = torch.flip(vector, [1])
-        x_forward = self.linear(vector)
-        x_backward = self.linear(backward)
+        x_forward  = self.linear_forward(vector)
+        x_backward = self.linear_backward(backward)
         
         for layer in self.mamba_forward:
             x_forward = layer(x_forward)
@@ -293,8 +300,7 @@ class BidirectionalMambaModel(BaseDeepfakeModel):
             x_backward = layer(x_backward)
         
         x_backward = torch.flip(x_backward, [1])
-        out = x_forward + x_backward
-        out = out.mean(dim=1)
-        
+        out = torch.cat([x_forward, x_backward], dim=-1)  # [B, 1500, 1024]
+        out = out.mean(dim=1)                              # [B, 1024]
         logit = self.linear_2(out)
         return logit

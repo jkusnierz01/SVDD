@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /data: m6
+  - override /model: bimamba
+
+logger:
+  name: "eval_m6"
+  tags: ["test", "m6", "ood", "bimamba", "w2v", "mert", "features"]
+
+# cpk_path: /net/people/plgrid/plgjedrzejkusnierz/big_storage/SVDD/outputs/2026-04-17/10-33-36/checkpoints/epoch_epoch=005.ckpt

@@ -8,12 +8,12 @@
 #SBATCH --mem=32GB
 #SBATCH --time=24:00:00
 #SBATCH --output=logs_mass_laundering.txt
-# Re-encodes all FLAC files through MP3 at a fixed bitrate and back to FLAC.
+# Re-encodes all FLAC files to mono, through MP3 at a fixed bitrate, then resamples to 16kHz FLAC.
 
 module load ffmpeg parallel
 
 INPUT_DIR="/net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/all_data"
-OUTPUT_DIR="/net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/all_data_32k"
+OUTPUT_DIR="/net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/all_data_16k_mono"
 BITRATE="32k"
 JOBS="16"
 
@@ -34,7 +34,7 @@ echo "Bitrate:  $BITRATE"
 echo "Jobs:     $JOBS"
 echo ""
 
-mapfile -t FILES < <(find "$INPUT_DIR" -name "*.flac" -type f | shuf -n 2000)
+mapfile -t FILES < <(find "$INPUT_DIR" -name "*.flac" -type f)
 TOTAL=${#FILES[@]}
 
 if [[ $TOTAL -eq 0 ]]; then
@@ -53,8 +53,8 @@ process_audio() {
     mkdir -p "$(dirname "$out_file")"
 
     if [[ ! -f "$out_file" ]]; then
-        ffmpeg -y -hide_banner -loglevel error -i "$in_file" -b:a "$4" "$tmp_mp3" && \
-        ffmpeg -y -hide_banner -loglevel error -i "$tmp_mp3" "$out_file"
+        ffmpeg -y -hide_banner -loglevel error -i "$in_file" -ac 1 -b:a "$4" "$tmp_mp3" && \
+        ffmpeg -y -hide_banner -loglevel error -i "$tmp_mp3" -ar 16000 "$out_file"
         rm -f "$tmp_mp3"
     fi
 }

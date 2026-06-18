@@ -4,9 +4,9 @@ save_dir: null
 offline: False
 id: null # pass correct id to resume experiment!
 project: "SVDD"
-log_model: False # upload lightning ckpts
-prefix: "" # a string to put at the beginning of metric keys
-# entity: "" # set to name of your wandb team
+log_model: False
+prefix: ""
 group: ""
 tags: []
 job_type: ""
+notes: "" # short description of what's different in this run

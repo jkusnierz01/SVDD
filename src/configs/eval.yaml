@@ -6,4 +6,4 @@ defaults:
   - logger: wandb
   - trainer: default
 
-cpk_path: /net/people/plgrid/plgjedrzejkusnierz/big_storage/SVDD/outputs/2026-04-17/10-33-36/checkpoints/epoch_epoch=005.ckpt
+cpk_path: /net/people/plgrid/plgjedrzejkusnierz/big_storage/SVDD/outputs/2026-06-04/16-49-45/late-fusion-small-model-last-vector-aggregation/checkpoints/epoch=018-val_loss=0.0000.ckpt

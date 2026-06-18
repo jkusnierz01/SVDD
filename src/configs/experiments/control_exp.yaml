@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: control_model
+  - override /data: sonics
+
+
+logger:
+  name: "control-exp"
+  tags: ["control", "exp"]
+  notes: "Control experiment"

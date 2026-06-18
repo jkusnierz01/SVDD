@@ -1,0 +1,13 @@
+# @package _global_
+# Early fusion + LayerNorm on embeddings (per timestep), after concat.
+defaults:
+  - override /model: bimamba
+  - override /data: sonics
+
+model:
+  norm_type: layer_norm
+
+logger:
+  name: "bimamba-layer-norm"
+  tags: ["bimamba", "layer_norm", "early-fusion", "concat"]
+  notes: "LayerNorm(encoder_input_dim) on fused W2V+MERT sequence before BiMamba"

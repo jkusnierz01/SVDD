@@ -5,5 +5,6 @@ defaults:
 
 
 logger:
-  name: "bimamba"
-  tags: ["bimamba", "features", "w2v", "mert"]
+  name: "bimamba-baseline-for-modality-ablation"
+  tags: ["bimamba", "baseline", "modality-ablation", "features", "w2v", "mert"]
+  notes: "Baseline model for modality ablation"

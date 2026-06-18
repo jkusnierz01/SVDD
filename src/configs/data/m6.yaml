@@ -1,5 +1,5 @@
 _target_: data.m6_dataloader.M6DataModule
-data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/M6/M6_preprocessed
+data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/M6/preprocessed_pooled_fp16
 batch_size: 32
 num_workers: 4
 transform: null

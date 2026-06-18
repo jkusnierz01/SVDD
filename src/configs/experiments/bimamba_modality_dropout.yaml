@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: bimamba
+  - override /data: sonics
+
+
+model:
+  modality_dropout: true
+
+logger:
+  name: "bimamba-modality-dropout"
+  tags: ["bimamba", "modality-dropout", "features", "w2v", "mert"]
+  notes: "Modality dropout"

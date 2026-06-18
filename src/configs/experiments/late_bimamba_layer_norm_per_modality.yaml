@@ -1,0 +1,20 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics
+
+model:
+  norm_type: layer_norm_per_modality
+  d_model: 128
+  n_layers: 1
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.00005
+  weight_decay: 0.01
+
+logger:
+  name: "late-fusion-bimamba-layer-norm-per-modality"
+  tags: ["late-fusion-bimamba", "layer-norm-per-modality", "features", "w2v", "mert"]
+  notes: "Late fusion bimamba model with LayerNorm(1024) on W2V and MERT separately"

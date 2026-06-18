@@ -14,6 +14,7 @@ from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor, AutoModel
 from tqdm import tqdm
 
 from src.utils.preprocessing import pad_loop_torch
+from src.preprocessing.audio_augmentation import apply_audio_augment, aug_seed
 
 
 class ChunkedAudioDataset(Dataset):
@@ -29,6 +30,7 @@ class ChunkedAudioDataset(Dataset):
         total_len_sec: int = 120,
         chunk_len_sec: int = 30,
         lowpass_cutoff_hz: int = None,
+        aug_variant: int | None = None,
     ):
         self.files = files
         self.sample_rate = sample_rate
@@ -36,6 +38,7 @@ class ChunkedAudioDataset(Dataset):
         self.chunk_samples = int(chunk_len_sec * sample_rate)
         self.num_chunks = self.total_samples // self.chunk_samples
         self.lowpass_cutoff_hz = lowpass_cutoff_hz
+        self.aug_variant = aug_variant
 
     def __len__(self):
         return len(self.files)
@@ -58,6 +61,11 @@ class ChunkedAudioDataset(Dataset):
                 wav = T.Resample(target_sr, self.sample_rate)(wav)
 
             wav = pad_loop_torch(wav, self.total_samples)
+
+            if self.aug_variant is not None:
+                rng = random.Random(aug_seed(stem, self.aug_variant))
+                wav = apply_audio_augment(wav, rng, self.sample_rate)
+
             chunks = wav.squeeze(0).unfold(0, self.chunk_samples, self.chunk_samples)
             return chunks, stem
 
@@ -92,6 +100,9 @@ class BaseFeatureProcessor(BaseProcessor):
         mert_model_name: str = "m-a-p/MERT-v1-330M",
         lowpass_cutoff_hz: int = None,
         limit_files: int = None,
+        train_only: bool = False,
+        apply_audio_augment: bool = False,
+        aug_variant: int = 0,
     ):
         self.output_dir = Path(output_dir)
         self.device = device
@@ -104,11 +115,30 @@ class BaseFeatureProcessor(BaseProcessor):
         self.mert_model_name = mert_model_name
         self.lowpass_cutoff_hz = lowpass_cutoff_hz
         self.limit_files = limit_files
+        self.train_only = train_only
+        self.apply_audio_augment = apply_audio_augment
+        self.aug_variant = aug_variant
 
     @abstractmethod
     def collect_files(self) -> list[tuple[Path, str]]:
         """Return list of (audio_path, stem) pairs to process."""
         pass
+
+    def _prepare_files(self, files: list[tuple[Path, str]]) -> list[tuple[Path, str]]:
+        from src.preprocessing.audio_augmentation import augment_stem
+
+        if self.train_only:
+            files = [(p, s) for p, s in files if s.split("_", 1)[0] == "train"]
+            logging.info(f"train_only: kept {len(files)} files")
+
+        if self.apply_audio_augment:
+            files = [(p, augment_stem(s, self.aug_variant)) for p, s in files]
+            logging.info(
+                f"apply_audio_augment: variant={self.aug_variant}, "
+                f"{len(files)} output stems"
+            )
+
+        return files
 
     def preprocess(self):
         w2v_out_dir = self.output_dir / "wav2vec"
@@ -132,6 +162,7 @@ class BaseFeatureProcessor(BaseProcessor):
         mert_model.eval()
 
         files = self.collect_files()
+        files = self._prepare_files(files)
         random.seed(12)
         random.shuffle(files)
         if self.limit_files is not None:
@@ -161,6 +192,7 @@ class BaseFeatureProcessor(BaseProcessor):
             total_len_sec=self.total_len_sec,
             chunk_len_sec=self.chunk_len_sec,
             lowpass_cutoff_hz=self.lowpass_cutoff_hz,
+            aug_variant=self.aug_variant if self.apply_audio_augment else None,
         )
         dataloader = DataLoader(
             dataset,

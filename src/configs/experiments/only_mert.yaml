@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - override /model: bimamba
+  - override /data: sonics
+
+model:
+  only_modality: mert
+  modality_dropout: false 
+
+logger:
+  name: "bimamba-only-mert"
+  tags: ["bimamba", "ablation", "only-mert"]
+  notes: "Ablation: tylko MERT, bez fuzji z Wav2Vec"

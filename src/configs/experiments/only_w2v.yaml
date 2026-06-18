@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - override /model: bimamba
+  - override /data: sonics
+
+model:
+  only_modality: w2v
+  modality_dropout: false
+  norm_type: layer_norm
+
+
+logger:
+  name: "bimamba-only-w2v-layer-norm-last-timestep-aggregation"
+  tags: ["bimamba", "ablation", "only-w2v", "layer-norm", "last-timestep-aggregation"]
+  notes: "Ablation: tylko Wav2Vec, bez fuzji z MERT, LayerNorm(encoder_input_dim) na wejściu, agregacja ostatnich timestepów"

@@ -1,7 +1,11 @@
 outputs
 output
 src/outputs
+./results/
 cookies.txt
 __pycache__/
 .ipynb_checkpoints/
 *.txt
+.venv
+.vscode
+notebooks/cache/

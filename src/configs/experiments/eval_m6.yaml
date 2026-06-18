@@ -1,10 +1,20 @@
 # @package _global_
 defaults:
+  - override /model: late_bimamba
   - override /data: m6
-  - override /model: bimamba
 
-logger:
-  name: "eval_m6"
-  tags: ["test", "m6", "ood", "bimamba", "w2v", "mert", "features"]
+model:
+  aggregation: "last_vector"
+  norm_type: layer_norm_per_modality
+  d_conv: 4
+  d_model: 128  
+  n_layers: 1
+  expand: 1
+  d_state: 8        
+  dropout: 0.4 
 
-# cpk_path: /net/people/plgrid/plgjedrzejkusnierz/big_storage/SVDD/outputs/2026-04-17/10-33-36/checkpoints/epoch_epoch=005.ckpt
+
+logger: 
+  name: "eval_m6_small_second_model"
+  tags: ["test", "m6", "ood", "late-fusion-bimamba", "small-model", "second-model", "last-vector-aggregation"]
+  notes: "Late fusion bimamba model with small model (d_model=128, n_layers=1, expand=1, d_state=8, dropout=0.4), last vector aggregation"

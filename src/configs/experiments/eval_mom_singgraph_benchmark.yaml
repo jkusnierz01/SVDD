@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: singgraph_benchmark
+  - override /data: mom_benchmark_singgraph
+
+logger:
+  name: "eval_mom_singgraph_benchmark"
+  tags: ["test", "mom", "ood", "singgraph_benchmark"]
+  notes: "SingGraph benchmark OOD eval on MoM features"

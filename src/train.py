@@ -4,12 +4,20 @@ from hydra.utils import instantiate
 import torch
 import wandb
 import rootutils
+import lightning as L
 
 ROOT = rootutils.setup_root(".", indicator=".project-root", pythonpath=True)
 
 
 @hydra.main(config_path="configs", config_name="train.yaml", version_base="1.1")
 def main(cfg: DictConfig):
+    if cfg.get("seed") is None:
+        import random
+        cfg.seed = random.randint(1, 1000000000)
+        
+    import lightning as L
+    L.seed_everything(cfg.seed, workers=True)
+        
     torch.set_float32_matmul_precision('medium')
     datamodule = instantiate(cfg.data)
     model = instantiate(cfg.model)

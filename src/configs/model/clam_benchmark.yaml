@@ -1,0 +1,23 @@
+_target_: models.clam_benchmark.ClamBenchmarkModel
+num_layers: 13
+layer_dim: 768
+proj_dim: 512
+num_heads: 4
+triplet_weight: 0.5
+margin: 1.0
+dropout: 0.3
+classifier_hidden: 256
+label_smoothing: 0.1
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.0001
+  weight_decay: 0.01
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 10

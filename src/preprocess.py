@@ -13,11 +13,18 @@ def main(cfg: DictConfig):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Processing on: {device}")
 
-    Path(cfg.paths.output_dir).mkdir(parents=True, exist_ok=True)
+    out_dir = cfg.preprocessing.get("output_dir", None)
+    if not out_dir and cfg.get("paths") and cfg.paths.get("output_dir"):
+        out_dir = cfg.paths.output_dir
+        
+    if not out_dir:
+        raise ValueError("output_dir must be specified either in preprocessing config or paths config")
+        
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
 
     processor = instantiate(
         cfg.preprocessing,
-        output_dir=str(cfg.paths.output_dir),
+        output_dir=str(out_dir),
         device=str(device),
     )
     processor.preprocess()

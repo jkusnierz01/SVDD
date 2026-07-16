@@ -1,19 +1,14 @@
 # @package _global_
 defaults:
-  - override /model: aasist
+  - override /model: aasist_features
+  - override /data: sonics_merged
 
 data:
-  batch_size: 12
-  num_workers: 4
-  drop_last: True
-  loader_type: "wav"
-  use_collate: False
+  batch_size: 16
 
 logger:
-  name: "aasist_baseline"
-
-paths:
-  singfake_data_dir: /mnt/data/kusnierz/audio-data/SingFake/data_after_separation/split_dump
+  name: "aasist_w2v_mert_baseline_smaller"
+  notes: "Using smaller bottleneck dimension to save RAM"
 
 trainer:
   max_epochs: 100

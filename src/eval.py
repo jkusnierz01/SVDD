@@ -1,6 +1,6 @@
 import torch
 from pathlib import Path
-from omegaconf import DictConfig
+from omegaconf import DictConfig, OmegaConf
 import hydra
 from hydra.utils import instantiate
 import wandb
@@ -17,6 +17,9 @@ def main(cfg: DictConfig):
     trainer = instantiate(cfg.trainer, logger=logger)
     
     model = instantiate(cfg.model)
+    
+    if logger and hasattr(logger, 'experiment'):
+        logger.experiment.config.update(OmegaConf.to_container(cfg, resolve=True))
 
     trainer.test(model=model, datamodule=datamodule, ckpt_path=cfg.cpk_path, weights_only=False)
     wandb.finish()

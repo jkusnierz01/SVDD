@@ -1,0 +1,12 @@
+# @package _global_
+defaults:
+  - override /model: singgraph_benchmark
+  - override /data: sonics_benchmark_singgraph
+
+trainer:
+  accumulate_grad_batches: 8  # effective batch = 4 * 8 = 32 tracks
+
+logger:
+  name: "singgraph_benchmark_subset"
+  tags: ["singgraph", "benchmark_10pct", "graph"]
+  notes: "SingGraph benchmark on precomputed vocals/instrumental from benchmark_10pct/features/singgraph_features"

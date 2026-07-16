@@ -1,0 +1,19 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics_benchmark_subset
+
+model:
+  aggregation: "last_vector"
+  norm_type: layer_norm_per_modality
+  d_model: 64       
+  n_layers: 2
+  expand: 1
+  d_state: 8         
+  dropout: 0.4
+
+logger:
+  name: "eval_sonics_late_bimamba_benchmark"
+  tags: ["test", "sonics", "late_bimamba", "proposed_pooled"]
+  notes: "Late BiMamba eval on SONICS test split (proposed_pooled)."
+

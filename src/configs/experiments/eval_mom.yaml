@@ -6,15 +6,15 @@ defaults:
 model:
   aggregation: "last_vector"
   norm_type: layer_norm_per_modality
-  d_conv: 4
-  d_model: 128  
-  n_layers: 1
+  d_model: 64       
+  n_layers: 2
   expand: 1
-  d_state: 8        
-  dropout: 0.4
+  d_state: 8         
+  dropout: 0.4   
 
-logger:
-  name: "eval_mom_small_second_model"
-  tags: ["test", "mom", "ood", "late-fusion-bimamba", "small-model", "second-model", "last-vector-aggregation"]
-  notes: "Late fusion bimamba model with small model (d_model=128, n_layers=1, expand=1, d_state=8, dropout=0.4), last vector aggregation"
+  
+logger: 
+  name: "eval_mom_late_bimabma_benchmark_subset-final"
+  tags: ["test", "mom", "ood", "late_bimamba", "last_vector_aggregation", "benchmark_subset"]
+  notes: "Late bimamba model with last vector aggregation and benchmark subset"
   

@@ -1,0 +1,5 @@
+_target_: data.clam_ood_dataloader.ClamOODDataModule
+data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/M6/features_clean
+batch_size: 4
+num_workers: 4
+transform: null

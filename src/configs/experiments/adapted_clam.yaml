@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /model: adapted_clam
+  - override /data: sonics_merged
+
+data:
+  batch_size: 32
+
+logger:
+  name: "adapted_clam_baseline"
+  notes: "Adapted CLAM model with w2v + mert features"

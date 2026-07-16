@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: clam_benchmark
+  - override /data: sonics_benchmark_clam
+
+logger:
+  name: "eval_sonics_clam_benchmark"
+  tags: ["test", "sonics", "clam_benchmark"]
+  notes: "CLAM benchmark eval on SONICS test split (features_clean)."
+

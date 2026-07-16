@@ -1,0 +1,7 @@
+_target_: data.singgraph_ood_dataloader.SingGraphOODDataModule
+data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/M6/features_clean
+batch_size: 4
+num_workers: 4
+transform: null
+num_windows: 30
+feat_dim: 1024

@@ -6,11 +6,11 @@ defaults:
 model:
   aggregation: "last_vector"
   norm_type: layer_norm_per_modality
-  d_model: 32        
-  n_layers: 1
+  d_model: 64       
+  n_layers: 2
   expand: 1
-  d_state: 4         
-  dropout: 0.5       
+  d_state: 8         
+  dropout: 0.4       
 
 optimizer:
   _target_: torch.optim.AdamW
@@ -19,6 +19,6 @@ optimizer:
   weight_decay: 0.1   
 
 logger:
-  name: "late-fusion-nano-model-curiosity"
-  tags: ["nano-model", "extreme-bottleneck"]
-  notes: "Curiosity run: d_model=32, d_state=4, lr=1e-5, wd=0.1 to force slow epoch-by-epoch learning."
+  name: "late-fusion-final3"
+  tags: ["late-fusion-bimamba", "last-vector-aggregation", "layer-norm-per-modality"]
+  notes: "Late fusion bimamba model with d_model=64, n_layers=2, expand=1, d_state=8, dropout=0.4"

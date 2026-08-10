@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: singgraph_benchmark
+  - override /data: m6_benchmark_singgraph
+
+logger:
+  name: "eval_m6_singgraph_benchmark"
+  tags: ["test", "m6", "ood", "singgraph_benchmark"]
+  notes: "SingGraph benchmark OOD eval on M6 features"

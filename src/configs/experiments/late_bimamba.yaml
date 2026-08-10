@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics
+
+
+logger:
+  name: "late-fusion-bimamba-big-temportal-dropout"
+  tags: ["late-fusion-bimamba", "label-smoothing", "TemporalDropout","big-temportal-dropout", "features", "w2v", "mert"]
+  notes: "Added big temportal dropout and implemented late fusion bimamba model"

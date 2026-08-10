@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - _self_
+  - data: sonics
+  - model: bimamba
+  - logger: wandb
+  - trainer: default
+
+cpk_path: /net/people/plgrid/plgjedrzejkusnierz/big_storage/SVDD/outputs/2026-07-08/02-18-54/singgraph_benchmark_subset/checkpoints/epoch=020-val_loss=0.0000.ckpt

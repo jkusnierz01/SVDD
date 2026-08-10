@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - data: singfake
+  - model: base
+  - callbacks: default
+  - logger: wandb
+  - trainer: default
+  - paths: default
+
+seed: null

@@ -1,0 +1,4 @@
+defaults:
+  - model_checkpoint
+  - early_stopping
+  - slurm_progress

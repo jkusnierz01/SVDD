@@ -1,0 +1,20 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: mom
+
+model:
+  aggregation: "last_vector"
+  norm_type: layer_norm_per_modality
+  d_model: 64       
+  n_layers: 2
+  expand: 1
+  d_state: 8         
+  dropout: 0.4   
+
+  
+logger: 
+  name: "eval_mom_late_bimabma_benchmark_subset-final"
+  tags: ["test", "mom", "ood", "late_bimamba", "last_vector_aggregation", "benchmark_subset"]
+  notes: "Late bimamba model with last vector aggregation and benchmark subset"
+  

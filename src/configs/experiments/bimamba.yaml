@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: bimamba
+  - override /data: sonics
+
+
+logger:
+  name: "bimamba-baseline-for-modality-ablation"
+  tags: ["bimamba", "baseline", "modality-ablation", "features", "w2v", "mert"]
+  notes: "Baseline model for modality ablation"

@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+  - preprocessing: sonics
+
+paths:
+  output_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/preprocessed_16k_mono

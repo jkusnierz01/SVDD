@@ -1,0 +1,6 @@
+_target_: data.clam_dataloader.ClamDataModule
+data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/benchmark_10pct/features_clean
+# CLAM [4499,13,768] x2 modalities is ~180MB/sample fp16; keep batch small.
+batch_size: 4
+num_workers: 4
+transform: null

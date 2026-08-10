@@ -1,0 +1,31 @@
+_target_: models.mamba.LateFusionBidirectionalMambaModel
+w2v_dim: 1024
+mert_dim: 1024
+fusion_dim: 1024
+n_layers: 2
+d_model: 512
+d_state: 16
+d_conv: 4
+expand: 2
+dropout: 0.3
+label_smoothing: 0.1
+# none | per_modality | layer_norm_per_modality (late: no global/layer_norm on fused)
+norm_type: none
+fusion_type: "concat" # "concat" or "add" or "gmu" or "scalar-gmu"
+test_seq_len: 1500
+modality_dropout: false
+aggregation: "mean"
+
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.0001
+  weight_decay: 0.01
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 10

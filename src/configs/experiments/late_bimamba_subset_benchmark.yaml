@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics_benchmark_subset
+
+model:
+  aggregation: "last_vector"
+  norm_type: layer_norm_per_modality
+  d_model: 64       
+  n_layers: 2
+  expand: 1
+  d_state: 8         
+  dropout: 0.4       
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.00001         
+  weight_decay: 0.1   
+
+logger:
+  name: "late-fusion-final3"
+  tags: ["late-fusion-bimamba", "last-vector-aggregation", "layer-norm-per-modality"]
+  notes: "Late fusion bimamba model with d_model=64, n_layers=2, expand=1, d_state=8, dropout=0.4"

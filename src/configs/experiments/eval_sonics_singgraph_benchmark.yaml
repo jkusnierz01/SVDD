@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /model: singgraph_benchmark
+  - override /data: sonics_benchmark_singgraph
+
+logger:
+  name: "eval_sonics_singgraph_benchmark"
+  tags: ["test", "sonics", "singgraph_benchmark"]
+  notes: "SingGraph benchmark eval on SONICS test split (features_clean)."
+

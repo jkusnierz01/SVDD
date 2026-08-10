@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: clam_benchmark
+  - override /data: mom_benchmark_clam
+
+logger:
+  name: "eval_mom_clam_benchmark"
+  tags: ["test", "mom", "ood", "clam_benchmark"]
+  notes: "CLAM benchmark OOD eval on MoM features"

@@ -1,0 +1,25 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics_merged
+
+
+model:
+  aggregation: "last_vector"
+  norm_type: layer_norm_per_modality
+  d_model: 128
+  n_layers: 1
+  expand: 1
+  d_state: 8
+  dropout: 0.4
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.00005
+  weight_decay: 0.01
+
+logger:
+  name: "late-fusion-small-model-last-vector-aggregation"
+  tags: ["late-fusion-bimamba", "small-model", "last-vector-aggregation", "features", "w2v", "mert"]
+  notes: "Late fusion bimamba model with small model (d_model=128, n_layers=1, expand=1, d_state=8, dropout=0.4), last vector aggregation"

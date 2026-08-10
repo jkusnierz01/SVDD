@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics_merged
+
+model:
+  aggregation: "last_vector"
+  norm_type: layer_norm_per_modality
+  d_model: 32        
+  n_layers: 1
+  expand: 1
+  d_state: 4         
+  dropout: 0.3      
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.00001         
+  weight_decay: 0.1   
+
+logger:
+  name: "late-fusion-nano-model3"
+  tags: ["nano-model", "extreme-bottleneck"]
+  notes: "Curiosity run: d_model=32, d_state=4, lr=1e-5, wd=0.1 to force slow epoch-by-epoch learning."

@@ -5,7 +5,7 @@ import json
 
 def main():
     df = pd.read_csv("singfake.csv", sep=',')
-    output_dir = "downloads"  # Katalog na pobrane pliki
+    output_dir = "downloads"
     os.makedirs(output_dir, exist_ok=True)
     
     log_list = []  
@@ -16,7 +16,6 @@ def main():
         title = row["Title"]
         spoof_type = row["Bonafide Or Spoof"]
         
-        # Utwórz nazwę pliku: Singer_Title_SpoofType.flac
         filename = f"{singer}_{title.replace('/', '_').replace(' ', '_')}_{spoof_type}.flac"
         filepath = os.path.join(output_dir, filename)
         
@@ -48,7 +47,6 @@ def main():
                 "error_msg": str(e)
             })
     
-    # Zapisz log do JSON
     with open("download_log.json", "w", encoding="utf-8") as f:
         json.dump(log_list, f, indent=4, ensure_ascii=False)
     print("Log zapisany do download_log.json")

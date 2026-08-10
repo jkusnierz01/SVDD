@@ -1,0 +1,12 @@
+# @package _global_
+defaults:
+  - override /model: clam_benchmark
+  - override /data: sonics_benchmark_clam
+
+trainer:
+  accumulate_grad_batches: 8  # effective batch = 4 * 8 = 32
+
+logger:
+  name: "clam_benchmark_subset_full"
+  tags: ["clam", "benchmark_10pct", "wca", "triplet"]
+  notes: "CLAM benchmark model on all-layer features from benchmark_10pct/features/clam_features"

@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: late_bimamba
+  - override /data: sonics_merged
+
+logger:
+  name: "late-fusion-bimamba-merged-train"
+  tags: ["late-fusion-bimamba", "merged", "audio-aug", "TemporalDropout", "concat-fusion", "features", "w2v", "mert"]
+  notes: "Train late fusion concat fusion with clean + offline audio-augmented pooled embeddings (preprocessed_pooled_merged)"

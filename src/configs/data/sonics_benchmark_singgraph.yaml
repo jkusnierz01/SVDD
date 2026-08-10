@@ -1,0 +1,8 @@
+_target_: data.singgraph_dataloader.SingGraphDataModule
+data_dir: /net/people/plgrid/plgjedrzejkusnierz/scratch/data/Sonics/benchmark_10pct/features_clean
+# SingGraph [30,T,1024] x2 modalities; flatten to B*30 windows in model.
+batch_size: 8
+num_workers: 4
+transform: null
+num_windows: 30
+feat_dim: 1024

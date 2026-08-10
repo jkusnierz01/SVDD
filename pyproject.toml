@@ -1,0 +1,33 @@
+[project]
+name = "svdd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "demucs>=4.0.1",
+    "gdown>=5.2.0",
+    "hydra-core>=1.3.2",
+    "jupyter>=1.1.1",
+    "librosa>=0.10.2.post1",
+    "lightning>=2.6.0",
+    "mamba-ssm>=2.2.6.post3",
+    "matplotlib>=3.10.7",
+    "pandas>=2.3.3",
+    "pyannote-audio>=4.0.1",
+    "rich>=14.2.0",
+    "rootutils>=1.0.7",
+    "seaborn>=0.13.2",
+    "soundfile>=0.13.1",
+    "tqdm>=4.67.1",
+    "torchaudio>=2.9.1",
+    "torchcodec>=0.9.0",
+    "wandb>=0.23.1",
+    "yt-dlp>=2025.12.8",
+    "transformers>=4.57.3",
+    "huggingface-hub>=0.36.0",
+    "torch>=2.9.1",
+    "mamba>=0.11.3",
+    "polars>=1.39.0",
+    "datasets>=4.8.4",
+]

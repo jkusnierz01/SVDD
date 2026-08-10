@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /data: sonics
+  - override /model: bimamba
+
+logger:
+  name: "eval_sonics"
+  tags: ["test", "sonics", "bimamba", "w2v", "mert", "features"]
+
+# cpk_path: /path/to/checkpoint.ckpt

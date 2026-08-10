@@ -1,0 +1,13 @@
+# @package _global_
+# Early fusion + LayerNorm(1024) on W2V and MERT separately before concat.
+defaults:
+  - override /model: bimamba
+  - override /data: sonics
+
+model:
+  norm_type: layer_norm_per_modality
+
+logger:
+  name: "bimamba-layer-norm-per-modality"
+  tags: ["bimamba", "layer_norm_per_modality", "early-fusion", "concat"]
+  notes: "LayerNorm per modality on [B,T,1024] before concat (vs legacy per_modality instance norm)"

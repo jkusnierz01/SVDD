@@ -1,0 +1,22 @@
+_target_: models.aasist_features.AASISTFeaturesModel
+w2v_dim: 1024
+mert_dim: 1024
+bottleneck_dim: 256
+d_args:
+  filts: [70, [1, 32], [32, 32], [32, 64], [64, 64]]
+  gat_dims: [64, 32]
+  pool_ratios: [0.5, 0.7, 0.5, 0.5]
+  temperatures: [2.0, 2.0, 100.0, 100.0]
+label_smoothing: 0.1
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.0001
+  weight_decay: 0.0001
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.CosineAnnealingLR
+  _partial_: true
+  T_max: 100
+  eta_min: 0.000005

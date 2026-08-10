@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /model: clam_benchmark
+  - override /data: m6_benchmark_clam
+
+logger:
+  name: "eval_m6_clam_benchmark"
+  tags: ["test", "m6", "ood", "clam_benchmark"]
+  notes: "CLAM benchmark OOD eval on M6 features"
